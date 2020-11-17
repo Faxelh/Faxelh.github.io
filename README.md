@@ -170,7 +170,7 @@
           </ul>
         </li>
         
-        <li class=" btn">
+        <li class="mr btn">
           <a href="https://gist.github.com/Faxel18"> Sign up</a>
         </li>
         
