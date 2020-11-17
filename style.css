@@ -215,7 +215,7 @@ nav{
 }
 li.mr{
   margin: auto 0 auto auto;
-  line-height: 1;
+  line-height: initial;
 }
 li.mr:hover{
   background: #1d1b1b;
