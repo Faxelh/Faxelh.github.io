@@ -3,6 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 <h2>Connectez-vous/Inscrivez-vous pour recevoir les dernieres postes</h2>
