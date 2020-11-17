@@ -87,6 +87,7 @@ nav{
 .navien li{
   line-height: 8rem;/*8rem;*/
   position: relative;
+  text-decoration: none;
 }
 .navien a{
   display: block;
