@@ -186,42 +186,19 @@
   </div>
 </section>
 
-<div class="social">
-  <a href="#">Facebook
-    <i class="fab fa-facebook "></i>
-  </a>
-  <a href="#">Youtube
-    <i class="fab fa-youtube  "></i>
-  </a>
-  <a href="#">Instagram
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="#">Twitter
-    <i class="fab fa-twitter  "></i>
-  </a>
-  <a href="#">Github
-    <i class="fab fa-github   "></i>
-  </a>
-  <a href="#">Whatsapp
-    <i class="fab fa-whatsapp "></i>
-  </a>
-  <a href="#">Telegram
-    <i class="fab fa-telegram "></i>
-  </a>
-</div>
 <div class="sb-attach">
-  <a href="#"><i class="fab fa-facebook-f"></i></a>
-  <a href="#"><i class="fab fa-twitter"></i></a>
-  <a href="#"><i class="fab fa-instagram"></i></a>
-  <a href="#"><i class="fab fa-youtube"></i></a>
-  <a href="#"><i class="fab fa-github"></i></a>
-  <a href="#"><i class="fab fa-whatsapp"></i></a>
-  <a href="#"><i class="fab fa-telegram"></i></a>
+  <a href="https://www.facebook.com/faxel19/"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.twitter.com/Faxel2020/"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/faxelh/"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.youtube.com/c/FASTERAXEl/"><i class="fab fa-youtube"></i></a>
+  <a href="https://github.com/threat0/"><i class="fab fa-github"></i></a>
+  <a href="(https://wa.me/22555709610/"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://t.me/linux_tor/"><i class="fab fa-telegram"></i></a>
 </div>
 <footer>
   <p>
     Dsigned with <i class="fa fa-heart" id="ge"></i> by
-    <a target="_blank" href="https://t.me/threatz3r0" class="gen">Faxel
+    <a target="_blank" href="https://t.me/threatz3r0" class="gen">Threat Z3R0
       <i class='fa fa-star' id="gem"></i>
     </a> <i class='fa fa-copyright'></i>
     2020 Tous les droits sont réservés.
