@@ -169,9 +169,11 @@
             </li>
           </ul>
         </li>
-        <li class="mr btn">
-          <a href="#" >Sign up</a>
+        
+        <li class=" btn">
+          <a href="https://gist.github.com/Faxel18"> Sign up</a>
         </li>
+        
       </ul>
     </nav>
   </div>
@@ -182,7 +184,7 @@
     <h2> Threat </h2>
     <h1> Z3R0   </h1>
     <p>I'm not here to play the game, I'm here to judge the players</p>
-    <a href="#" class="btn">lire plus</a>
+    <a href="https://www.patreon.com/threatz3r0" class="btn">lire plus</a>
   </div>
 </section>
 
@@ -192,9 +194,10 @@
   <a href="https://www.instagram.com/faxelh/"><i class="fab fa-instagram"></i></a>
   <a href="https://www.youtube.com/c/FASTERAXEl/"><i class="fab fa-youtube"></i></a>
   <a href="https://github.com/threat0/"><i class="fab fa-github"></i></a>
-  <a href="(https://wa.me/22555709610/"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://wa.me/22555709610/"><i class="fab fa-whatsapp"></i></a>
   <a href="https://t.me/linux_tor/"><i class="fab fa-telegram"></i></a>
 </div>
+
 <footer>
   <p>
     Dsigned with <i class="fa fa-heart" id="ge"></i> by
@@ -204,6 +207,7 @@
     2020 Tous les droits sont réservés.
   </p>
 </footer>
+
 <script src="/script.js"></script>
 </body>
 </html>
