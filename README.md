@@ -1,7 +1,5 @@
-<!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
 <head>
-	<title>Faxel Code</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 	<link rel="stylesheet" href="/styles.css">
@@ -452,8 +450,7 @@
             <form action="" class="cf">
                 <div class="cins">
 	                <input type="text" placeholder="Nom" class="cin">
-	                <input type="text" class="cin" placeholder="Entrer votre mail" onkeyup="val();">
-	                <span class="indicateur"></span>
+	                <input type="text"  placeholder="Entrer votre mail" class="cin">
                 </div>
 
                 <textarea name="" id="" cols="0" rows="10" class="cin"></textarea>
@@ -519,7 +516,6 @@
 <div class="copy">
     <div id="up">
         <img src="https://raw.githubusercontent.com/Phantom-19/img/main/up/btp.png" alt="">
-        <!--<i class="fa fa-chevron-up"></i>-->
     </div>
     <p class="cpy">Designed with <i class="fa fa-heart"></i> by <a href="https://t.me/Faxelh">Faxel</a></p>
     <p class="co"><i class="fa fa-copyright"></i> 2020 <a href="https://t.me/linux_tor" class="cos">Threat Z3R0</a> . All Rights Reserved.</p>
