@@ -522,7 +522,26 @@
 </div>
 
 <script type="text/javascript" src="/script2.js"></script>
-<script type="text/javascript" src="/script3.js"></script>
+<script type="text/javascript">
+	// Write your JS Project  here.
+    $(document).ready(function(){
+        // saisie d'un script d'animation de texte
+	    var threats = new Typed(".threat0", {
+		    strings: ["Hacker", "YouTuber", "Developer", "Web Designer", "Professional security."],
+		    typeSpeed: 100,
+		    backSpeed: 60,
+		    loop: true
+	    });
+        // saisie d'un script d'animation de texte
+	    var  types = new Typed(".threat1", {
+		    strings: ["Hacker", "YouTuber", "Developer", "Web Designer", "Professional security"],
+		    typeSpeed: 90,
+		    backSpeed: 50,
+		    loop: true
+        });
+	  
+    });
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
