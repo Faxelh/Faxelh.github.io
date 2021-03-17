@@ -1,0 +1,94 @@
+@media screen and (max-width: 960px){
+    #nvb__lg{
+        padding-left: 25px;
+    }
+    .nvb__cont{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .nvb__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all .5s ease;
+        z-index: -1;
+    }
+    .nvb__menu.active {
+        background: #2f2727;
+        top: 100%;
+        opacity: 1;
+        transition: all .5s ease;
+        z-index: 999;
+        height: 86vh;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+    .nvb__toggle .bar {
+        width: 30px;
+        height: 3px;
+        margin: 7px auto;
+        transition: all .3s ease-in-out;
+        background: linear-gradient(to top, #de0f57, #f10505, #8e00ee);
+        transform: scale(.7);
+        display: block;
+        cursor: pointer;
+    }
+    .nvb__item{
+        width: 100%;
+    }
+    .nvb__lks{
+        text-align: center;
+        width: 100%;
+        display: table;
+    }
+    .nvb__lks:hover{
+        color: #e20b4f;
+        background: none;
+        padding-top: 0;
+    }
+    .nvb__btn{
+        padding: 0 2rem;
+    }
+    .btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 50px;
+        margin: 0;
+    }
+    #mobile-menu{
+        position: absolute;
+        top: 0;
+        right: 5%;
+        transform: translate(10%, 15%) ;
+        width: 45px;
+        height: 45px;
+        border: 3px solid #ffb199 ;
+        border-radius: 50%;
+    }
+    #mobile-menu .bar:nth-child(1) {
+        transform: translateY(10px) rotate(0deg);
+    }
+    #mobile-menu .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(0deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(40deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
