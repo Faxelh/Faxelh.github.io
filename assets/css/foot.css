@@ -76,6 +76,7 @@ footer ul{
     border-radius: 50%;
     line-height: 45px;
     font-size: 35px;
+    background-color: #c1c1c1;
     transition: all .5s ease;
 }
 .foot_col .s_lien a:nth-child(1){
@@ -93,23 +94,20 @@ footer ul{
 }
 .foot_col .s_lien a:nth-child(4){
     color: #082aa5;
-    background: #efacac;
+    background-color: #c1c1c1;
 }
 .foot_col .s_lien a:nth-child(5){
     color: #05f8f1;
-    background: #efacac;
+    background-color: #c1c1c1;
 }
 .foot_col .s_lien a:nth-child(6){
     color: #ffde05;
-    background: #efacac;
 }
 .foot_col .s_lien a:nth-child(7){
     color: #15ff06;
-    background: #efacac;
 }
 .foot_col .s_lien a:nth-child(8){
     color: #9a05bb;
-    background: #efacac;
 }
 
 .foot_col .s_lien a:hover:nth-child(2){
