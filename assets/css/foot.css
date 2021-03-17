@@ -95,6 +95,27 @@ footer ul{
     color: #082aa5;
     background: #efacac;
 }
+.foot_col .s_lien a:nth-child(5){
+    color: #05f8f1;
+    background: #efacac;
+}
+.foot_col .s_lien a:nth-child(6){
+    color: #ffde05;
+    background: #efacac;
+}
+.foot_col .s_lien a:nth-child(7){
+    color: #15ff06;
+    background: #efacac;
+}
+.foot_col .s_lien a:nth-child(8){
+    color: #9a05bb;
+    background: #efacac;
+}
+
+.foot_col .s_lien a:hover:nth-child(2){
+    color: #0fb6e0;
+    background: linear-gradient(to right, #f54804, #faf5f5, #31ec08);
+}
 .foot_col .s_lien a:hover:nth-child(n){
     background: linear-gradient(to right, #f54804, #faf5f5, #31ec08);
 }
