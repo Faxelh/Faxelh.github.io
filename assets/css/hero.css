@@ -1,0 +1,50 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
+    padding: 200px 0;
+}
+.hero__cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+.hero__hd {
+    font-size: 100px;
+    margin-bottom: 25px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+.hero__hd span {
+    background: #ee0979; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+}
+.hero__desc{
+    font-size: 60px;
+    background: #de0d56; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #838086, #c90a56); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4e50, #ff2256); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+@media screen and (max-width: 768px) {
+    .hero__hd {
+        font-size: 60px;
+    }
+    .hero__desc {
+        font-size: 40px;
+    }
+}
