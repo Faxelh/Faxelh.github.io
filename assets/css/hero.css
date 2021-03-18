@@ -1,7 +1,7 @@
 /* Hero Section */
 .hero {
     background: linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
-    padding: 200px 0;
+    padding: 10rem 0;
 }
 .hero__cont {
     display: flex;
@@ -15,8 +15,8 @@
     padding: 30px;
 }
 .hero__hd {
-    font-size: 100px;
-    margin-bottom: 25px;
+    font-size: 8rem;
+    margin-bottom: 2rem;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #fff;
@@ -31,7 +31,7 @@
     -mo-text-fill-color: transparent;
 }
 .hero__desc{
-    font-size: 60px;
+    font-size: 5rem;
     background: #de0d56; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #838086, #c90a56); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4e4e50, #ff2256); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -40,11 +40,15 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+
 @media screen and (max-width: 768px) {
+    .hero {
+        padding: 5rem 0;
+    }
     .hero__hd {
-        font-size: 60px;
+        font-size: 3rem;
     }
     .hero__desc {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 }
