@@ -13,10 +13,10 @@ body {
 }
 h1{
   font-size: 13rem;
+	color: #fff;
 }
 @media screen and (max-width: 768px) {
   h1{
     font-size: 5rem;
-    color: #fff;
   }
 }
