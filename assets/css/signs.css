@@ -23,7 +23,6 @@
     background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
     background-size: 100%;
     -webkit-background-clip: text;
-    /*-moz-background-clip: text;*/
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-transform: uppercase;
@@ -36,7 +35,6 @@
     background: linear-gradient(to right, #ec3d09, #da22ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
-   /*-moz-background-clip: text;*/
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #fff;
@@ -94,7 +92,7 @@
 }
 .mn__img--card {
     margin: 15px;
-    height: 400px;
+    height: 500px;
     width: 500px;
     border-radius: 10px;
     display: flex;
@@ -149,14 +147,36 @@
         font-size: 1.5rem;
     }
 }
+@media screen and (max-width: 768px) {
+    .main{
+        padding: 5rem 0;
+    }
+    .mn__img--card {
+        width:350px;
+        height: 350px;
+    }
+    .mn__content h1 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    .mn__content h2 {
+        font-size: 3rem;
+    }
+    .mn__content p {
+        margin-top: 2rem;
+    }
+    .mn__btn {
+        padding: 15px 40px;
+        margin: 2.5rem 0;
+    }
+.bxs-group {
+        font-size: 18rem;
+    }
+}
 @media screen and (max-width: 480px) {
     .mn__img--card {
         width: 250px;
         height: 250px;
-    }
-    .fa-users,
-    .fa-layer-group {
-        font-size: 4rem;
     }
     .mn__content h1 {
         font-size: 2rem;
@@ -171,5 +191,8 @@
     .mn__btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
+    }
+    .bxs-group {
+        font-size: 10rem;
     }
 }
