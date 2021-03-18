@@ -1,6 +1,6 @@
-@import url("@.css"); @import url("bktp.css"); @import url("cals.css");
-@import url("foot.css"); @import url("ports.css"); @import url("get_in.css");
-@import url("hero.css"); @import url("perso.css"); @import url("signs.css");
+@import url("@.css"); @import url("bktp.css"); @import url("foot.css");
+@import url("ports.css"); @import url("get_in.css"); @import url("hero.css");
+@import url("perso.css"); @import url("signs.css");@import url("tuto.css");
 * {
    margin: 0;
    padding: 0;

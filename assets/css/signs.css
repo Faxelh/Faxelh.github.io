@@ -25,7 +25,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-bottom: 32px;
 }
 .mn__content h2{
