@@ -9,7 +9,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     height: 400px;
-    width: 600px;
+    width:600px;
     background: linear-gradient(to right, #f54804, #faf5f5, #31ec08);
     overflow: hidden;
     border-radius: 20px;
@@ -21,12 +21,22 @@
     top: 50%;
     transform: translateY(-50%);
     text-align: justify;
-    padding: 40px;
-    font-family: 'Merriweather', serif;
+    padding: 60px;
 }
-h1,h3 {
+h1{
     font-weight: 900;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
     text-align: center;
+    font-size: 10rem;
+    font-family: 'Caveat', serif;
+}
+h3{
+    font-weight: normal;
+    text-align: justify;
+    font-family: 'Merriweather', serif;
 }
 .flap {
     width: 100%;
@@ -35,7 +45,7 @@ h1,h3 {
 .flap::before {
     position: absolute;
     content: "";
-    height: 120%;
+    height: 132%;
     width: 50%;
     background: #333 url("../@/bn/Th.png") no-repeat -30px;
     transition: 1s;
@@ -43,7 +53,7 @@ h1,h3 {
 .flap::after {
     position: absolute;
     content: "";
-    height: 120%;
+    height: 132%;
     width: 50%;
     right: 0;
     background: #fff url("../@/bn/Th.png") no-repeat -330px;
@@ -56,8 +66,11 @@ h1,h3 {
     transform: translatex(-330px);
 }
 @media screen and (max-width: 768px) {
+    h1{
+        font-size: 2.5rem;
+    }
     .perso{
-        height: 70vh;
+        height: 60vh;
     }
     .perso_container  {
         height: 250px;
