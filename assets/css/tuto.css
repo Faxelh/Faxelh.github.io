@@ -36,13 +36,35 @@
   transition:  .3s ease-in;
 }
 .tuto__card:nth-child(2) {
-  background: #1fa2ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(to right, #ff0844 , #ffb199 ,#f59b1d);
 }
 .tuto__card:nth-child(3) {
-  background: linear-gradient(to right, #f59b1d, #d5d1d1, #2fe50f);
+  background-image: linear-gradient(to right, #f59b1d, #d5d1d1, #2fe50f);
 }
+.tuto__card:nth-child(4) {
+  background-image: linear-gradient(to right, #f51d48, #d5d1d1, #21cda5);
+}
+.tuto__card:nth-child(5) {
+  background-image: linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
+}
+.tuto__card:nth-child(6) {
+  background: #1fa2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff); /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.tuto__card:nth-child(7) {
+  background-image: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+}
+.tuto__card:nth-child(8) {
+  background-image: linear-gradient(to right, #612c35, #6f5b5b, #18c9a6);
+}
+.tuto__card:nth-child(9) {
+  background-image: linear-gradient(to right, #f80227, #fff400, #ed00f3)
+}
+.tuto__card:nth-child(10) {
+  background-image: linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
+}
+
 .tuto__card h2 {
   text-align: center;
 }
