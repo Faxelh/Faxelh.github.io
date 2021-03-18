@@ -53,7 +53,6 @@
    margin-top: 5rem;
 }
 .tuto__cards button {
-   color: #fff;
    padding: 15px 30px;
    border: none; outline: none;
    text-transform: capitalize;
@@ -61,6 +60,10 @@
    background: #000;
    font-size: 2rem;
    cursor: pointer;
+}
+.tuto__cards button a{
+   text-decoration: none;
+   color: #fff;
 }
 .tuto__cards:hover {
    transform: scale(1.075);
