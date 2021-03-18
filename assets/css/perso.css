@@ -1,6 +1,6 @@
 .perso{
     background: linear-gradient(to right, #0a0a0a, #9a0b0b, #ecd508);
-    height: 100vh;
+    height: 90vh;
     place-items: center;
 }
 .perso_container  {
@@ -56,14 +56,17 @@ h1,h3 {
     transform: translatex(-330px);
 }
 @media screen and (max-width: 768px) {
+    .perso{
+        height: 70vh;
+    }
     .perso_container  {
-        height: 300px;
-        width: 500px;
+        height: 250px;
+        width: 450px;
     }
     .flap::before {
         height: 175%;
         width: 50%;
-        background: #fff url("../@/bn/Th.png") no-repeat -80px;
+        background: #fff url("../@/bn/Th.png") no-repeat -105px;
     }
     .flap::after {
         height: 175%;
