@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Faxel Code | Calendrier</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="../../assets/@/bn/tz.ico">
+	<link rel="stylesheet" href="calendrier.css">
+</head>
+<body class="clair">
+<!-- Calendar Section -->
+<section>
+	<div class="calendar">
+		<div class="calendar-header">
+			<span class="month-picker" id="month-picker">Janvier</span>
+			<div class="year-picker">
+				<span class="year-change" id="prev-year"><pre><</pre></span>
+				<span id="year">2021</span>
+				<span class="year-change" id="next-year"><pre>></pre></span>
+			</div>
+		</div>
+		<div class="calendar-body">
+			<div class="calendar-week-day">
+				<div>Lun</div>
+				<div>Mar</div>
+				<div>Mer</div>
+				<div>Jeu</div>
+				<div>Ven</div>
+				<div>Sam</div>
+				<div>Dim</div>
+			</div>
+			<div class="calendar-days"></div>
+		</div>
+		<div class="calendar-footer">
+			<div class="toggle">
+				<span>Mode Sombre</span>
+				<div class="dark-mode-switch">
+					<div class="dark-mode-switch-ident"></div>
+				</div>
+			</div>
+		</div>
+		<div class="month-list"></div>
+	</div>
+</section>
+
+<script src="calendrier.js"></script>
+</body>
+</html>

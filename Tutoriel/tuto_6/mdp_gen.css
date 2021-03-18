@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	font-family: 'Caveat', cursive;
+	background: linear-gradient(to right, #f8410a, #797575, #2eea0d);
+}
+h2{
+	margin: 10px 0 20px;
+	font-weight: 900;
+	font-size: 30px;
+	text-align: center;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #fff;
+}
+input[type=checkbox] {
+	margin-right: 0;
+}
+.gen{
+	background:  #bb0e36 linear-gradient(to right, #0a0a0a, #9a0b0b, #ecd508);
+	box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	padding: 20px;
+	width: 410px;
+	max-width: 100%;
+}
+.results{
+	background: #612f2f linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 60px;
+	width: 100%;
+	border-radius:10px ;
+}
+.results #result{
+	word-break: break-word;
+	max-width: calc(100% - 40px);
+	color: #fff;
+	font-weight: 600;
+}
+.clip {
+	border: none;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	position: absolute;
+	right: 5px;
+	border-radius: 50px;
+	outline: none;
+	background: #726767 linear-gradient(to right, #4aff06, #e3dcdc, #dc1f08);
+}
+.clip  .bx{
+	color: #fff;
+	font-size: 33px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.btn{
+	border: none;
+	cursor: pointer;
+	padding: 8px 10px ;
+	background: #726767 linear-gradient(to right, #4aff06, #e3dcdc, #dc1f08);
+	font-size: 16px;
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 50px;
+	outline: none;
+	transition: all .3s ease;
+}
+.btn:hover{
+	color: #4e0a0a;
+	letter-spacing: 2px;
+	background: #06ffc9  linear-gradient(to right, #06ffda, #e3dcdc, #dc088e);
+}
+.param{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0;
+	color: #fff;
+	font-weight: 600;
+}
+.param .it{
+	outline: none;
+	text-align: center;
+	background: #402a2a linear-gradient(to right, #06ffda, #402a2a, #dc088e);
+	color: #fff;
+	font-size: 20px;
+	border-radius: 50px;
+	width: 60px;
+	height: 30px;
+}
+@media screen and (max-width: 400px) {
+	
+	.results{
+		font-size: 14px;
+	}
+}
