@@ -2,7 +2,7 @@
 .mise_evidence {
    border-bottom: 4px solid rgb(132, 0, 255);
 }
-/* Tutoriel view section*/
+/* Tutoriel  section*/
 .tutos {
    background-image: linear-gradient(-225deg, #231557 , #44107a , #ff1361 , #fff800 100%);
    display: flex;
@@ -13,24 +13,38 @@
    padding: 5rem 0;
 }
 .tutos h1 {
-   background-color: #ff8177;
-   background-image: linear-gradient(to right, #ff0844 , #f7673c );
-   background-size: 100%;
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
    -moz-text-fill-color: transparent;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-fill-color: #fff;
    margin-bottom: 5rem;
-   font-size: 5rem;
+   font-size: 5.5rem;
+   border-radius: 5px;
+   position: relative;
+   background: #ff8177 linear-gradient(to right, #ff0844 0%, #f7673c 100%);
 }
-.tuto__wrap {
+.tutos h1::after {
+   content: '';
+   position: absolute;
+   background: #8bff77;
+   bottom: 0;  left: 50%;
+   width: 0;
+   height: 4px;
+   transition:  width .5s ease;
+   transform: translateX(-50%);
+}
+.tutos h1:hover::after {
+   width: 100%;
+}
+.tutos__wrap {
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: 1fr;
 }
-.tuto__cards {
+.tutos__cards {
    height: 450px;
-   width: 900px;
-   border-radius: 5px;
+   width: 950px;
+   border-radius: 30px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -38,21 +52,25 @@
    background-image: linear-gradient(to right, #00dbde, #fc00ff);
    transition:  .3s ease-in;
 }
-.tuto__cards h2 {
+.tutos__cards:hover {
+   transform: scale(1.075);
+   transition:  .3s ease-in;
+}
+.tutos__cards h2 {
    text-align: center;
    font-size: 2rem;
 }
-.tuto__cards p {
+.tutos__cards p {
    text-align: center;
    margin-top: 24px;
    font-size: 20px;
 }
-.tuto__btns {
+.tutos__btns {
    display: flex;
    justify-content: center;
    margin-top: 5rem;
 }
-.tuto__cards button {
+.tutos__cards button {
    padding: 15px 30px;
    border: none; outline: none;
    text-transform: capitalize;
@@ -61,11 +79,12 @@
    font-size: 2rem;
    cursor: pointer;
 }
-.tuto__cards button a{
+.tutos__cards button a{
    text-decoration: none;
    color: #fff;
 }
-.tuto__cards:hover {
+.tutos__cards button:hover {
+   background: #d21515;
    transform: scale(1.075);
    transition:  .3s ease-in;
 }
@@ -76,21 +95,21 @@
    .tutos h1 {
       font-size:3.5rem;
    }
-   .tuto__wrap {
+   .tutos__wrap {
       grid-template-columns: 1fr;
    }
-   .tuto__cards {
+   .tutos__cards {
       height: 425px;
-      width: 300px;
+      width: 350px;
    }
-   .tuto__cards p {
+   .tutos__cards p {
       margin-top: 30px;
       font-size: 16px;
    }
-   .tuto__btns {
+   .tutos__btns {
       margin-top:3rem;
    }
-   .tuto__cards button {
+   .tutos__cards button {
       font-size: 1.3rem;
    }
 }
