@@ -3,6 +3,6 @@
     position: fixed;
     top: 10%; left: 0;
     background-color: #35ce1a;
-    height: 1rem;
+    height: 1rem; z-index: 1;
     transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
