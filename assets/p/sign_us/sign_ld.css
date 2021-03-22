@@ -1,0 +1,83 @@
+:root{
+    --d:20px;
+    --aE:ease-in-out;/*animationEase --circlesCount: --cC*/
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Caveat', cursive;
+    background: linear-gradient(to right, #f8410a, #797575, #2eea0d);
+}
+.containers{
+    position: fixed;
+    background: #333;
+    width: 100%;
+    height: 100vh;
+}
+
+.loads {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-transform: rotatex(60deg);
+    transform: rotatex(60deg);
+}
+.loads .cercle {
+    position: absolute;
+    top: calc(var(--i) * var(--d));
+    bottom: calc(var(--i) * var(--d));
+    left: calc(var(--i) * var(--d));
+    right: calc(var(--i) * var(--d));
+    margin: auto;
+    border: 20px solid var(--c);
+    border-radius:  50%;
+    box-shadow: inset  0 4px 4px var(--c),
+    inset  0 4px 8px var(--c) ,
+    inset  0 4px 10px var(--c) ;
+    -webkit-animation: anime var(--aS) var(--aE) infinite;
+    animation: anime var(--aS) var(--aE) infinite;
+    -webkit-animation-delay: calc(var(--i) * (var(--aS) / var(--cC)));
+    animation-delay: calc(var(--i) * (var(--aS) / var(--cC)));
+}
+
+@-webkit-keyframes anime{
+    0%,100%{
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+    50%{
+        -webkit-transform: translateZ(calc(var(--i) * var(--d) * -1));
+        transform: translateZ(calc(var(--i) * var(--d) * -1));
+    }
+}
+.back{
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+h3{
+    text-align: center;
+    padding: 200px  0;
+    font-size: 12rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+@media  (max-width: 768px) {
+    h3{
+        padding: 250px  0;
+        font-size: 4rem;
+    }
+}
