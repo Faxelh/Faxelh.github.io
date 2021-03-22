@@ -1,6 +1,23 @@
 @import url("@.css"); @import url("bktp.css"); @import url("foot.css");
 @import url("ports.css"); @import url("get_in.css"); @import url("hero.css");
-@import url("perso.css"); @import url("signs.css");@import url("tuto.css");
+@import url("perso.css"); @import url("signs.css");@import url("indicator.css");
+@font-face {
+   font-family: "lora";
+   src: url("fonts/lora.woff2");
+}
+@font-face {
+   font-family: "Caveat";
+   src: url("fonts/Caveat.woff2");
+   font-weight: Bold;
+}
+@font-face {
+   font-family: "Montserrat";
+   src: url("fonts/montserat.woff2");
+}
+@font-face {
+   font-family: "Sacramento";
+   src: url("fonts/sacramento.ttf");
+}
 * {
    margin: 0;
    padding: 0;
