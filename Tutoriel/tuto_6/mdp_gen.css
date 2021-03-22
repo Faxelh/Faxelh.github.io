@@ -1,3 +1,4 @@
+@import url("../inter_anim.css");
 * {
 	margin: 0;
 	padding: 0;
@@ -104,8 +105,7 @@ input[type=checkbox] {
 	width: 60px;
 	height: 30px;
 }
-@media screen and (max-width: 400px) {
-	
+@media screen and (max-width: 768px) {
 	.results{
 		font-size: 14px;
 	}

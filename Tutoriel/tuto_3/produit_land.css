@@ -1,3 +1,4 @@
+@import url("../inter_anim.css");
 :root{
    --gradient:linear-gradient(90deg, #bb6382, #ea097e,orangered);
    --linear:linear-gradient(90deg,orangered, #9a6d7e, #ea097e);

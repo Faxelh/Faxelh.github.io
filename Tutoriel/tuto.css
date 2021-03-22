@@ -10,14 +10,24 @@
   padding: 2rem 0;
 }
 .tuto h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
-  background-size: 100%;
+  background: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: #fff;
   margin-bottom: 5rem;
-  font-size: 5rem;
+  font-size: 5.5rem;
+  position: relative;
+}
+.tuto h1::after {
+  content: '';
+  position: absolute;
+  background: #ff8177;
+  bottom: 0;  left: 50%;
+  width: 35%;
+  height: 4px;
+  transition:  width .5s ease;
+  transform: translateX(-50%);
 }
 .tuto__wrapper {
   display: grid;
@@ -26,14 +36,18 @@
 }
 .tuto__card {
   margin: 10px;
-  height: 425px;
+  height: 400px;
   width: 300px;
-  border-radius: 5px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
   background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  transition:  .3s ease-in;
+}
+.tuto__card:hover {
+  transform: scale(1.075);
   transition:  .3s ease-in;
 }
 .tuto__card:nth-child(2) {
@@ -65,38 +79,33 @@
 .tuto__card:nth-child(10) {
   background-image: linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
 }
-
 .tuto__card h2 {
   text-align: center;
+  font-size: 2.5rem;
 }
 .tuto__card p {
   text-align: center;
   margin-top: 24px;
-  font-size: 20px;
+  font-size: 18px;
+  color: #000;
 }
 .tuto__btn {
   display: flex;
   justify-content: center;
-  margin-top: 16px;
-}
-.tuto__card button  {
-  padding: 14px 24px;
+  margin-top: 90px;
   border: none; outline: none;
   text-transform: capitalize;
   border-radius: 10px;
-  background: #131313;
+  background: #000;
   font-size: 1rem;
-  cursor: pointer;
 }
-.tuto__card button a{
+.tuto__btn  a{
   color: #fff;
   text-decoration: none;
-}
-.tuto__card:hover {
-  transform: scale(1.075);
-  transition:  .3s ease-in;
   cursor: pointer;
+  padding: 14px 24px;
 }
+
 @media screen and (max-width: 1300px) {
   .tuto__wrapper {
     grid-template-columns: 1fr 1fr;
@@ -107,6 +116,6 @@
     font-size: 3rem;
   }
   .tuto__wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns:  1fr;
   }
 }
