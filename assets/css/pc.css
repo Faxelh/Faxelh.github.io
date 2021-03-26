@@ -1,6 +1,7 @@
 @import url("@.css"); @import url("bktp.css"); @import url("foot.css");
 @import url("ports.css"); @import url("get_in.css"); @import url("hero.css");
 @import url("perso.css"); @import url("signs.css");@import url("indicator.css");
+@import url("cookie.css");
 @font-face {
    font-family: "lora";
    src: url("../../fonts/lora.woff2");

@@ -1,0 +1,77 @@
+
+.time {
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    color: #000;
+    background: #ddd;
+    padding: 0 10px;
+    top: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cookies{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 370px;
+    height: 220px;
+    background: #fff;
+    padding: 25px 25px 30px 25px;
+    border-radius: 20px;
+    box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+    text-align: center;
+    z-index: 1;
+}
+.cookies.hide{
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+}
+::selection{
+    color: #fff;
+    background: #FCBA7F;
+}
+.cookies img{
+    width: 30px;
+    height: 30px;
+}
+.cookie_content h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+.cookie_content{
+    margin-top: 10px;
+}
+.cookie_content p{
+    color: #858585;
+    margin: 5px 0 20px 0;
+}
+.content .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cookie_btn button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: #FCBA7F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cookie_btn button:hover{
+    transform: scale(0.97);
+}
+.cookie_btn .cookie_item{
+    margin: 0 10px;
+}
+.cookie_btn a{
+    color: #FCBA7F;
+}
