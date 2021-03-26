@@ -1,8 +1,9 @@
 
 .indicator {
     position: fixed;
-    top: 10%; left: 0;
-    background-color: #35ce1a;
-    height: 1rem; z-index: 1;
+    top: 60px; left:0;
+    background: linear-gradient(to right, #03ff95, #57f303, #fdfdfd);
+    height: 5px;
+    z-index: 1;
     transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
