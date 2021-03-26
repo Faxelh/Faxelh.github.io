@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Binaire en texte | Texte en binaire</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Bin_Txt.css"/>
+</head>
+<body>
+<section>
+    <div class="contours">
+        <h1 class="titres">Binaire en texte</h1>
+        <button type="button" class="com" data-type="binary">Commutateur</button>
+        <form>
+            <div class="input">
+                <label for="input"></label>
+                <textarea name="input" id="input" cols="30" rows="10" data-type="binary" placeholder="Code binaire d'entrée..."></textarea>
+            </div>
+            <button type="submit">Convertir</button>
+            <div id="resultat">Resultat...</div>
+            <div class="copy"><i class="bx bx-clipboard"></i></div>
+        </form>
+    </div>
+</section>
+<script src="Bin_Txt.js"></script>
+</body>
+</html>
