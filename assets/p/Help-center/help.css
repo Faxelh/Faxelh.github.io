@@ -1,0 +1,144 @@
+@import "hre.css";
+:root {
+  --p-color: #0ff;
+  --s-color: #6c8095;
+  --b-color: #11e388;
+  --ff:'Caveat',cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family:var(--ff);
+  background-color: var(--p-color);
+}
+.title {
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+}
+.title h1 {
+  padding:20px;
+}
+.title input {
+  padding: 12px;
+  width: 250px;
+  background: #ddd;
+  border: 1px dashed #000;
+  border-radius: 40px;
+  font-family: inherit;
+  outline: none;
+}
+
+.title input::placeholder {
+  font-family: inherit;
+}
+.container {
+  padding: 50px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  border-radius: 50px;
+  background-color: #444;
+  border: 1px dotted #000;
+}
+.container h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.container .articles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container .articles div {
+  margin: 0 5px 30px;
+  border: 1px dotted #f00;
+  border-radius: 15px;
+  padding: 15px;
+  color: #fff;
+}
+.container .footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container .footer div {
+  padding: 20px;
+  margin: 0 20px 30px;
+}
+.container .footer h5 {
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.container .footer div ul li {
+  margin: 5px 0;
+}
+.container .footer div ul li a {
+  color: #000;
+  font-size: 14px;
+}
+.container .footer div ul li a:hover {
+  color: #fff;
+  border-bottom: 2px dotted #e7e4e4;
+}
+.container .more-info {
+  text-align: center;
+}
+.container .more-info h2 {
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px 15px;
+  width: 200px;
+  border: 2px dashed var(--b-color);
+  border-radius: 40px;
+  background-color: var(--b-color);
+  color: #fff; outline: none;
+  font-family: inherit;
+  transition: background-color 0.4s;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media (max-width: 900px) {
+  .title  .indicateur{
+    top:21%;
+    right: 27%;
+  }
+  .container {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 500px) {
+  .title h1 {
+    font-size: 24px;
+  }
+  .container .articles,
+  .container .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .container .footer {
+    text-align: center;
+  }
+  .container .more-info h2 {
+    font-size: 20px;
+  }
+}
