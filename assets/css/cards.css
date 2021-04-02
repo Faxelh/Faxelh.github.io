@@ -1,0 +1,145 @@
+.perso{
+    background: linear-gradient(to right, #0a0a0a, #9a0b0b, #ecd508);
+    height: 90vh;
+    place-items: center;
+}
+.perso_container  {
+    position: relative;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px; width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 20px #ddd;
+    background: linear-gradient(to right, #f54804, #faf5f5, #31ec08);
+}
+.perso_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 5px;
+}
+h1{
+    font-weight: 900;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    text-align: center;
+    font-size: 4rem;
+}
+h3{
+    font-weight: normal;
+    text-align: justify;
+}
+.flap {
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in;
+}
+.flap::before {
+    position: absolute;
+    content: "";
+    height: 150%;
+    width: 50%;
+    background: #fff url("../@/bn/tmz.png") no-repeat -180px;
+    transition: all .5s ease-in;
+}
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 150%;
+    width: 50%; right: 0;
+    background: #fff url("../@/bn/tmz.png") no-repeat -330px;
+    transition: all .5s ease-in;
+}
+.perso_container:hover .flap::after {
+    transform: translatex(330px);
+}
+.perso_container:hover .flap::before{
+    transform: translatex(-330px);
+}
+
+@media screen and (min-width: 550px) {
+    .perso_container  {
+        height: 410px;
+        width: 500px;
+    }
+    .perso_content {
+        padding: 5px;
+    }
+    h1{
+        font-size: 8rem;
+    }
+    .flap::before {
+        height: 150%;
+        background: #fff url("../@/bn/tmz.png") no-repeat -60px;
+    }
+    .flap::after {
+        height: 150%;
+        background: #fff url("../@/bn/tmz.png") no-repeat -320px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .perso_container  {
+        height: 400px;
+        width: 600px;
+    }
+    h1{
+        font-size: 10rem;
+    }
+    .flap::before {
+        height: 150%;
+        background: #fff url("../@/bn/tmz.png") no-repeat -30px;
+    }
+    .flap::after {
+        height: 150%;
+        right: 0;
+        background: #fff url("../@/bn/tmz.png") no-repeat -330px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .perso_container  {
+        width: 800px;
+    }
+    .perso_content {
+        padding: 10px;
+    }
+    .flap::before {
+        height: 155%;
+        background: #fff url("../@/bn/faxel.png") no-repeat -240px;
+    }
+    .flap::after {
+        height: 155%;
+        background: #fff url("../@/bn/faxel.png") no-repeat -650px;
+    }
+    .perso_container:hover .flap::after {
+        transform: translatex(400px);
+    }
+    .perso_container:hover .flap::before{
+        transform: translatex(-400px);
+    }
+}
+@media screen and (min-width: 1000px) {
+    .perso_container  {
+        height: 500px;
+        width: 900px;
+    }
+    .flap::before {
+        height: 156%;
+        background: #fff url("../@/bn/faxel.png") no-repeat -186px;
+    }
+    .flap::after {
+        height: 155%;
+        background: #fff url("../@/bn/faxel.png") no-repeat -630px;
+    }
+    .perso_container:hover .flap::after {
+        transform: translatex(450px);
+    }
+    .perso_container:hover .flap::before{
+        transform: translatex(-450px);
+    }
+}

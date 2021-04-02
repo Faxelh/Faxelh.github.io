@@ -1,0 +1,260 @@
+@import "../css/blog.css";@import "../css/heros.css";
+@import "../css/foots.css";@import "../css/sign.css";
+@import "../css/port.css";@import "../css/cookie.css";
+@import "../css/bktps.css";@import "../css/get_ins.css";
+@import "../css/indique.css";@import "../css/exemple.css";
+@import "../css/tutoriels.css";@import "../css/cards.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: 'Caveat', cursive;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #2a2b2f;
+  padding: 8px 1rem;
+}
+.logo {
+  margin-right: 1rem;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.logo a {
+  cursor: pointer;
+  font-size: 3rem;
+}
+.navbar_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 8px;
+}
+.navbar_list {
+  display: flex;
+}
+.nav_item {
+  padding: 5px 1rem;
+  transition: all .3s ease;
+}
+.nav_item.active,.nav_item.active:hover{
+  background: linear-gradient( to right, #0ff, #f0f, #f00);
+  border-radius: 20px;
+}
+.nav_item:hover{
+  background: linear-gradient( to right, #f8410a, #797575, #2eea0d);
+  transition: all .2s ease;
+  border-radius: 50px;
+}
+.nav_link {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin: 5px auto;
+}
+/********* navbar right ************/
+.search {
+  padding:  5px 1rem;
+  border: 1px dotted #0ff;
+  border-radius: 15px;
+}
+.btn_v {
+  padding: 8px 1rem;
+  border: none;
+}
+.btn_search {
+  background: linear-gradient(to right, #000, #f00, #ecd508);
+  border-radius: 20px;
+  color: #fff; cursor: pointer;
+  font-weight: 600;
+}
+.nvb__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.btn_sign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  color: #fff;
+}
+/************dropdown*************/
+.dropdown {
+  position: relative;
+}
+.dropdown-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-list {
+  display: none;
+  position: absolute;
+  top: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: clamp(160px, 120px, 220px);
+  padding: 1rem 0;
+  border: 1px dotted #f00;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+}
+.dropdown-list.show {
+  display: block;
+}
+.dropdown-list a {
+  display: block;
+  color: #000;
+  padding: 10px 1rem;
+}
+.dropdown-list a:hover {
+  background-color: #f00;
+  border-radius: 5px;
+}
+.dropdown-inner {
+  left: 100%;
+  top: 0;
+}
+.dropdown .dropdown-list .dropdown:hover {
+  background-color: #777;
+  border-radius: 5px;
+}
+.dropdown .dropdown-list .dropdown:hover > .dropdown-list {
+  display: block;
+}
+/**********  responsive design**************/
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    height: 60px;
+  }
+  .navbar_content {
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 60px;
+    right: 0; width: 0;
+    height: 120%;
+    background-color: #2f2727;
+    overflow: hidden;
+    transition: all .2s;
+    margin-top: 0;
+    z-index: 1000;
+  }
+  .navbar_content.show {
+    width: 100vw;
+    padding: 10px 3rem;
+    transition: width .2s ease-in;
+  }
+  .nav_item.active,.nav_item.active:hover{
+    background: none;
+  }
+  .navbar_list {
+    flex-direction: column;
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 10px 2rem;
+  }
+  .nvb__btn{
+    padding: 0 2rem;
+  }
+  .nav_item {
+    transition: none;
+  }
+  .nav_item:hover{
+    background: none;
+    transition: none
+  }
+  .nav_link:hover{
+    color: #f00;
+    transition: all .3s ease-in;
+  }
+  .navbar_right {
+    padding: 1rem 2rem;
+  }
+  .bar{
+    border-top: 1px solid #fff;
+    padding: 10px 1rem;
+  }
+  /**  burger menu ****/
+  .navbar .burger {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    padding: 18px 40px 21px 6px;
+    box-shadow: 1px 1px 3px #0ff;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .navbar .burger span,
+  .navbar .burger span:before,
+  .navbar .burger span:after {
+    content: "";
+    border-radius: 2rem;
+    height: 4px;
+    width: 35px;
+    background-color: #0ff;
+    position: absolute;
+    display: block;
+    transition: all 300ms ease-in-out;
+    box-shadow: inset 0 0 3px #0ff;
+  }
+  .navbar .burger span:before {
+    top: -10px;
+  }
+  .navbar .burger span:after {
+    bottom: -10px;
+  }
+  .navbar .burger.active {
+    box-shadow: none;
+  }
+  .navbar .burger.active span {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .navbar .burger.active span:before,
+  .navbar .burger.active span:after {
+    top: 0;
+    width: 30px;
+  }
+  .navbar .burger.active span:before {
+    transform: rotate(45deg);
+  }
+  .navbar .burger.active span:after {
+    transform: rotate(-45deg);
+  }
+  .dropdown-btn {
+    flex-direction: column;
+  }
+  .dropdown-btn .bxs-chevron-down{
+    display: none;
+  }
+  .dropdown-list {
+    position: relative;
+    left: 80px;
+    top: 0;
+  }
+  .dropdown .dropdown-list .dropdown {
+    display: none;
+  }
+}
+

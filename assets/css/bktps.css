@@ -1,0 +1,40 @@
+
+#bktp {
+    position: fixed;
+    bottom: 40px; right: 20px;
+    width: 2rem; height: 2rem;
+    background: #333;
+    animation: bktp 2.5s infinite;
+    border-radius: 100%;
+    transition-delay: 1s;
+    opacity: .7; cursor: pointer;
+    transition:  .4s ease;
+    border: none;
+}
+#bktp:active{
+    background: #1cd716;
+}
+img{
+    width: 2rem;
+}
+@keyframes bktp {
+    0%{box-shadow: 0 0 0 0 rgb(255, 3, 74);}
+    60%{box-shadow: 0 0 0 2rem rgb(251, 0, 84);}
+    100%{box-shadow: 0 0 0 0 rgb(255, 2, 107);}
+}
+@media (min-width:1000px ){
+    #bktp {
+        width: 3rem; height: 3rem;
+    }
+    img{
+        width: 3rem;
+    }
+}
+@media (min-width:1200px ){
+    #bktp {
+        width: 4rem; height: 4rem;
+    }
+    img{
+        width: 4rem;
+    }
+}

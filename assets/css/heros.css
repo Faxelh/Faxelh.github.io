@@ -1,0 +1,96 @@
+/* Heros Section */
+
+.hero {
+    background: linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
+    padding: 5rem 0;
+}
+.hero__cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.hero__hd {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+.hero__hd span {
+    background: #ee0979; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+}
+.hero__desc {
+    font-size: 2rem;
+    background: #de0d56; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #838086, #c90a56); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4e50, #ff2256); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.mn__btn{
+    font-size: 1.8rem;
+    background: #ff1ead;
+    background: -webkit-linear-gradient(to right, #f59b1d, #d5d1d1, #2fe50f);
+    background: linear-gradient(to right, #f59b1d, #d5d1d1, #2fe50f);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all .4s;
+}
+.mn__btn:hover {
+    color: #fff;
+}
+.mn__btn::after{
+    position: absolute;
+    content: '';
+    top: 0; left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
+    transition: all .4s;
+    border-radius: 10px;
+}
+.mn__btn a{
+    position: relative;
+    color: #333;
+    font-weight: 900;
+}
+.mn__btn a:hover{
+    color: #fff;
+}
+.mn__btn:hover:after {
+    width: 100%;
+    border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        padding: 10rem 0;
+    }
+    .hero__cont {
+        margin: 0 auto;
+        max-width: 1200px;
+        height: 90%;
+        padding: 30px;
+    }
+    .hero__hd {
+        font-size: 8rem;
+    }
+    .hero__desc{
+        font-size: 5rem;
+    }
+    .mn__btn{
+        padding: 20px 60px;
+    }
+}
