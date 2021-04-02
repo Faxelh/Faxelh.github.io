@@ -1,0 +1,91 @@
+@import "sers.css";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Caveat", cursive;
+	list-style: none;
+	outline: none;
+}
+body {
+	background:#ddd;
+}
+img {
+	max-width: 100%;
+}
+.hdu {
+	background-color: coral;
+	height: 3px;
+	width: 100px;
+	margin: 0 auto 20px;
+}
+.services {
+	padding: 20px 20px 50px;
+}
+.services h3 {
+	text-align: center;
+	font-size: 3rem;
+	color: #f0f;
+}
+.services .cards {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 30px;
+}
+.services .cards .card {
+	position: relative;
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 50px;
+	transition: opacity 0.4s;
+}
+.services .cards .card:hover {
+	opacity: 0.8;
+}
+.services .cards .card img {
+	border-radius: 20px 20px 0 0;
+}
+.services .cards .card button {
+	position: absolute;
+	top: 20px; right: 20px;
+	background-color: coral;
+	color: #fff;
+	border-radius: 20px;
+	padding: 5px;
+	opacity: 0;
+	border: 1px dotted #000;
+	transition: opacity .5s ease-in-out;
+	cursor: pointer;
+}
+.services .cards .card:hover button {
+	opacity: 1;
+	transition: opacity .5s ease-in-out;
+}
+.services .cards .card button  a{
+	color: #fff;
+	font-size: 2rem;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+@media (min-width: 640px) {
+	.services .cards {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+}
+@media (min-width: 992px) {
+	.services .cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.services h3 {
+		font-size: 5rem;
+	}
+}
+@media (min-width: 1280px) {
+	.services {
+		max-width: 1200px;
+		margin: auto;
+	}
+}
