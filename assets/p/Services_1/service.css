@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Caveat', cursive;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #f8410a, #797575, #2eea0d);
+}
+* {
+    font-family: 'Caveat', cursive;
+}
+
+.header-underline {
+    background: linear-gradient(to right, #f8410a, #797575, #2eea0d);
+    height: 5px;
+    width: 100px;
+    margin: 0 auto 20px;
+}
+.services {
+    padding: 50px 20px;
+    display: grid;    gap: 20px;
+    grid-template-columns: 1fr;
+    background: #333;
+}
+.services .cards {
+    background-color: #e0d2d2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow .4s;
+}
+.services .cards:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+.services .cards h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.services .cards p {
+    margin-top: 10px;
+    line-height: 1.8;
+}
+.btn-offer {
+    background-color: crimson;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid #000;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+.btn-offer:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1440px) {
+    .services {
+        max-width: 1300px;
+        margin: auto;
+        padding: 100px 0;
+    }
+}
