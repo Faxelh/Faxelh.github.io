@@ -1,0 +1,198 @@
+.main{
+    background-color: #afabab;
+    padding: 10rem 0;
+}
+.mn__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+}
+.mn__content{
+    width: 100%;
+}
+.mn__content h1{
+    font-size: 2rem;
+    background-color: #fe3b6f;
+    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+}
+.mn__content h2{
+    font-size: 5rem;
+    background: #ff8177; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f56708, #da22ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec3d09, #da22ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+.mn__content p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+.mn__btn{
+    font-size: 1.8rem;
+    background: #ff1ead;
+    background: -webkit-linear-gradient(to right, #f59b1d, #d5d1d1, #2fe50f);
+    background: linear-gradient(to right, #f59b1d, #d5d1d1, #2fe50f);
+    padding: 20px 60px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all .4s;
+    outline: none;
+}
+.mn__btn:hover {
+    color: #fff;
+}
+.mn__btn::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
+    transition: all 0.35s;
+    border-radius: 10px;
+}
+.mn__btn a{
+    position: relative;
+    z-index: 2;
+    color: #333;
+    font-weight: 900;
+    text-decoration: none;
+}
+.mn__btn a:hover{
+    color: #fff;
+}
+.mn__btn:hover:after {
+    width: 100%;
+    border-radius: 10px;
+}
+.mn__img--container {
+    text-align: center;
+}
+.mn__img--card {
+    margin: 15px;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #ec5519 0%, #5bf607 100%);
+}
+.bxs-group {
+    font-size: 25rem;
+    color: #ee215b;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #333;
+}
+#card-2 {
+    background: #ff512f;
+    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+    background-image: linear-gradient(to right, #ee4809 0%, #edeaee 50%, #5bf607 100%);
+}
+/* Mobile Responsive */
+@media screen and (max-width: 1100px) {
+    .mn__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+    .mn__img--container {
+        display: flex;
+        justify-content: center;
+    }
+    .mn__img--card {
+        height: 425px;
+        width: 425px;
+    }
+    .mn__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .mn__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    .mn__content h2 {
+        font-size: 3rem;
+    }
+    .mn__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main{
+        padding: 5rem 0;
+    }
+    .mn__img--card {
+        width:350px;
+        height: 350px;
+    }
+    .mn__content h1 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    .mn__content h2 {
+        font-size: 3rem;
+    }
+    .mn__content p {
+        margin-top: 2rem;
+    }
+    .mn__btn {
+        padding: 15px 40px;
+        margin: 2.5rem 0;
+    }
+.bxs-group {
+        font-size: 18rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .mn__img--card {
+        width: 250px;
+        height: 250px;
+    }
+    .mn__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .mn__content h2 {
+        font-size: 2rem;
+    }
+    .mn__content p {
+        margin-top: 2rem;
+    }
+    .mn__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+    .bxs-group {
+        font-size: 10rem;
+    }
+}
