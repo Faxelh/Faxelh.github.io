@@ -1,124 +1,332 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <title>Faxel Horizon</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Faxel Horizon </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="assets/@/bn/tz.ico">
-  <link rel="stylesheet" href="assets/css/pc.css">
-  <link rel="stylesheet" href="assets/css/mobs.css">
+  <link rel="stylesheet" href="assets/css/base.css" />
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
 <body>
-<div class="indicator"></div>
-<nav class="navs">
-  <div class="nvb__cont">
-    <a href="#" id="nvb__lg">Horizon</a>
-    <div class="nvb__toggle" id="mobile-menu">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </div>
-    <ul class="nvb__menu">
-      <li class="nvb__item"><a href="#home" class="nvb__lks" id="home-page">Home</a></li>
-      <li class="nvb__item"><a href="#tutoriel" class="nvb__lks" id="tuto-page">Tutoriel</a></li>
-      <li class="nvb__item"><a href="#condition" class="nvb__lks" id="condition-page">Condition</a></li>
-      <li class="nvb__item"><a href="#service" class="nvb__lks" id="services-page">Services</a></li>
-      <li class="nvb__item"><a href="#portfolio" class="nvb__lks" id="portfolio-page">Portofolio</a></li>
-      <li class="nvb__btn "><a href="#sign-up" class="btns" id="signup">Sign Us</a></li>
+<div class="indique"></div>
+<nav class="navbar">
+  <div class="logo"><a href="#">Horizon</a></div>
+  <div class="burger"><span></span> <span></span><span></span></div>
+  <div class="navbar_content">
+    <ul class="navbar_list">
+      <li class="nav_item active"><a href="#home" class="nav_link">Home</a></li>
+      <li class="nav_item"><a href="#tutoriel"  class="nav_link">Tutoriels</a></li>
+      <li class="nav_item"><a href="#condition" class="nav_link">Conditions</a></li>
+      <li class="nav_item"><a href="#service" class="nav_link">Services</a></li>
+      <li class="nav_item dropdown">
+        <a href="#" class="nav_link dropdown-btn">Portfolio<i class="bx bxs-chevron-down"></i></a>
+        <div class="dropdown-list">
+          <a href="#portfolio">Portfolio 1</a>
+          <a href="#portfolio">Portfolio 2</a>
+          <a href="#portfolio">Portfolio 4</a>
+          <a href="#portfolio">Portfolio 5</a>
+        </div>
+      </li>
+      <li class="nvb__btn "><a href="#sign-up" class="btn_sign" id="signup">Sign Us</a></li>
     </ul>
+    <div class="navbar_right">
+      <div class="bar"></div>
+      <form cl id="form" action="">
+        <label><input type="text" class="search" placeholder="Search ..." required /></label>
+        <button class="btn_v btn_search">Search</button>
+      </form>
+    </div>
   </div>
 </nav>
 <!-- Hero Section -->
 <section>
   <div class="hero" id="home">
     <div class="hero__cont">
-      <h1 class="hero__hd">Choose your <span>Forfait</span></h1>
-      <p class="hero__desc">Unlimited Possibilities</p>
+      <h1 class="hero__hd">Citation <span>inspirante</span></h1>
+      <p class="hero__desc">“Impossible” est pour ceux qui ne veulent pas vraiment.<br> John Keats</p>
       <button class="mn__btn"><a href="assets/p/about_us/about.html">About Us</a></button>
+    </div>
+  </div>
+</section>
+<!-- Sign-Us  Section -->
+<section>
+  <div class="main" id="sign-up">
+    <div class="mn__container">
+      <div class="mn__content">
+        <h1>Join Our Team</h1>
+        <h2>Sign Up Today</h2>
+        <p>See what makes us different</p>
+        <button class="mn__btn"><a href="assets/p/sign_us/signus.html">Sign Up</a></button>
+      </div>
+      <div class="mn__img--container">
+        <div class="mn__img--card" id="card-2">
+          <i class='bx bxs-group'></i>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 <!-- Tutoriels Section -->
 <section>
-	<div class="tutos" id="tutoriel">
-		<h1>Our Tutoriels</h1>
-		<div class="tutos__wrap">
-			<div class="tutos__cards">
-				<h2>You need Tutoriel </h2>
-				<p>
-					Don't read success Stories, You will only get a message.
-					Read failure stories, you will get Ideas to get Success.
-				</p>
-				<div class="tutos__btns"><button><a href="Tutoriel/tuto.html">View here</a> </button></div>
-			</div>
-	</div>
-	</div>
+  <div class="tutos" id="tutoriel">
+    <h1>Our Tutoriels</h1>
+    <div class="tutos__wrap">
+      <div class="tutos__cards">
+        <h2>You need Tutoriel </h2>
+        <p>
+          Don't read success Stories, You will only get a message.
+          Read failure stories, you will get Ideas to get Success.
+        </p>
+        <div class="tutos__btns"><button><a href="Tutoriel/tuto.html">View here</a> </button></div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- Sign-Us  Section -->
-<section>
-	<div class="main" id="sign-up">
-		<div class="mn__container">
-			<div class="mn__content">
-				<h1>Join Our Team</h1>
-				<h2>Sign Up Today</h2>
-				<p>See what makes us different</p>
-				<button class="mn__btn"><a href="assets/p/sign_us/signus.html">Sign Up</a></button>
-			</div>
-			<div class="mn__img--container">
-				<div class="mn__img--card" id="card-2">
-					<i class='bx bxs-group'></i>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- PortFolio Section -->
+<!-- My Card  Section -->
 <section id="portfolio">
   <div class="folio" >
     <div class="folio__cont">
       <h1 class="folio__hd">Faxel <span>Horizon</span></h1>
       <p class="folio__desc">
-        Don't read success Stories, You will ol-nly get a message.
-        Read failure stories, you will get Ideas to get Success.
+        Essaye encore. Échoue de nouveau. Échoue mieux.
+        Rien ne vaut plus que ce jour. La vérité est dans la simplicité.
+        Le fou se questionne, le sage demande. Rêve sans peur.
+        Pas de pression, pas de diamants.
       </p>
-      <button class="mn__btn"><a href="F/folio.html">View My Portfolio here</a></button>
+      <button class="mn__btn"><a href="M/me.html">View My Portfolio here</a></button>
     </div>
   </div>
 </section>
-<!-- Card Profil Perso-->
+<!-- My Card  Section -->
 <section class="perso">
   <div class="perso_container">
     <div class="perso_content">
       <h1>Faxel</h1>
       <h3>
-	      I love designing websites and keep things as simple as possible.
-	      My goals is to focus on minimalism and conveying the message that you want to send.
-	      Don't read success Stories, You will ol-nly get a message. Read failure stories, you will get Ideas to get Success.
+        I love designing websites and keep things as simple as possible.
+        My goals is to focus on minimalism and conveying the message that you want to send.
+        Don't read success Stories, You will ol-nly get a message. Read failure stories, you will get Ideas to get Success.
       </h3>
     </div>
     <div class="flap"></div>
   </div>
 </section>
-<!-- Get in touch section-->
-<section>
-  <div class="social-section">
-    <div id="social-panel">
-      <p>Designed with <b>♥</b> by<a target="_blank" href="https://threat0.github.io"> Threat Z3r0</a></p>
-      <button class="close_btn"><img src="assets/@/bn/x.png" alt=""></button>
-      <h4 class="hor2"></h4>
-      <ul>
-        <li><a href="https://www.patreon.com/faxelh" target="_blank"><i class='bx bxl-patreon' style='color:rgba(212,18,213,0.92)'></i></a></li>
-        <li><a href="https://twitter.com/faxel2020" target="_blank"><i class='bx bxl-twitter' style='color:rgba(18,187,213,0.92)'></i></a></li>
-        <li><a href="https://linkedin.com/in/faxelh" target="_blank"><i class='bx bxl-linkedin' style='color:rgba(23,87,189,0.91)'></i></a></li>
-        <li><a href="https://facebook.com/threatz0" target="_blank"><i class='bx bxl-facebook-circle' style='color:#1873b8'></i></a></li>
-        <li><a href="https://instagram.com/faxelh" target="_blank"><i class='bx bxl-instagram' style='color:rgba(211,12,79,0.84)'></i></a></li>
-      </ul>
+<!-- Exemple form  section-->
+<section class="exemple_contact">
+  <h2>Contact Me</h2>
+  <form class="form">
+    <div class="names">
+      <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required/>
+      <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required/>
     </div>
+    <div class="dates">
+      <p><input type="date" name="check-in-date" id="checkIn" required /></p>
+      <p> <input type="text" name="message" id="msg" placeholder="XXX-XXX-XXXX-XX" required/></p>
+    </div>
+    <div class="mailer">
+      <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+
+      <div class="select">
+        <select name="select" id="select">
+          <option value="Student">Student</option>
+          <option value="Manager" >Manager </option>
+          <option value="Scientific">Scientific </option>
+          <option value="Hacker" selected>Hacker</option>
+          <option value="Web Designer" >Web Designer</option>
+          <option value="Other" >Other</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="btn_valid">Send</button>
+  </form>
+</section>
+<!-- Service Section -->
+<section class="services" id="service">
+  <div class="cards">
+    <h4>Blog post 1</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
   </div>
-  <!--Get in Touch button-->
-  <button class="get_in" id="get"><b class="hor3"></b></button>
+  <div class="cards">
+    <h4>Blog post 2</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
+  <div class="cards">
+    <h4>Blog post 3</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
+  <div class="cards">
+    <h4>Blog post 4</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
+  <div class="cards">
+    <h4>Blog post 5</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
+  <div class="cards">
+    <h4>Blog post 6</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
+  <div class="cards">
+    <h4>Blog post 7</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
+  <div class="cards">
+    <h4>Blog post 8</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
+  <div class="cards">
+    <h4>Blog post 9</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
+
+  <div class="cards">
+    <h4>Blog post 10</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
+  <div class="cards">
+    <h4>Blog post 11</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
+  <div class="cards">
+    <h4>Blog post 12</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus
+      ipsum sed quo maiores, assumenda corporis earum porro rerum enim
+      voluptatibus fugit, minus ducimus quidem perferendis suscipit iure
+      aliquid doloremque?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ex
+      dicta rerum ducimus recusandae maiores, culpa nulla deserunt suscipit
+      obcaecati.
+    </p>
+    <button class="btn-offer">Continue Reading</button>
+  </div>
 </section>
 <!-- Footer Section-->
 <section id="condition">
@@ -129,8 +337,8 @@
           <h4><span>A</span>cces Quick</h4>
           <ul>
             <li><a href="assets/p/Contact_Us/c__us.html">contact us</a></li>
-	          <li><a href="#">condition</a></li>
-            <li><a href="assets/p/Sercvice_1/service.html">our services</a></li>
+            <li><a href="#">condition</a></li>
+            <li><a href="assets/p/Services_2/services.html">our services</a></li>
             <li><a href="#">privacy policy</a></li>
           </ul>
         </div>
@@ -155,7 +363,7 @@
           <h4><span>F</span>ollow us</h4>
           <div class="s_lien">
             <a href="https://www.facebook.com/threatz0"><i class="bx bxl-facebook "></i></a>
-            <a href="https://www.twitter.com/faxel2020"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.twitter.com/faxelhs"><i class="bx bxl-twitter"></i></a>
             <a href="https://www.instagram.com/faxelh"><i class="bx bxl-instagram"></i></a>
             <a href="https://www.linkedin.com/in/faxelh"><i class="bx bxl-linkedin"></i></a>
             <a href="https://t.me/faxelh"><i class="bx bxl-telegram"></i></a>
@@ -173,28 +381,51 @@
     <p><b>&copy;</b> <b>2019</b><script>new Date().getFullYear()>2019&&document.write("-" + new Date().getFullYear());</script> <b>Threat Z3R0</b>.All Rights Reserved.</p>
   </div>
 </section>
-<!-- Back To Top button -->
-<button id="bktp"><img src="assets/@/bn/btp.png" alt=""></button>
-<!-- Cookies set -->
-<div class="cookies">
-  <div class="time">&times;</div>
-  <img src="assets/@/bn/cis.png" alt="">
-  <div class="cookie_content">
-    <h2>Cookies Consent</h2>
-    <p>This website use cookies to ensure you get the best experience on our website.</p>
-    <div class="cookie_btn">
-      <button class="cookie_item">I understand</button>
-      <a href="#" class="cookie_item">Learn more</a>
+<!-- Get in touch section-->
+<section>
+  <div class="social-section">
+    <div id="social-panel">
+      <p>Designed with <b>♥</b> by<a target="_blank" href="https://threat.netlify.app"> Faxel</a></p>
+      <button class="close_btn"><img src="assets/@/bn/x.png" alt=""></button>
+      <h4 class="hor2"></h4>
+      <ul>
+        <li><a href="https://www.patreon.com/faxelh" target="_blank"><i class='bx bxl-patreon' style='color:rgba(212,18,213,0.92)'></i></a></li>
+        <li><a href="https://twitter.com/faxelhs" target="_blank"><i class='bx bxl-twitter' style='color:rgba(18,187,213,0.92)'></i></a></li>
+        <li><a href="https://t.me/threatz3r0" target="_blank"><i class='bx bxl-telegram' style='color:rgba(23,189,189,0.91)'></i></a></li>
+        <li><a href="https://facebook.com/threatz0" target="_blank"><i class='bx bxl-facebook-circle' style='color:#1873b8'></i></a></li>
+        <li><a href="https://instagram.com/faxelh" target="_blank"><i class='bx bxl-instagram' style='color:rgba(211,12,79,0.84)'></i></a></li>
+      </ul>
     </div>
   </div>
-</div>
+  <button class="get_in" id="get"><b class="hor3"></b></button>
+</section>
+<!-- Cookies consent Section -->
+<section>
+  <div class="pop">
+    <div class="xs">&times;</div>
+    <img src="assets/@/bn/ck.svg" alt="cookies">
+    <h2>Hi! This site uses cookies.</h2>
+    <p>
+      Cookies allow the website publisher to do useful things like find out whether the computer (and probably its user) has visited the site before.
+      We use cookies to ensure you can get the best experience on our site. If you keep using this site we assume that you agree to our use of cookies.
+      <a href="">Privacy Policy </a>
+    </p>
+    <div class="bouton">
+      <button class="btn">Sweet... cookies!</button>
+      <button class="btn ghost" id="accepter">
+        No. Thank! <span>Don't click me</span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Back To Top button -->
+<button id="bktp"><img src="assets/@/bn/btp.png" alt=""></button>
 <!-- My Script JS -->
-<script src="assets/js/indicator.js"></script>
 <script src="assets/js/bktp.js"></script>
+<script src="assets/js/indique.js"></script>
 <script src="assets/js/get_in.js"></script>
-<script src="assets/js/pc_mob.js"></script>
 <script src="assets/js/typed.js"></script>
-<script src="assets/js/cookie.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqQ1pfvIQ-BgajbYyNFhY-b7nXkRgAMnE"></script>
+<script src="assets/js/base.js"></script>
+<script src="assets/js/cookies.js"></script>
 </body>
 </html>
