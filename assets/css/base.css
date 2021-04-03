@@ -162,9 +162,82 @@
 .dropdown .dropdown-list .dropdown:hover > .dropdown-list {
   display: block;
 }
+.sign_menu {
+  position: absolute;
+  left: 250px;
+  top: 75px;
+  padding-top: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  border-radius: 1rem;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  background: #202d5f;
+  /* background: linear-gradient(to right, #fb5, #fa9, #f0f);*/
+}
+.sign_menu.open {
+  opacity: 1;
+  height: 190px;
+}
+.sign_menu div{
+  margin: 10px;
+}
+.sign_menu div h4 {
+  font-size: 1.5rem;
+  background: #f97  linear-gradient(to right, #ddd, #ff8,#0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: #000;
+  margin-bottom: 10px;
+}
+ .sign_menu div p {
+   color: #ddd;
+  width: 270px;
+  margin-bottom: 25px;
+}
+ .btn_light, .btn_dark,.btn_cont{
+   padding: 10px 30px;
+   border-radius: 1rem;
+   box-shadow: 0 5px 5px hsla(221, 39%, 11%, 0.15);
+   font-size: 16px;
+   letter-spacing: 1px;
+   cursor: pointer;
+   font-weight: 600;
+   text-transform: capitalize;
+   transition: background-color .2s ease-in-out;
+ }
+.btn_dark {
+  background-color: #000;
+  color: #fff;
+  border: 2px dotted #000;
+}
+.btn_dark:hover {
+  background-color: transparent;
+}
+.btn_light {
+  color: #0ff;
+  background-color: transparent;
+  border: 2px solid #ddd;
+}
+.btn_light:hover {
+  background-color: #ddd;
+  color: #000;
+}
+.btn_cont {
+  background-color: transparent;
+  color: #fff;
+  border: 2px dashed  #fff;
+}
+.btn_cont:hover {
+  color: #000;
+  background-color: #0ff;
+  border: 1px dashed #000;
+}
 /**********  responsive design**************/
-
 @media screen and (max-width: 1100px) {
+  .sign_menu{
+    display:none;
+  }
   .navbar {
     height: 60px;
   }
