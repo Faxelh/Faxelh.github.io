@@ -30,6 +30,12 @@ window.onclick = (e) => {
   }
 };
 
+const menu_sign = document.querySelector(".sign_menu"),
+ actionBtn = document.querySelector(".nvb__btn");
+actionBtn.addEventListener("click", () => {
+  menu_sign.classList.toggle("open")
+})
+
 const body = document.querySelector(".loader");
 setTimeout(function (){
   body.classList.add("back");
