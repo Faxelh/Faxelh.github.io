@@ -31,8 +31,8 @@
 .content .loader .an {
     position: relative;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background: #00ff0a;
     box-shadow: 0 0 10px #00ff0a,
     0 0 20px #00ff0a,
@@ -57,9 +57,14 @@
     10%{
         transform: scale(1);
     }
-    50%,
-    100%{
+    50%, 100%{
         transform: scale(0.1);
     }
 }
-
+@media screen and (min-width: 768px){
+    .content .loader .an {
+        width: 20px;
+        height: 20px;
+        margin: 20px 10px;
+    }
+}
