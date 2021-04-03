@@ -30,3 +30,7 @@ window.onclick = (e) => {
   }
 };
 
+const body = document.querySelector(".loader");
+setTimeout(function (){
+  body.classList.add("back");
+}, 4000);
