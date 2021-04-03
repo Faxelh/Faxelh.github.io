@@ -34,7 +34,7 @@
     transition: transform .4s , box-shadow .4s ;
 }
 .container .card:hover .box {
-    transform: translateY(-50px);
+    transform: translateY(-10px);
     box-shadow: 0 40px 70px rgba(0,0,0,0.5);
 }
 .container .card .box .content{
