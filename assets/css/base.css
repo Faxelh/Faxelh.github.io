@@ -236,7 +236,10 @@
 /**********  responsive design**************/
 @media screen and (max-width: 1100px) {
   .sign_menu{
-    display:none;
+    display: none;
+  }
+.bxs-chevron-down-circle{
+  visibility: hidden;
   }
   .navbar {
     height: 60px;
