@@ -1,4 +1,4 @@
-@import "pre.css";
+/*@import "pre.css";*/
 * {
   margin: 0;
   padding: 0;
@@ -56,11 +56,11 @@ h3, .contact-info h3 {
 }
 .grand_cercle {
   position: absolute;
-  width: 450px; height: 450px;
+  width: 400px; height: 400px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #ff4500, #0f0, #67267f);
-  bottom: 50%; right: 50%;
-  transform: translate(-40%, 38%);
+  background: linear-gradient(to bottom, #ff4500, #0f0, #f0f);
+  bottom: 70%; right: 90%;
+  transform: translate(80%, 38%);
 }
 .grand_cercle:after {
   content: "";
@@ -68,16 +68,16 @@ h3, .contact-info h3 {
   width: 360px; height: 360px;
   background-color: #ddd;
   border-radius: 50%;
-  top: calc(50% - 180px);
+  top: calc(70% - 260px);
   left: calc(50% - 180px);
 }
 .grand_cercles {
   position: absolute;
-  width: 450px; height: 450px;
+  width: 400px; height: 400px;
   border-radius: 50%;
   background: linear-gradient(to top, orangered, #67267f,lime);
-  bottom: 28%; right: -7%;
-  transform: translate(-30%, 35%);
+  bottom: 28%; right: 20%;
+  transform: translate(20%, 70%);
 }
 .grand_cercles:after {
   content: "";
@@ -218,7 +218,7 @@ textarea.input_field {
   transition: .7s ease-in-out;
   font-weight: 600;
   line-height: 1;
-  margin-left: 75px;
+  margin-left: 50px;
 }
 .send_btn:hover {
   background: #794a4a;
@@ -269,7 +269,7 @@ textarea.input_field {
 }
 .social-media p {
   color: #333;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .social{
   display: flex;
@@ -290,6 +290,11 @@ textarea.input_field {
 .social a:hover {
   transform: scale(1.05);
 }
+@media screen and (min-width: 325px){
+  .send_btn {
+    margin-left: 75px;
+  }
+}
 
 @media screen and (min-width: 650px){
   h3, .contact-info h3 {
@@ -304,36 +309,14 @@ textarea.input_field {
     top: 50px; left: -13px;
   }
   .grand_cercle {
-    width: 450px; height: 450px;
-    bottom: 50%; right: 50%;
+    width: 400px; height: 400px;
+    bottom: 53%; right: 25%;
     transform: translate(-40%, 38%);
   }
-  .grand_cercle:after {
-    width: 360px; height: 360px;
-    top: calc(50% - 180px);
-    left: calc(50% - 180px);
-  }
   .grand_cercles {
-    width: 450px; height: 450px;
-    bottom: 28%; right: -7%;
+    width: 400px; height: 400px;
+    bottom: 20%; right: -20%;
     transform: translate(-30%, 35%);
-  }
-  .grand_cercles:after {
-    width: 360px; height: 360px;
-    top: calc(30% -  90px);
-    left: calc(35% -  120px);
-  }
-  .cercle.un {
-    width: 130px;
-    height: 130px;
-    top: 130px;
-    right: -40px;
-  }
-  .cercle.deux {
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    right: 30px;
   }
   form {
     padding: 2rem 1rem;
@@ -371,36 +354,14 @@ textarea.input_field {
     top: 80px;
   }
   .grand_cercle {
-    width: 450px; height: 450px;
-    bottom: 50%; right: 50%;
+    width: 400px; height: 400px;
+    bottom: 54%; right: 30%;
     transform: translate(-40%, 38%);
   }
-  .grand_cercle:after {
-    width: 360px; height: 360px;
-    top: calc(50% - 180px);
-    left: calc(50% - 180px);
-  }
   .grand_cercles {
-    width: 450px; height: 450px;
-    bottom: 28%; right: -7%;
+    width: 400px; height: 400px;
+    bottom: 20%; right: -16%;
     transform: translate(-30%, 35%);
-  }
-  .grand_cercles:after {
-    width: 360px; height: 360px;
-    top: calc(30% -  90px);
-    left: calc(35% -  120px);
-  }
-  .cercle.un {
-    width: 130px;
-    height: 130px;
-    top: 130px;
-    right: -40px;
-  }
-  .cercle.deux {
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    right: 30px;
   }
   form {
     padding: 1.5rem 2rem;
@@ -432,36 +393,10 @@ textarea.input_field {
     max-width: 940px;
   }
   .grand_cercle {
-    width: 450px; height: 450px;
-    bottom: 50%; right: 50%;
-    transform: translate(-40%, 38%);
-  }
-  .grand_cercle:after {
-    width: 360px; height: 360px;
-    top: calc(50% - 180px);
-    left: calc(50% - 180px);
+    bottom: 65%; right: 45%;
   }
   .grand_cercles {
-    width: 450px; height: 450px;
-    bottom: 28%; right: -7%;
-    transform: translate(-30%, 35%);
-  }
-  .grand_cercles:after {
-    width: 360px; height: 360px;
-    top: calc(30% -  90px);
-    left: calc(35% -  120px);
-  }
-  .cercle.un {
-    width: 130px;
-    height: 130px;
-    top: 130px;
-    right: -40px;
-  }
-  .cercle.deux {
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    right: 30px;
+    bottom: 20%; right: -15%;
   }
   form {
     padding: 4rem 3rem;
@@ -511,36 +446,10 @@ textarea.input_field {
     max-width: 1100px;
   }
   .grand_cercle {
-    width: 450px; height: 450px;
-    bottom: 50%; right: 50%;
-    transform: translate(-40%, 38%);
-  }
-  .grand_cercle:after {
-    width: 360px; height: 360px;
-    top: calc(50% - 180px);
-    left: calc(50% - 180px);
+    bottom: 70%; right: 55%;
   }
   .grand_cercles {
-    width: 450px; height: 450px;
-    bottom: 28%; right: -7%;
-    transform: translate(-30%, 35%);
-  }
-  .grand_cercles:after {
-    width: 360px; height: 360px;
-    top: calc(30% -  90px);
-    left: calc(35% -  120px);
-  }
-  .cercle.un {
-    width: 130px;
-    height: 130px;
-    top: 130px;
-    right: -40px;
-  }
-  .cercle.deux {
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    right: 30px;
+    bottom: 15%;right: -10%;
   }
   form {
     padding: 5rem 3rem;
