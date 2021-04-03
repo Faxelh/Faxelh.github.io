@@ -33,4 +33,11 @@ window.onclick = (e) => {
 const body = document.querySelector(".loader");
 setTimeout(function (){
   body.classList.add("back");
-}, 4000);
+}, 5000);
+
+window.addEventListener('load', function () {
+  let intro = document.querySelector('.loader')
+  setTimeout(() => {
+    intro.classList.remove('transi');
+  }, 200);
+})
