@@ -234,6 +234,17 @@
   border: 1px dashed #000;
 }
 /**********  responsive design**************/
+@media  (max-width: 345px) {
+  .search {
+    margin-left: -60px;
+    padding: 5px 5px;
+  }
+ .btn_sign {
+   display: inline-block;
+   padding: 5px 0;
+   height: 60%;
+ }
+}
 @media screen and (max-width: 1100px) {
   .sign_menu{
     display: none;
