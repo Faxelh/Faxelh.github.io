@@ -6,6 +6,7 @@
 @import "../css/indique.css";@import "../css/exemple.css";
 @import "../css/tutoriels.css";@import "../css/cards.css";
 @import "../css/service_sect.css";@import "../css/loader.css";
+@import "../css/them.css";@import "../css/@.css";
 /*--------------------------------------------------------------*/
 @font-face {
   font-family: "lora";
@@ -37,13 +38,12 @@
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #2a2b2f;
+  background-color: var(--hd);
   padding: 8px 1rem;
 }
 .logo {
   margin-right: 1rem;
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background: var(--lg);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
@@ -67,16 +67,16 @@
   transition: all .3s ease;
 }
 .nav_item.active,.nav_item.active:hover{
-  background: linear-gradient( to right, #0ff, #f0f, #f00);
+  background: var(--active);
   border-radius: 20px;
 }
 .nav_item:hover{
-  background: linear-gradient( to right, #f8410a, #797575, #2eea0d);
+  background: var(--navh);
   transition: all .2s ease;
   border-radius: 50px;
 }
 .nav_link {
-  color: #fff;
+  color: var(--txt);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,17 +86,20 @@
 /********* navbar right ************/
 .search {
   padding:  5px 1rem;
-  border: 1px dotted #0ff;
+  border: var(--bds);
   border-radius: 15px;
+  color: var(--txt);
+  background: var( --bgs);
 }
 .btn_v {
   padding: 8px 1rem;
   border: none;
 }
 .btn_search {
-  background: linear-gradient(to right, #000, #f00, #ecd508);
+  background: var(--search);
   border-radius: 20px;
-  color: #fff; cursor: pointer;
+  color: var(--txt);
+  cursor: pointer;
   font-weight: 600;
 }
 .nvb__btn{
@@ -114,10 +117,9 @@
   width: 100%;
   border: none;
   border-radius: 10px;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  color: #fff;
+  background:var(--signw);
+  background: var(--sign);
+  color: var(--txt);
 }
 /************dropdown*************/
 .dropdown {
@@ -132,7 +134,7 @@
   display: none;
   position: absolute;
   top: 50px;
-  background-color: #fff;
+  background-color: var(--hd);
   border-radius: 10px;
   width: clamp(160px, 120px, 220px);
   padding: 1rem 0;
@@ -144,16 +146,15 @@
 }
 .dropdown-list a {
   display: block;
-  color: #000;
+  color: var(--txt);
   padding: 10px 1rem;
 }
 .dropdown-list a:hover {
-  background-color: #f00;
+  background-color: var(--txt);
   border-radius: 5px;
 }
 .dropdown-inner {
-  left: 100%;
-  top: 0;
+  left: 100%; top: 0;
 }
 .dropdown .dropdown-list .dropdown:hover {
   background-color: #777;
@@ -164,16 +165,14 @@
 }
 .sign_menu {
   position: absolute;
-  left: 250px;
-  top: 75px;
+  left: 250px; top: 75px;
   padding-top: 10px;
   grid-template-columns: repeat(3, 1fr);
   display: grid;
   border-radius: 1rem;
   transition: all .4s ease-in-out;
   opacity: 0;
-  background: #202d5f;
-  /* background: linear-gradient(to right, #fb5, #fa9, #f0f);*/
+  background: var(--hd);
 }
 .sign_menu.open {
   opacity: 1;
@@ -184,7 +183,7 @@
 }
 .sign_menu div h4 {
   font-size: 1.5rem;
-  background: #f97  linear-gradient(to right, #ddd, #ff8,#0ff);
+  background: var(--divh4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: #000;
@@ -259,10 +258,9 @@
     flex-direction: column;
     justify-content: flex-start;
     position: absolute;
-    top: 60px;
-    right: 0; width: 0;
-    height: 120%;
-    background-color: #2f2727;
+    top: 60px; right: 0;
+    width: 0; height: 120%;
+    background-color: var(--hd);
     overflow: hidden;
     transition: all .2s;
     margin-top: 0;
@@ -293,21 +291,20 @@
     transition: none
   }
   .nav_link:hover{
-    color: #f00;
+    color: var(--cb);
     transition: all .3s ease-in;
   }
   .navbar_right {
     padding: 1rem 2rem;
   }
   .bar{
-    border-top: 1px solid #fff;
+    border-top: 2px solid var(--txt);
     padding: 10px 1rem;
   }
   /**  burger menu ****/
   .navbar .burger {
     position: absolute;
-    right: 12px;
-    cursor: pointer;
+    right: 12px; cursor: pointer;
     padding: 18px 40px 21px 6px;
     box-shadow: 1px 1px 3px #0ff;
     border-radius: 20px;
@@ -318,12 +315,11 @@
   .navbar .burger span:after {
     content: "";
     border-radius: 2rem;
-    height: 4px;
-    width: 35px;
+    height: 4px; width: 35px;
     background-color: #0ff;
     position: absolute;
     display: block;
-    transition: all 300ms ease-in-out;
+    transition: all .3s ease-in-out;
     box-shadow: inset 0 0 3px #0ff;
   }
   .navbar .burger span:before {
@@ -341,8 +337,7 @@
   }
   .navbar .burger.active span:before,
   .navbar .burger.active span:after {
-    top: 0;
-    width: 30px;
+    top: 0; width: 30px;
   }
   .navbar .burger.active span:before {
     transform: rotate(45deg);
@@ -353,15 +348,12 @@
   .dropdown-btn {
     flex-direction: column;
   }
-  .dropdown-btn .bxs-chevron-down{
-    display: none;
-  }
   .dropdown-list {
     position: relative;
-    left: 80px;
-    top: 0;
+    left: 80px; top: 0;
   }
-  .dropdown .dropdown-list .dropdown {
+  .dropdown .dropdown-list .dropdown,
+  .dropdown-btn .bxs-chevron-down{
     display: none;
   }
 }

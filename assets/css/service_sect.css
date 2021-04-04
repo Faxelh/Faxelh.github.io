@@ -1,5 +1,5 @@
 .service_sect{
-    background: #ddd;
+    background: var(--serv);
 }
 .container{
     display: flex;
@@ -24,7 +24,7 @@
     position: absolute;
     top: 35px;  left: 20px;
     right: 20px; bottom: 30px;
-    background: #2a2b2f;
+    background: var(--servcard);
     border-radius: 20px;
     border: 1px dotted #fff;
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
@@ -53,16 +53,16 @@
     margin: 0 auto 10px;
 }
 .container .card .box .content .icon .bx{
-    color: #fff;
+    color: var(--stxt);
     font-size: 3rem;
 }
 .container .card .box .content h3{
     font-size: 1.8rem;
-    color: #fff;
+    color: var(--stxt);
     font-weight: 300;
 }
 .container .card .box .content h4{
-    color: #fff;
+    color: var(--stxt);
     font-size: 3rem;
     font-weight: 700;
 }
@@ -74,7 +74,7 @@
     position: relative;
 }
 .container .card .box .content ul li{
-    color: #fff;
+    color: var(--stxt);
     margin: 5px 0;
 }
 .container .card .box .content ul li .bx-check{

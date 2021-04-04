@@ -1,7 +1,6 @@
 /* Heros Section */
-
 .hero {
-    background: linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
+    background: var(--hero);
     padding: 5rem 0;
 }
 .hero__cont {
@@ -56,9 +55,8 @@
     position: absolute;
     content: '';
     top: 0; left: 0;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
+    width: 0; height: 100%;
+    background: linear-gradient(to right, #d319db, #6f5b5b, #0f9);
     transition: all .4s;
     border-radius: 10px;
 }
@@ -74,6 +72,7 @@
     width: 100%;
     border-radius: 10px;
 }
+
 @media screen and (min-width: 768px) {
     .hero {
         padding: 10rem 0;

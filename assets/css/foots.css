@@ -1,43 +1,5 @@
-
-/************ Responsive ************/
-/*
-@media screen and (max-width: 991px){
-    .droit{
-        padding: 15px;
-        font-size: 15px;
-        display: flex;
-    }
-}
-@media screen and (max-width: 768px) {
-    .foot_col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-    .droit{
-        width: 100%;
-        padding: 10px;
-        font-size: 13px;
-        display: flex;
-    }
-}
-@media screen and (max-width: 610px){
-    .droit{
-        width: 100%;
-        padding: 10px;
-        font-size: 12px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
-@media(max-width: 574px){
-    .foot_col{
-        width: 100%;
-    }
-}
-*/
-
 footer{
-    background: linear-gradient(to right, #612c35, #6f5b5b, #18c9a6);
+    background: var(--footer);
     padding: 30px 0;
 }
 .dispo{
@@ -148,10 +110,10 @@ footer{
 }
 .droit{
     width: 100%;
-    background: linear-gradient(to right, #f54804, #faf5f5, #31ec08);
+    background: var(--copy);
     padding: 8px 10px;
     text-align: center;
-    color: #000;
+    color: var(--copya);
     justify-content: space-evenly;
     display: flex;
     font-size: 8px;

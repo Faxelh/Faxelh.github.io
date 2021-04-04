@@ -1,7 +1,7 @@
 
 .exemple_contact {
     padding: 20px 10px;
-    background-image: linear-gradient(to right, #ff0844 0%, #0ff 100%);
+    background: var(--exemple);
 }
 .exemple_contact h2{
     font-size: 3rem ;

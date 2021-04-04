@@ -1,6 +1,6 @@
 /* Tutoriels  section*/
 .tutos {
-    background-image: linear-gradient(-225deg, #231557 , #44107a , #ff1361 , #fff800 100%);
+    background: var(--tutos);
     display: flex;
     flex-direction: column;
     justify-content: center;

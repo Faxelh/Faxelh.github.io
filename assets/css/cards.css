@@ -1,5 +1,5 @@
 .perso{
-    background: linear-gradient(to right, #0a0a0a, #9a0b0b, #ecd508);
+    background: var(--cards);
     height: 90vh;
     place-items: center;
 }

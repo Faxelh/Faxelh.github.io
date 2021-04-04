@@ -1,6 +1,6 @@
 /*Port Folio Section */
 .folio {
-    background: linear-gradient(to right, #f36a0f, #b8b0b0, #75dc1a);
+    background-color: var(--ports);
     padding: 2rem  0;
 }
 .folio__cont {
@@ -69,7 +69,6 @@
 @media (min-width:768px ){
     /*Port Folio Section */
     .folio {
-        background: linear-gradient(to right, #f36a0f, #b8b0b0, #75dc1a);
         padding: 5rem  0;
     }
     .folio__cont {

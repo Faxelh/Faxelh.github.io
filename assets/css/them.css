@@ -1,0 +1,173 @@
+
+html {
+
+  --cb: #fff;
+  --text: #333;
+  --txt:#000;
+  --hd: #f80;
+  --bgs:#fff;
+  --sigm:#ddd;
+  --bds: 1px dotted #0ff;
+  
+ --hero:linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
+  --signs:#afabab;
+  --tutos:linear-gradient(-225deg, #231557 , #44107a , #ff1361 , #fff800 100%);
+  --ports: linear-gradient(to right, #f36a0f, #444, #0f0);
+  --cards: linear-gradient(to right, #0a0a0a, #9a0b0b, #ecd508);
+  --serv: #ddd; --servcard:#2a2b2f; --stxt:#fff;
+  --exemple: linear-gradient(to right, #ff0844 0%, #0ff 100%);
+  --footer: linear-gradient(to right, #612c35, #6f5b5b, #18c9a6);
+  --copy: linear-gradient(to right, #f54804, #faf5f5, #31ec08) ;  --copya:#000;
+  
+  --lg: #ff8177  linear-gradient(to top, #000 0%, #ddd 100%);
+  --active:linear-gradient( to right, #f90, #fff, #0f0);
+  --search: #833ab4  linear-gradient(to right, #ddd, #f89, #0f0);
+  --sign:#833ab4   linear-gradient(to right, #0ff, #ddd, #833ab4);
+  --signw: #833ab4  -webkit-linear-gradient(to right, #0ff, #ddd, #833ab4);
+  --divh4: #f97  linear-gradient(to right, #000, #f0f,#0f0);
+  --navh:linear-gradient(to right, #0f0, #ff8, #fff);
+  
+  --mh1:linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+  --mh2:-webkit-linear-gradient(to right, #f56708, #da22ff);
+  --mh2:linear-gradient(to right, #ec3d09, #da22ff);
+  --btn1:linear-gradient(to right, #f8a, #ccc, #f8d);
+  --btn1:-webkit-linear-gradient(to right, #f59b1d, #666, #f8a);
+  --btn1-a:linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
+ --card:linear-gradient(to right, #ee4809 0%, #edeaee 50%, #5bf607 100%);
+}
+html[data-theme="nuit"] {
+  --cb: #f00;
+  --text: #f3f3f3;
+  --txt:#fff;
+  --hd: #2a2b2f;
+  --bgs:#000;
+  --sigm:#202d5f;
+  --bds: 1px solid #fff;
+  
+  --hero:#2a2b2f;
+  --signs:#2a2b2f;
+  --tutos:#2a2b2f;
+  --ports:#2a2b2f;
+  --cards: #2a2b2f;
+  --serv: #2a2b2f; --servcard:#ddd; --stxt:#000;
+  --exemple: #2a2b2f;
+  --footer: #2a2b2f;;
+  --copy:#2a2b2f ; --copya:#fff;
+  
+  --lg: #ff8177  linear-gradient(to top, #0ff 0%, #fff 100%);
+  --active:linear-gradient( to right, #0ff, #f0f, #f00);
+  --search: linear-gradient(to right, #000, #f00, #ecd508);
+  --sign: #833ab4 linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  --signw: #833ab4  -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  --divh4: #f97  linear-gradient(to right, #ddd, #ff8,#0ff);
+ 
+  --navh:linear-gradient( to right, #f8410a, #797575, #2eea0d);
+  --mh1:linear-gradient(to top, #fff 0%, #0ff 100%);
+  --mh2:linear-gradient(to right, #f90, #f0f);
+  --btn1:linear-gradient(to right, #f90, #ddd, #0ff);
+  --btn1-a:linear-gradient(to right, #ec3d09, #666, #0f9);
+  --card:linear-gradient(to right, #5bf607   0%,#ee4809 50%, #edeaee 100%);
+}
+
+html[data-theme="nuit"] * {
+  transition: all .6s ease ;
+}
+
+#underline {
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  background-color:var(--txt);
+  width: 65px;
+  border-radius: 5px 5px 0 0;
+  transition: all .5s ease;
+}
+.balance {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 55px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.balance::before {
+  position: absolute;
+  content: "";
+  left: 5px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  transform: scale(1.3);
+  transition: left .3s ease-in;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+                             0 1px 1px 0 rgba(0, 0, 0, 0.14),
+                             0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background-size: 15px;
+  background: #fff url("../@/bn/sun.png") no-repeat center;
+}
+.modes:checked + .balance {
+  background-color: rgb(218, 216, 216);
+}
+.modes:checked + .balance::before {
+  left: 29px;
+  background-size: 18px;
+  background: #fff url("../@/bn/moon.png") no-repeat center;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media screen and (min-width: 1000px){
+  #underline {
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    background-color:var(--txt);
+    width: 65px;
+    border-radius: 5px 5px 0 0;
+    transition: all .5s ease;
+  }
+}
+@keyframes animateLeft {
+  from {
+    opacity: .3;
+    transform: translateX(-250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes animateRight {
+  from {
+    opacity: .3;
+    transform: translateX(250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animateTop {
+  from {
+    opacity: .3;
+    transform: translateY(-250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateBottom {
+  from {
+    opacity: .3;
+    transform: translateY(250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

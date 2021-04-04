@@ -1,5 +1,5 @@
 .main{
-    background-color: #afabab;
+    background-color: var(--signs);
     padding: 10rem 0;
 }
 .mn__container{
@@ -19,37 +19,39 @@
 }
 .mn__content h1{
     font-size: 2rem;
-    background-color: #fe3b6f;
-    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background-image: var(--mh1);
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-transform: capitalize;
     margin-bottom: 32px;
+    animation: animateTop .7s ease;
+    
 }
 .mn__content h2{
     font-size: 5rem;
     background: #ff8177; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f56708, #da22ff); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ec3d09, #da22ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--mh2); /* Chrome 10-25, Safari 5.1-6 */
+    background: var(--mh2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: var(--wb);
+    animation: animateLeft 1s ease;
+    animation-delay: .5s;
 }
 .mn__content p{
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    color: #333;
+    color:var(--text);
+    animation:   animateLeft 1.2s ease;
 }
 .mn__btn{
     font-size: 1.8rem;
-    background: #ff1ead;
-    background: -webkit-linear-gradient(to right, #f59b1d, #d5d1d1, #2fe50f);
-    background: linear-gradient(to right, #f59b1d, #d5d1d1, #2fe50f);
+    background: var(--mh2);
     padding: 20px 60px;
     border: none;
     border-radius: 10px;
@@ -57,31 +59,24 @@
     cursor: pointer;
     position: relative;
     transition: all .4s;
-    outline: none;
-}
-.mn__btn:hover {
-    color: #fff;
+    animation:  animateBottom 2s ease;
 }
 .mn__btn::after{
     position: absolute;
     content: '';
-    top: 0;
-    left: 0;
+    top: 0; left: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
-    transition: all 0.35s;
+    background: var(--btn1-a);
+    transition: all .4s;
     border-radius: 10px;
 }
 .mn__btn a{
     position: relative;
     z-index: 2;
-    color: #333;
+    color: #fff;
     font-weight: 900;
     text-decoration: none;
-}
-.mn__btn a:hover{
-    color: #fff;
 }
 .mn__btn:hover:after {
     width: 100%;
@@ -99,18 +94,19 @@
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #ec5519 0%, #5bf607 100%);
 }
 .bxs-group {
     font-size: 25rem;
     color: #ee215b;
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: #333;
+    animation: animateTop 1.5s ease;
 }
 #card-2 {
     background: #ff512f;
     background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
-    background-image: linear-gradient(to right, #ee4809 0%, #edeaee 50%, #5bf607 100%);
+    background-image: var(--card);
+    animation: animateRight  .7s ease;
 }
 /* Mobile Responsive */
 @media screen and (max-width: 1100px) {
