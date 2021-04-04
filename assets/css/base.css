@@ -117,7 +117,7 @@
   width: 100%;
   border: none;
   border-radius: 10px;
-  background:var(--signw);
+  background: var(--signw);
   background: var(--sign);
   color: var(--txt);
 }
@@ -173,6 +173,7 @@
   transition: all .4s ease-in-out;
   opacity: 0;
   background: var(--hd);
+  border: 2px solid var(--txt);
 }
 .sign_menu.open {
   opacity: 1;
