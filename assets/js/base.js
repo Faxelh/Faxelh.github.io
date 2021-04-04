@@ -45,5 +45,5 @@ window.addEventListener('load', function () {
   let intro = document.querySelector('.loader')
   setTimeout(() => {
     intro.classList.remove('transi');
-  }, 200);
+  }, 100);
 })
