@@ -1,3 +1,4 @@
+
 * {
    font-family: 'Caveat', cursive;
    margin: 0;
@@ -6,18 +7,16 @@
    text-decoration: none;
    box-sizing: border-box;
 }
-
 body {
    height: 100vh;
-   background: linear-gradient(to right, orange,darkgrey,#10ea10);
    overflow: hidden;
+   background: linear-gradient(to right, orange,darkgrey,#10ea10);
 }
 
 .align-item-center {
    display: flex;
    align-items: center;
    justify-content: center;
-   text-align: center;
 }
 
 .book-wrap {
@@ -30,6 +29,7 @@ body {
    opacity: 0;
    transform: rotate(-20deg);
    animation: show-up 2s forwards;
+   text-align: center;
 }
 .cover {
    position: absolute;
@@ -159,6 +159,7 @@ body {
 }
 .wrap-content h1{
    color: #236c4c;
+   text-transform: capitalize;
    font-weight: 600;
    font-size: 1rem;
 }
