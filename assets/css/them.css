@@ -11,8 +11,11 @@ html {
   
  --hero:linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
   --signs:#afabab;
-  --tutos:linear-gradient(-225deg, #231557 , #44107a , #ff1361 , #fff800 100%);
-  --ports: linear-gradient(to right, #f36a0f, #444, #0f0);
+  --tutos: linear-gradient(-225deg, #231557 , #44107a , #ff1361 , #fff800 100%);
+  --ports: linear-gradient(to right, #f90, #ddd, #0f1);--ports-txt:#000;
+  --ports-btn:#ff1ead  linear-gradient(to right, #f51d48, #333, #21cda5);
+  --ports-btn-after:#ff1ead  linear-gradient(to right, #f59b1d, #333, #2fe50f);
+
   --cards: linear-gradient(to right, #0a0a0a, #9a0b0b, #ecd508);
   --serv: #ddd; --servcard:#2a2b2f; --stxt:#fff;
   --exemple: linear-gradient(to right, #ff0844 0%, #0ff 100%);
@@ -47,7 +50,10 @@ html[data-theme="nuit"] {
   --hero:#2a2b2f;
   --signs:#2a2b2f;
   --tutos:#2a2b2f;
-  --ports:#2a2b2f;
+  --ports:#2a2b2f;--ports-txt:#fff;
+  --ports-btn: #ff1ead linear-gradient(to right, #f51d48, #d5d1d1, #21cda5);
+  --ports-btn-after:#ff1ead  linear-gradient(to right, #f59b1d, #d5d1d1, #2fe50f);
+
   --cards: #2a2b2f;
   --serv: #2a2b2f; --servcard:#ddd; --stxt:#000;
   --exemple: #2a2b2f;
@@ -77,7 +83,7 @@ html[data-theme="nuit"] * {
   position: absolute;
   bottom: 0;
   height: 5px;
-  background-color:var(--txt);
+  background-color: #f00;
   width: 65px;
   border-radius: 5px 5px 0 0;
   transition: all .5s ease;
