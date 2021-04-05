@@ -1,3 +1,4 @@
+@import "ld_base.css";
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +29,6 @@
     -5px -5px 15px rgba(255,255,255,0.1);
     border-radius: 15px;
     margin: 10px;
-
 }
 .container .card .box{
     position: absolute;
@@ -44,7 +44,7 @@
     transition: transform .4s , box-shadow .4s ;
 }
 .container .card:hover .box {
-    transform: translateY(-50px);
+    transform: translateY(-35px);
     box-shadow: 0 40px 70px rgba(0,0,0,0.5);
 }
 .container .card .box .content{
@@ -151,7 +151,4 @@
 .container .card:nth-child(10)  .box .content .icon{
     background: #dff;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-@media screen and (min-width: 768px) {
-
 }
