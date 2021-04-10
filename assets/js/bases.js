@@ -1,34 +1,25 @@
 
 window.addEventListener("scroll", function(){
-  const hd = document.querySelector("header");
-  hd.classList.toggle('sticky', window.scrollY > 0);
+  const navSticky = document.querySelector("#navbars");
+  navSticky.classList.toggle('sticky', window.scrollY > 0);
 });
-const afficherMenu = (basculeId, navId) =>{
-  const bascule = document.getElementById(basculeId),
-      nav = document.getElementById(navId)
-  if(bascule && nav){
-    bascule.addEventListener('click', ()=>{
-      nav.classList.toggle('afficher')
-    })
-  }
-}
-afficherMenu('burgs','affiche_menu')
 
-const navLink = document.querySelectorAll('.nav__link');
-function linkAction(){
-  navLink.forEach(n => n.classList.remove('active'));
-  this.classList.add('active');
-  const navMenu = document.getElementById('affiche_menu')
-  navMenu.classList.remove('afficher')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction));
-/*---------------------------------------------------------------------*/
-const bug = document.querySelectorAll('.burgs');
-function rotateI(){
-  this.classList.add('affiche');
-}
-bug.forEach(n => n.addEventListener('click', rotateI));
+const burger = document.querySelector( '.hburger');
+const mobile_menu = document.querySelector('.navis .nav_bar .nav_list .nav_cont');
+const menu_item = document.querySelectorAll('.navis .nav_bar .nav_list .nav_cont .nav_item  .nav_link');
+const header = document.querySelector('#nvbars .navis ');
 
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  mobile_menu.classList.toggle('active');
+});
+
+menu_item.forEach((item) => {
+  item.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    mobile_menu.classList.toggle('active');
+  });
+});
 /*---------------------------------------------------------------------*/
 const menu_sign = document.querySelector(".sign_menu"),
     actionBtn = document.querySelector("#nvb__btn");
@@ -47,13 +38,13 @@ window.addEventListener('load', function () {
     intro.classList.remove('transi');
   }, 100);
 })
-/*---------------------------------------------------------------------*/
-//javascript
-const navigation = document.getElementById("#nvb__btn");
-const navigationItems = document.querySelectorAll(" .sign_menu a ")
 
-navigationItems.forEach((navigationItem) => {
-  navigationItem.addEventListener("click", () => {
-    navigation.classList.remove("affiche");
-  });
+/*document.addEventListener('scroll', () => {
+  const scroll_position = window.scrollY;
+  if (scroll_position > 250) {
+    header.style.backgroundColor = '#202b2f';
+  } else {
+    header.style.backgroundColor = '#f80';
+  }
 });
+*/
