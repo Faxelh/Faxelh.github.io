@@ -1,10 +1,20 @@
-const curseur = document.getElementById('curseur');
-document.addEventListener('mousemove', e => {
-  curseur.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-})
-document.addEventListener('click', () => {
-  curseur.classList.add("expand");
-  setTimeout(() => {
-    curseur.classList.remove("expand");
-  }, 200)
-})
+const cursor = document.querySelector(".cursor");
+let timeout;
+//follow cursor on mousemove
+document.addEventListener("mousemove", (e) => {
+  let x = e.pageX;
+  let y = e.pageY;
+  cursor.style.top = y + "px";
+  cursor.style.left = x + "px";
+  cursor.style.display = "block";
+  //cursor effects when mouse stopped
+  function mouseStopped(){
+    cursor.style.display = "none";
+  }
+  clearTimeout(timeout);
+  timeout = setTimeout(mouseStopped, 1000);
+});
+//cursor effects when mouseout
+document.addEventListener("mouseout", () => {
+  cursor.style.display = "none";
+});
