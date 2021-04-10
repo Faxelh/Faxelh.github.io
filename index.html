@@ -12,8 +12,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
 <body>
+
 <div class="indique"></div>
-<div id="curseur"></div>
+<div class="cursor"></div>
+
   <div class="loader transi ">
     <div class="loader_wrap">
       <ul class="loader_list">
@@ -26,56 +28,53 @@
       <p class="light">Chargement...</p>
     </div>
   </div>
-<nav class="navbar">
-  <div class="logo"><a href="#">Horizon</a></div>
-  <div class="burger"><span></span> <span></span><span></span></div>
-  <div class="navbar_content">
-    <ul class="navbar_list">
-      <li class="nav_item active"><a href="#home" class="nav_link">Home</a></li>
-      <li class="nav_item"><a href="#tutoriel"  class="nav_link">Tutoriels</a></li>
-      <li class="nav_item"><a href="#condition" class="nav_link">Conditions</a></li>
-      <li class="nav_item"><a href="#service" class="nav_link">Services</a></li>
-      <li class="nav_item dropdown">
-        <a href="#" class="nav_link dropdown-btn">Portfolio<i class="bx bxs-chevron-down"></i></a>
-        <div class="dropdown-list">
-          <a href="#portfolio">Portfolio 1</a>
-          <a href="#portfolio">Portfolio 2</a>
-          <a href="#portfolio">Portfolio 4</a>
-          <a href="#portfolio">Portfolio 5</a>
-        </div>
-      </li>
-      <li class="nvb__btn"><a href="#" class="btn_sign">Sign Us <i class="bx bxs-chevron-down-circle"></i></a></li>
-    </ul>
-    <div class="sign_menu">
-      <div>
-        <h4>Registered Users</h4>
-        <p>No one sees how much you do for them, They only see what you don't do.</p>
-        <button class="btn_dark ">Sign in</button>
-      </div>
-      <div>
-        <h4>New Customers</h4>
-        <p>No one sees how much you do for them, They only see what you don't do..</p>
-        <button class="btn_light">Create account</button>
-      </div>
-      <div>
-        <h4>Contact Us</h4>
-        <p> No one sees how much you do for them, They only see what you don't do.</p>
-        <button class="btn_cont">Contact us</button>
-      </div>
-    </div>
-    <label for="mods" class="dark">
-      <input type="checkbox" id="mods" class="modes" />
-      <div class="balance"></div>
-    </label>
-    <div class="navbar_right">
-      <div class="bar"></div>
-      <form cl id="form" action="">
-        <label><input type="text" class="search" placeholder="Search ..." required /></label>
-        <button class="btn_v btn_search">Search</button>
+
+
+<header>
+  <nav class="nav centre">
+    <div><a href="#" class="nav__logo">Horizon</a></div>
+    <div class="search-box">
+      <form>
+        <label for="search"></label>
+        <input type ="text"  id ="search" placeholder="recherche" required>
+        <button type ="submit" class="search-btn"><i class="bx bx-search"></i></button>
       </form>
     </div>
-  </div>
-</nav>
+    <div class="nav__menu" id="affiche_menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+        <li class="nav__item"><a href="#tutoriel" class="nav__link">Tutoriels</a></li>
+        <li class="nav__item"><a href="#condition" class="nav__link">Conditions</a></li>
+        <li class="nav__item"><a href="#service" class="nav__link">Services</a></li>
+        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+        <li class="nav__item" id="nvb__btn"><a href="#" class="btn_sign">Sign Us <i class="bx bxs-chevron-down-circle"></i></a></li>
+      </ul>
+
+      <div class="sign_menu">
+        <div>
+          <h4>Registered Users</h4>
+          <p>No one sees how much you do for them, They only see what you don't do.</p>
+          <a href="#"  class="btn_dark  sigmlink ">Sign in</a>
+        </div>
+        <div>
+          <h4>New Customers</h4>
+          <p>No one sees how much you do for them, They only see what you don't do..</p>
+          <a href="#"  class="btn_light  sigmlink">Create account</a>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p> No one sees how much you do for them, They only see what you don't do.</p>
+          <a href="#contactme"  class="btn_cont  sigmlink" >Contact us</a>
+        </div>
+      </div>
+
+    </div>
+    <li><i class='bx bx-moon changement' id="theme"></i></li>
+    <div class="burgs"  id="burgs"><div class="bar"></div></div>
+
+  </nav>
+</header>
+
 <!-- Hero Section -->
 <section>
   <div class="hero" id="home">
@@ -150,23 +149,23 @@
   </div>
 </section>
 <!--   Section for our Services -->
-<section class="service_sect">
-<div class="container">
-  <div class="card">
-    <div class="box">
-      <div class="content">
-        <div class="icon"> <i class="bx bxl-telegram" aria-hidden="true"></i></div>
-        <h3>Premium Services</h3>
-        <h4><sup>$</sup>5</h4>
-        <ul><li><i class="bx bx-check" aria-hidden="true"></i>Live Support</li></ul>
-        <a href="assets/p/Service/bases.html">View our Services</a>
+<section class="service_sect" id="service">
+  <div class="container">
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <div class="icon"> <i class="bx bxl-telegram" aria-hidden="true"></i></div>
+          <h3>Premium Services</h3>
+          <h4><sup>$</sup>5</h4>
+          <ul><li><i class="bx bx-check" aria-hidden="true"></i>Live Support</li></ul>
+          <a href="assets/p/Service/bases.html">View our Services</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </section>
 <!-- Exemple form  section-->
-<section class="exemple_contact">
+<section class="exemple_contact" id="contactme">
   <h2>Contact Me</h2>
   <form class="form">
     <div class="names">
@@ -185,7 +184,7 @@
           <option value="Student">Student</option>
           <option value="Manager" >Manager </option>
           <option value="Scientific">Scientific </option>
-          <option value="Hacker" selected>Hacker</option>
+          <option indexvalue="Hacker" selected>Hacker</option>
           <option value="Web Designer" >Web Designer</option>
           <option value="Other" >Other</option>
         </select>
@@ -289,7 +288,7 @@
   </div>
 </section>
 <!-- Back To Top button -->
-<button id="bktp"><img src="assets/@/bn/btp.png" alt=""></button>
+<button class="bktp"><img src="assets/@/bn/btp.png" alt=""></button>
 <!-- My Script JS -->
 <script src="assets/js/bktp.js"></script>
 <script src="assets/js/them.js"></script>
@@ -297,7 +296,7 @@
 <script src="assets/js/indique.js"></script>
 <script src="assets/js/get_in.js"></script>
 <script src="assets/js/typed.js"></script>
-<script src="assets/js/base.js"></script>
+<script src="assets/js/bases.js"></script>
 <script src="assets/js/cookies.js"></script>
 </body>
 </html>
