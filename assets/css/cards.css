@@ -10,7 +10,7 @@
     height: 400px; width: 300px;
     overflow: hidden;
     border-radius: 20px;
-    cursor: pointer;
+    cursor: none;
     box-shadow: 0 0 20px 20px #ddd;
     background: linear-gradient(to right, #f54804, #faf5f5, #31ec08);
 }

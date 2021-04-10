@@ -1,7 +1,7 @@
 .indique {
-    top:0; left:0;
-    background: linear-gradient(to right, #03ff95, #57f303, #fdfdfd);
-    height: 5px;
+    top: 62px; left:0;
+    background: var(--indicator);
+    height: 6px;
     z-index: 100000;
     transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
     position: fixed;

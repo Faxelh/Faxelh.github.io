@@ -37,7 +37,7 @@
     border: 2px solid #db3477;
     border-radius: 10px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+    cursor: none;
     font-size: 20px;
     font-weight: 600;
     padding: 5px 35px;
@@ -80,7 +80,7 @@
     top: 5px; left:5px;
     width: 35px;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: none;
 }
 
 @media (min-width:768px ){
