@@ -29,51 +29,30 @@
     </div>
   </div>
 
-
-<header>
-  <nav class="nav centre">
-    <div><a href="#" class="nav__logo">Horizon</a></div>
-    <div class="search-box">
-      <form>
+<nav id="nvbars">
+  <div class="navis">
+    <div class="nav_bar">
+      <div class="logo"> Horizon</div>
+      <form class="search_box">
         <label for="search"></label>
         <input type ="text"  id ="search" placeholder="recherche" required>
         <button type ="submit" class="search-btn"><i class="bx bx-search"></i></button>
       </form>
-    </div>
-    <div class="nav__menu" id="affiche_menu">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-        <li class="nav__item"><a href="#tutoriel" class="nav__link">Tutoriels</a></li>
-        <li class="nav__item"><a href="#condition" class="nav__link">Conditions</a></li>
-        <li class="nav__item"><a href="#service" class="nav__link">Services</a></li>
-        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-        <li class="nav__item" id="nvb__btn"><a href="#" class="btn_sign">Sign Us <i class="bx bxs-chevron-down-circle"></i></a></li>
-      </ul>
-
-      <div class="sign_menu">
-        <div>
-          <h4>Registered Users</h4>
-          <p>No one sees how much you do for them, They only see what you don't do.</p>
-          <a href="#"  class="btn_dark  sigmlink ">Sign in</a>
-        </div>
-        <div>
-          <h4>New Customers</h4>
-          <p>No one sees how much you do for them, They only see what you don't do..</p>
-          <a href="#"  class="btn_light  sigmlink">Create account</a>
-        </div>
-        <div>
-          <h4>Contact Us</h4>
-          <p> No one sees how much you do for them, They only see what you don't do.</p>
-          <a href="#contactme"  class="btn_cont  sigmlink" >Contact us</a>
-        </div>
+      <li><i class='bx bx-moon changement' id="theme"></i></li>
+      <div class="nav_list">
+        <div class="hburger"><div class="bar"></div></div>
+        <ul class="nav_cont">
+          <li class="nav_item"><a class="nav_link actives" href="#home" data-after="Home">Home</a></li>
+          <li class="nav_item"><a class="nav_link" href="#tutoriel" data-after="Tutoriels">Tutoriels</a></li>
+          <li class="nav_item"><a class="nav_link" href="#condition" data-after="Conditions">Conditions</a></li>
+          <li class="nav_item"><a class="nav_link" href="#service" data-after="Services">Services</a></li>
+          <li class="nav_item"><a class="nav_link" href="#portfolio" data-after="Portfolio">Portfolio</a></li>
+        </ul>
       </div>
-
     </div>
-    <li><i class='bx bx-moon changement' id="theme"></i></li>
-    <div class="burgs"  id="burgs"><div class="bar"></div></div>
+  </div>
+</nav>
 
-  </nav>
-</header>
 
 <!-- Hero Section -->
 <section>
