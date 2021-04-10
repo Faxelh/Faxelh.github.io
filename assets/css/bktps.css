@@ -18,7 +18,7 @@
     100%{box-shadow: 0 0 0 0 rgb(243, 236, 239);}
 }
 .bktp.show {
-    bottom: 45px;
+    bottom: 40px;
     opacity:1;
     right: 40px;
     cursor: pointer;

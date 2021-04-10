@@ -42,214 +42,251 @@ body {
 }
 .changement{
   color: var(  --change);
-  font-size: 2rem;
+  font-size: 20px;
   cursor: pointer;
   transition: all .6s ease ;
 }
-header{
-  background: var(--hd);
-  width: 100%;
-  z-index: 9999;
+/* Nav section */
+nav {
   position: fixed;
-  border-bottom: 2px dotted var(--txt);
+  z-index: 9999;
+  width: 100vw;
+  height: auto;
+  background: var(--hd);
 }
-header.sticky{
+nav .sticky{
   background: var(--hd-s);
-  transition: all   .5s  ease-in-out;
+  transition: all  .5s  ease-in-out;
 }
-/*===== NAV =====*/
-.centre{
-  width: calc(100% - 2rem);
-  margin-left: .5rem;
-}
-.nav{
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (max-width: 768px){
-  .nav__menu{
-    position: fixed;
-    top: 60px;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    background: var(--hd);
-    transition: all .5s ease;
-  }
-  header.sticky .nav__menu{
-    transition: all .5s ease;
-    background: var(--hd-s);
-  }
-}
-.nav__item{
-  margin-bottom: 1.5rem;
-}
-.nav__link{
-  position: relative;
-  color: var(--txt);
-  font-weight: 600;
-}
-.nav__link:hover::after{
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 3px;
-  left: 0; top: 1.5rem;
-  background-color: var(--pre);
-  transition: all 1s ;
-}
-.nav__logo{
-  font-size: 3rem;
+.logo{
+  font-size: 2rem;
   background: var(--lg);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-header.sticky .nav__logo {
-  background: var(--lg-s);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+#nvbars .navis {
+  min-height: 8vh;
+  transition: .3s ease background-color;
 }
-header.sticky .nav__link {
-  color: var(--shlink);
-  font-size: 1rem;
-}
-/*Active menu*/
-.active::after{
-  position: absolute;
-  content: "";
+#nvbars .nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
-  height: 3px;
-  left: 0; top: 1.5rem;
-  background-color: var(--pre);
+  height: 60px;
 }
-/*=== Afficher le  menu avec js ===*/
-.afficher{
-  right: 0;
+#nvbars .nav_list .nav_cont {
+  position: absolute;
+  background: var(--hd);
+  width: 100vw;
+  height: 100vh;
+  left: 100%;
+  top: 60px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  transition: .5s ease left;
 }
-/* Case de recherche */
-.search-box{
-  flex: none;
-  font-size: 15px;
-  position: relative;
+#nvbars .nav_list .nav_cont.active {
+  left: 0;
 }
-.search-box #search{
-  width: 60%;
-  height: 30px;
-  border: var(--bds);
-  border-radius: 30px;
-  color:var(--txt);
-  font-size: 15px;
-  padding-left: 10px;
-  margin-left: 20px;
-  padding-right: 30px;
-  transform: scale(.9);
+#nvbars .nav_list .nav_cont .nav_link {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: var(--txt);
+  text-transform: capitalize;
+  padding: 10px;
+  display: block;
+  font-weight: 600;
 }
-.search-box .search-btn{
-  cursor: pointer;
-  width: 35px;
-  height: 30px;
-  border-radius: 30px;
-  border: var(--bds);
-  transform: scale(.9);
+#nvbars .nav_list .nav_cont .nav_link::after {
+  content: attr(data-after);
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color:var(--aft);
+  font-size: 9rem;
+  letter-spacing: 50px;
+  z-index: -1;
+  text-transform: uppercase;
+  transition: .3s ease letter-spacing;
 }
-.bx-sun, .bx-moon{
-  margin-left: -5px;
+#nvbars .nav_list .nav_cont .nav_item:hover .nav_link::after {
+  transform: translate(-50%, -50%) scale(.5);
+  letter-spacing: initial;
 }
-header  .burgs {
+#nvbars .nav_list .nav_cont .nav_link.actives,
+#nvbars .nav_list .nav_cont .nav_link.actives:hover{
+  background: var(--active);
+  border-radius: 10px;
+}
+#nvbars .nav_list .nav_cont .nav_link:hover{
+  background: var(--navh);
+  transition: all .2s ease;
+  border-radius: 10px;
+}
+/* Hamburger  */
+#nvbars .hburger {
+  height: 50px;
+  width: 50px;
   border: 3px solid #fff;
-  border-radius: 100%;
+  border-radius: 50%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30px; width: 30px;
-  transition:  .3s ease transform;
+  z-index: 100;
   cursor: pointer;
-  margin-left: 5px;
-  animation:  anime 1s ease infinite;
+  transform: scale(.75);
+  margin-right: 15px;
+}
+#nvbars .hburger:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  animation: anime 1s ease infinite;
 }
 @keyframes anime {
   0%{
     box-shadow: 0 0 0 0 rgb(255, 3, 74);
   }
   70%{
-    box-shadow: 0 0 0 4px rgb(222, 214, 215);
+    box-shadow: 0 0 0 5px rgb(222, 214, 215);
   }
   100%{
     box-shadow: 0 0 0 0 rgb(255, 2, 107);
   }
 }
-header  .burgs.affiche {
-  transform: rotate(360deg);
-}
-header  .burgs.affiche .bar:before {
-  top: 0;
-  transform: rotate(45deg);
-}
-header  .burgs.affiche .bar:after {
-  top: 0;
-  transform: rotate(-45deg);
-}
-header  .burgs .bar {
-  height: 2px;width: 30px;
-  background-color: #fff;
+#nvbars .hburger .bar {
+  height: 2px;  width: 30px;
   position: relative;
-  display: flex;
+  background: #fff;
+  z-index: -1;
 }
-header  .burgs.affiche .bar::before,
-header  .burgs.affiche .bar::after {
-  content: '';
+#nvbars .hburger .bar::after,
+#nvbars .hburger .bar::before {
+  content: '';   left: 0;
   position: absolute;
-  left: 0;
+  height: 100%;  width: 100%;
+  background: #fff;
+  transition: .3s ease;
+  transition-property: top, bottom;
+}
+#nvbars .hburger .bar::after {
+  top: 8px;
+}
+#nvbars .hburger .bar::before {
+  bottom: 8px;
+}
+#nvbars .hburger.active .bar::before {
+  bottom: 0;
+}
+#nvbars .hburger.active .bar::after {
+  top: 0;
+}
+
+/* Case de recherche */
+.search_box {
+  display: flex;
+  margin: auto 0;
+  height: 30px;
+}
+.search_box input {
+  background: var(--txt);
+  color:var(--cb);
+  padding: 5px 5px 5px 10px;
+  font-size: 13px;
+  width: 100px;  height: 100%;
+  border-radius: 30px;
+  border: var(--bds);
+}
+.search_box .search-btn {
+  font-size: 18px;
+  background: var(--search);
+  color: var(--sbtn);
+  padding: 5px 10px;
   height: 100%;
-  width: 100%;
-  background-color: #fff;
-  transition: .3s ease all;
+  position: relative;
+  cursor: pointer;
+  border: var(--bds);
+  font-weight: 600;
+  border-radius: 30px;
 }
-header  .burgs.affiche .bar {
-  background-color: transparent;
-}
-/* ===== MEDIA QUERIES=====*/
 
-@media screen and (min-width: 1000px){
-  .centre{
-    grid-column-gap: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+/* Media Query For Desktop */
+@media  screen and (min-width: 400px){
+  .search_box input {
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    width: 130px;
   }
-  .nav__list{
-    display: flex;
-    padding-top: 0;
+  .search_box .search-btn {
+    padding: 5px 11px;
   }
-  .nav__item{
-    margin-left: 1.5rem;
-    margin-bottom: 0;
+}
+@media  screen and (min-width: 600px){
+  .search_box input {
+    padding: 10px 10px 10px 20px;
+    width: 180px;
   }
-  header .burgs{
+  .search_box .search-btn {
+    padding: 5px 11px;
+  }
+}
+@media  screen and (min-width: 768px){
+  .search_box input {
+    width: 200px;
+  }
+  .search_box .search-btn {
+    padding: 5px 15px;
+  }
+}
+@media  screen and (min-width: 1000px) {
+  .logo{
+    font-size: 3rem;
+  }
+  .changement{
+    font-size: 2rem;
+  }
+  #nvbars .hburger {
     display: none;
-    visibility: hidden;
   }
-  .search-box{
-    flex: .9;
+  #nvbars .nav_list .nav_cont {
+    position: initial;
+    display: block;
+    height: auto;     width: fit-content;
+    margin: 0 50px;
+    background: transparent;
   }
-  .search-box #search{
-    width:40%;
+  #nvbars .nav_list .nav_cont .nav_item {
+    display: inline-block;
   }
-  .search-box .search-btn{
-    width: 55px;
+  #nvbars .nav_list .nav_cont .nav_link {
+    letter-spacing: 0;
+    padding: 5px;
   }
-  .bx-moon, .bx-sun{
-    margin-left: 5px;
+  #nvbars .nav_list .nav_cont .nav_link:after {
+    display: none;
+  }
+  .search_box input {
+    width: 100px;
+  }
+  .search_box .search-btn {
+    padding: 5px 10px;
   }
 }
-
-@media screen and (min-width: 1024px){
-  .centre{
-    margin-left: auto;
-    margin-right: auto;
+@media  screen and (min-width: 1200px){
+  .search_box input {
+    width: 220px;
+  }
+  .search_box .search-btn {
+    padding: 5px 15px;
   }
 }

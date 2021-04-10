@@ -1,14 +1,13 @@
 
 :root {
-  
+    --aft: rgba(17, 16, 16, 0.2);
   --pre:#0ff;
-  --bg:#ddd;
   --change:#fff;
   --cb: #fff;
+    --sbtn:#000;
   --txt:#000;
   --hd: #f50;
   --hd-s: coral;
-  --bgs:#fff;
   --sigm:#ddd;
   --shlink:#0f9;
   --indicator:  linear-gradient(to right, #000, #0f9, #202d5f);
@@ -27,7 +26,7 @@
   --footer: linear-gradient(to right, #612c35, #6f5b5b, #18c9a6);
   --copy: linear-gradient(to right, #f54804, #faf5f5, #31ec08) ;  --copya:#000;
   
-  --lg: #ff8177  linear-gradient(to top, #000 0%, #ddd 100%);
+  --lg: #ff8177  linear-gradient(to top, #fff 0%, #0f0 100%);
   --lg-s: #ef0e55 linear-gradient(to top, #ff8 0%, #0f9 100%);
   --active:linear-gradient( to right, #f90, #fff, #0f0);
   --search: #833ab4  linear-gradient(to right, #ddd, #f89, #0f0);
@@ -46,20 +45,14 @@
  
 }
 body.sombre{
-  
+  --aft: rgba(255, 255, 255, 0.2);
   --pre:#d50;
-  --title-color: #fff;
-  --text-color: #333;
   --change:#0f0;
-  --body-color: #2a2b2f;
-  --container-color: #27302C;
-  --bg:#000;
-  
   --cb: #f00;
+    --sbtn:#fff;
   --txt:#fff;
   --hd: #2a2b2f;
   --hd-s: #202d5f;
-  --bgs:#000;
   --shlink:#0f9;
   --sigm:#202d5f;
   --indicator:  linear-gradient(to right, #0f9, #f50, #ddd);

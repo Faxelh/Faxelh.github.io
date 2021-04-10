@@ -82,7 +82,7 @@ header.sticky .sign_menu{
   background-color: #0ff;
   border: 1px dashed #000;
 }
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 768px){
   .sign_menu {
     position: absolute;
     right: 50px; top: 65px;
