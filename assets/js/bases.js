@@ -20,12 +20,7 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle('active');
   });
 });
-/*---------------------------------------------------------------------*/
-const menu_sign = document.querySelector(".sign_menu"),
-    actionBtn = document.querySelector("#nvb__btn");
-actionBtn.addEventListener("click", () => {
-  menu_sign.classList.toggle("open")
-})
+
 /*---------------------------------------------------------------------*/
 const body = document.querySelector(".loader");
 setTimeout(function (){
@@ -38,13 +33,3 @@ window.addEventListener('load', function () {
     intro.classList.remove('transi');
   }, 100);
 })
-
-/*document.addEventListener('scroll', () => {
-  const scroll_position = window.scrollY;
-  if (scroll_position > 250) {
-    header.style.backgroundColor = '#202b2f';
-  } else {
-    header.style.backgroundColor = '#f80';
-  }
-});
-*/
