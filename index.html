@@ -16,18 +16,19 @@
 <div class="indique"></div>
 <div class="cursor"></div>
 
-  <div class="loader transi ">
-    <div class="loader_wrap">
-      <ul class="loader_list">
-        <li class="loader_item">F</li>
-        <li class="loader_item">A</li>
-        <li class="loader_item">X</li>
-        <li class="loader_item">E</li>
-        <li class="loader_item">L</li>
-      </ul>
-      <p class="light">Chargement...</p>
-    </div>
+<div class="loader transi ">
+  <div class="loader_wrap">
+    <ul class="loader_list">
+      <li class="loader_item">F</li>
+      <li class="loader_item">A</li>
+      <li class="loader_item">X</li>
+      <li class="loader_item">E</li>
+      <li class="loader_item">L</li>
+    </ul>
+    <p class="light">Chargement...</p>
   </div>
+</div>
+
 
 <nav id="nvbars">
   <div class="navis">
@@ -50,9 +51,68 @@
         </ul>
       </div>
     </div>
+    <div class="audroit" ><a href="#mon_droit"><i class="bx bx-chevron-down"></i></a></div>
   </div>
 </nav>
 
+<!-- Barre Latterale Gauche Section -->
+<div class="laterale">
+  <a href="#"><i class="gauche  bx bx-home"></i></a>
+  <a href="#"><i class="gauche  bx bx-user"></i></a>
+  <a href="#"><i class="gauche  bx bx-bookmark"></i></a>
+  <a href="#"><i class="gauche  bx bx-hourglass"></i></a>
+  <a href="#"><i class="gauche  bx bx-search"></i></a>
+</div>
+
+<section class="galeries">
+
+  <div class="Galerie">
+    <div class="SlideShow">
+      <div id="play" onclick="PlayPause();"></div>
+      <div onclick="plusS(-1);" class="sp-btn larow"><span class="arow arowl"></span></div>
+      <div onclick="plusS(1);" class="sp-btn rarow"><span class="arow arowr"></span></div>
+      <div class="cTH"><p class="cT slideTextFromTop"></p></div>
+
+      <div class="imH">
+        <img src="assets/@/bn/i1.jpg" alt="">1366X768
+        <p class="cT">Texte de la légende N°1</p>
+      </div>
+
+      <div class="imH">
+        <img src="assets/@/bn/i2.jpg" alt="">1366X768
+        <p class="cT">Texte de la légende N°2</p>
+      </div>
+
+      <div class="imH">
+        <img src="assets/@/bn/i3.jpg" alt="">1366X768
+        <p class="cT">Texte de la légende N°3</p>
+      </div>
+
+      <div class="imH">
+        <img src="assets/@/bn/i4.jpg" alt="">1366X768
+        <p class="cT">Texte de la légende N°4</p>
+      </div>
+
+      <div class="imH">
+        <img src="assets/@/bn/i5.png" alt="">1366X768
+        <p class="cT">Texte de la légende N°5</p>
+      </div>
+
+      <div class="imH">
+        <img src="assets/@/bn/i6.png" alt="">1366X768
+        <p class="cT">Texte de la légende N°6</p>
+      </div>
+
+      <div class="imH">
+        <img src="assets/@/bn/wb.png" alt="">1366X768
+        <p class="cT">Texte de la légende N°4</p>
+      </div>
+
+
+    </div>
+    <div id="dC"></div>
+  </div>
+</section>
 
 <!-- Hero Section -->
 <section>
@@ -224,7 +284,7 @@
     </div>
   </footer>
   <!-- Copyright Section -->
-  <div class="droit">
+  <div class="droit" id="mon_droit">
     <p>Designed with <b>♥</b> by <a href="https://t.me/faxelh">Faxel</a></p>
     <p><b>&copy;</b> <b>2019</b><script>new Date().getFullYear()>2019&&document.write("-" + new Date().getFullYear());</script> <b>Threat Z3R0</b>.All Rights Reserved.</p>
   </div>
@@ -271,6 +331,7 @@
 <!-- My Script JS -->
 <script src="assets/js/bktp.js"></script>
 <script src="assets/js/them.js"></script>
+<script src="assets/js/user.js"></script>
 <script src="assets/js/curseur.js"></script>
 <script src="assets/js/indique.js"></script>
 <script src="assets/js/get_in.js"></script>
