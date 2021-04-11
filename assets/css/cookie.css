@@ -9,7 +9,7 @@
     position: absolute;
     bottom: -150px;
     left: 5px;
-    z-index: 1000;
+    z-index: 997;
 }
 .pop h2{
     color: #000;
@@ -37,12 +37,12 @@
     border: 2px solid #db3477;
     border-radius: 10px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-    cursor: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
-    padding: 5px 35px;
+    padding: 5px 15px;
     margin: 5px;
     color: #fff;
+    cursor: pointer;
     position: relative;
 }
 .btn:active, .btn:hover {
@@ -88,9 +88,6 @@
         width: 450px;
         bottom: -350px;
         left: 20px;
-    }
-    .bouton {
-        padding: 10px;
     }
     .btn {
         padding: 10px 30px;

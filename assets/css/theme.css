@@ -4,9 +4,10 @@
   --pre:#0ff;
   --change:#fff;
   --cb: #fff;
-    --sbtn:#000;
+    --sbtn:#f59;
   --txt:#000;
   --hd: #f50;
+    --hdi: rgba(17, 16, 16, 0.2);
   --hd-s: coral;
   --sigm:#ddd;
   --shlink:#0f9;
@@ -49,9 +50,10 @@ body.sombre{
   --pre:#d50;
   --change:#0f0;
   --cb: #f00;
-    --sbtn:#fff;
+    --sbtn:#f90;
   --txt:#fff;
   --hd: #2a2b2f;
+    --hdi: rgba(255, 255, 255, .3);
   --hd-s: #202d5f;
   --shlink:#0f9;
   --sigm:#202d5f;

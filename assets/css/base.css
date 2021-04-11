@@ -7,7 +7,7 @@
 @import "../css/tutoriels.css";@import "../css/cards.css";
 @import "../css/service_sect.css";@import "../css/loader.css";
 @import "../css/theme.css";@import "../css/@.css";
-@import "../css/curseur.css";
+@import "../css/curseur.css";@import "../css/user.css";
 /*--------------------------------------------------------------*/
 @font-face {
   font-family: "lora";
@@ -54,7 +54,7 @@ nav {
   height: auto;
   background: var(--hd);
 }
-nav .sticky{
+nav.sticky{
   background: var(--hd-s);
   transition: all  .5s  ease-in-out;
 }
@@ -65,17 +65,20 @@ nav .sticky{
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-#nvbars .navis {
-  min-height: 8vh;
-  transition: .3s ease background-color;
-}
+
 #nvbars .nav_bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 60px;
+  border-bottom: 2px solid var(--txt);
 }
+ #nvbars.sticky .nav_list .nav_cont {
+  background: var(--hd-s);
+   transition: all  .5s ease;
+}
+
 #nvbars .nav_list .nav_cont {
   position: absolute;
   background: var(--hd);
@@ -109,8 +112,8 @@ nav .sticky{
   top: 50%; left: 50%;
   transform: translate(-50%, -50%) scale(0);
   color:var(--aft);
-  font-size: 9rem;
-  letter-spacing: 50px;
+  font-size: 8rem;
+  letter-spacing: 8rem;
   z-index: -1;
   text-transform: uppercase;
   transition: .3s ease letter-spacing;
@@ -210,7 +213,7 @@ nav .sticky{
 .search_box .search-btn {
   font-size: 18px;
   background: var(--search);
-  color: var(--sbtn);
+  color: var(--txt);
   padding: 5px 10px;
   height: 100%;
   position: relative;
@@ -273,7 +276,12 @@ nav .sticky{
     padding: 5px;
   }
   #nvbars .nav_list .nav_cont .nav_link:after {
-    display: none;
+    content: attr(data-after);
+    left: 63%;
+    font-size: 4.5rem;
+    letter-spacing: 5rem;
+    text-transform: capitalize;
+    /*display:none*/
   }
   .search_box input {
     width: 100px;
