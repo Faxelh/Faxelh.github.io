@@ -1,8 +1,8 @@
+const navs = document.querySelector("nav");
+window.addEventListener("scroll", function() {
+  navs.classList.toggle("sticky", window.scrollY > 0);
+})
 
-window.addEventListener("scroll", function(){
-  const navSticky = document.querySelector("#navbars");
-  navSticky.classList.toggle('sticky', window.scrollY > 0);
-});
 
 const burger = document.querySelector( '.hburger');
 const mobile_menu = document.querySelector('.navis .nav_bar .nav_list .nav_cont');
@@ -33,3 +33,20 @@ window.addEventListener('load', function () {
     intro.classList.remove('transi');
   }, 100);
 })
+
+const audroit = document.querySelector(".audroit");
+window.addEventListener("scroll", () => {
+  const scrollHeight = window.pageYOffset;
+  if (scrollHeight < 500) {
+    audroit.classList.add("apparait");
+  } else {
+    audroit.classList.remove("apparait");
+  }
+});
+
+audroit.addEventListener('click', function(){
+  window.scroll({
+    behavior:"smooth"
+  });
+});
+
