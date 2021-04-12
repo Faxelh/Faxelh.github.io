@@ -1,0 +1,269 @@
+.galeries{
+    background: var(--hd);
+    height: 100vh;
+}
+.diapo_galerie{
+    width: 90vw;
+    margin: auto;
+    height: 100vh;
+    padding: 5rem 0;
+}
+.diapo_galerie .diaporama{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+}
+.diapo_galerie .diaporama #play{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url("../@/bn/p.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    margin: 5px;
+    cursor: pointer;
+}
+.diapo_galerie .diaporama #play:hover{
+    opacity: .7;
+}
+.diapo_galerie .diaporama .diaporama_content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.diapo_galerie .diaporama .diaporama_content img{
+    width: 100%;
+    height: 100%;
+}
+.diapo_galerie .diaporama .diaporama_content .legende{
+    display: none;
+}
+.diapo_galerie .diaporama .larow,
+.diapo_galerie .diaporama .rarow{
+    width: 30px;
+    background: var(--hd-s);
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background .5s;
+    height: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.diapo_galerie .diaporama .rarow{
+    left: auto;
+    right: 0;
+    border-radius: 20px 0 0 20px;
+}
+.diapo_galerie .diaporama .larow:hover,
+.diapo_galerie .diaporama .rarow:hover{
+    background:var(--hd);/* #e30e74*/
+    cursor: pointer;
+}
+.diapo_galerie .arow{
+    display: inline-block;
+    border: 4px solid var(--txt);
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+.diapo_galerie .arow.arowl{
+    transform: rotateZ(-135deg);
+}
+.diapo_galerie .arow.arowr{
+    transform: rotateZ(45deg);
+}
+.diapo_galerie .diaporama > .debut_diaporama{
+    position: absolute;
+    color: var(--txt);
+    background: var(--aft);
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%; height: 50px;
+    line-height: 3rem;
+    overflow: hidden;
+    bottom: 0; z-index: 1;
+}
+.diapo_galerie #diaporamas{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+}
+.diapo_galerie #diaporamas .points{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #f50;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+.diapo_galerie #diaporamas .points.diapo{
+  background-color: #0f0;
+}
+.diapo_galerie #diaporamas .points:hover{
+    background-color: #f8a;
+}
+/* déplacer la diapositive actuelle à gauche */
+.diapo_galerie .moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+/*déplacer vers la gauche Diapositive suivante */
+.diapo_galerie .moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+    from {
+        margin-left: 0;
+        opacity: 1;
+    }
+    to {
+        margin-left: -100%;
+        opacity: 1;
+    }
+}
+@keyframes moveLeftNext {
+    from {
+        margin-left: 100%;
+        opacity: 1;
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+/*déplacer vers la droite Diapositive actuelle */
+.diapo_galerie .moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+/*déplacer vers la droite Diapositive précédente */
+.diapo_galerie .moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+@keyframes moveRightCurrent {
+    from {
+        margin-left: 0;
+        opacity: 1;
+    }
+    to {
+        margin-left: 100%;
+        opacity: 1;
+    }
+}
+@keyframes moveRightPrev {
+    from {
+        margin-left: -100%;
+        opacity: 1;
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+/** faire glisser le texte du bas  **/
+.slideTextFromBottom {
+    animation-name: slideTextFromBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromBottom {
+    from {
+        opacity: 0;
+        margin-top: 100px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+/** faire glisser le texte du haut  ****/
+.slideTextFromTop {
+    animation-name: slideTextFromTop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromTop {
+    from {
+        opacity: 0;
+        margin-top: -100px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+/**********  Responsive mobile menu  *********/
+@media(max-width: 768px){
+    .diapo_galerie .diaporama .rarow{
+        border-radius: 30px 0 0 30px;
+    }
+}
+
+
+
+
+.audroit {
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    display: none;
+    animation: bas-haut 1.5s ease-in-out infinite;
+}
+.audroit .bx-chevron-down {
+    font-size: 3rem;
+    color: #000;
+    font-weight: 600;
+    padding-top: 10%;
+}
+.audroit.apparait {
+    top: 85%;
+    left: 50%;
+    display: flex;
+    transition: all 1s ease;
+}
+@keyframes bas-haut {
+    0% {
+        top: 85%; opacity: 0;
+    }
+    50% {
+        top: 88%; opacity: 1;
+    }
+    100% {
+        top: 85%; opacity: 0;
+    }
+}
