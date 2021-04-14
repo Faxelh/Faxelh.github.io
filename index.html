@@ -7,15 +7,16 @@
   <link rel="icon" type="image/x-icon" href="assets/@/bn/tz.ico">
   <link rel="stylesheet" href="assets/css/base.css" />
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
 <body>
-
+<!-- Indicateur Section -->
 <div class="indique"></div>
+<!-- Curseur Section -->
 <div class="cursor"></div>
-
+<!-- Galerie Section -->
 <div class="loader transi ">
   <div class="loader_wrap">
     <ul class="loader_list">
@@ -28,8 +29,7 @@
     <p class="light">Chargement...</p>
   </div>
 </div>
-
-
+<!-- Navigation barre Section -->
 <nav id="nvbars">
   <div class="navis">
     <div class="nav_bar">
@@ -54,7 +54,6 @@
     <div class="audroit" ><a href="#mon_droit"><i class="bx bx-chevron-down"></i></a></div>
   </div>
 </nav>
-
 <!-- Barre Latterale Gauche Section -->
 <div class="laterale">
   <a href="#"><i class="gauche  bx bx-home"></i></a>
@@ -102,7 +101,6 @@
     <div id="diaporamas"></div>
   </div>
 </section>
-
 <!-- Hero Section -->
 <section>
   <div class="hero" id="home">
@@ -197,22 +195,22 @@
   <h2>Contact Me</h2>
   <form class="form">
     <div class="names">
-      <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required/>
+     <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required/>
       <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required/>
     </div>
     <div class="dates">
       <p><input type="date" name="check-in-date" id="checkIn" required /></p>
-      <p> <input type="text" name="message" id="msg" placeholder="XXX-XXX-XXXX-XX" required/></p>
+      <p><input type="text" name="message" id="msg" placeholder="XXX-XXX-XXXX-XX" required/></p>
     </div>
     <div class="mailer">
-      <input type="email" name="email" id="email" placeholder="Enter your email" required/>
-
+     <input type="email" name="email" id="email" placeholder="Enter your email" required/>
       <div class="select">
+        <label for="select"></label>
         <select name="select" id="select">
           <option value="Student">Student</option>
           <option value="Manager" >Manager </option>
           <option value="Scientific">Scientific </option>
-          <option indexvalue="Hacker" selected>Hacker</option>
+          <option value="Hacker" selected>Hacker</option>
           <option value="Web Designer" >Web Designer</option>
           <option value="Other" >Other</option>
         </select>
@@ -223,7 +221,7 @@
 </section>
 <!-- Map  section-->
 <div class = "map">
-  <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Abidjan,%20Ivory%20Coast&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Abidjan,%20Ivory%20Coast&t=k&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
 </div>
 <!-- Footer Section-->
 <section id="condition">
