@@ -1,6 +1,11 @@
 .map{
   background: var(--hd);
 }
+#gmap_canvas{
+  border: none;
+  scroll: no;
+  margin: 0;
+}
 /*Lateral Gauche */
 .laterale {
   width: 40px;
