@@ -18,36 +18,30 @@
     width: 100%;
 }
 .mn__content h1{
-    font-size: 2rem;
+    font-size: 3rem;
     background-image: var(--mh1);
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    -webkit-text-stroke-color: var(--txt);
     text-transform: capitalize;
     margin-bottom: 32px;
-    animation: animateTop .7s ease;
-    
 }
 .mn__content h2{
     font-size: 5rem;
-    background: #ff8177; /* fallback for old browsers */
-    background: var(--mh2); /* Chrome 10-25, Safari 5.1-6 */
     background: var(--mh2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--wb);
-    animation: animateLeft 1s ease;
-    animation-delay: .5s;
+    -webkit-text-stroke-color: var(--txt);
+
 }
 .mn__content p{
     margin-top: 1rem;
     font-size: 2rem;
-    font-weight: 700;
-    color:var(--text);
-    animation:   animateLeft 1.2s ease;
+    color:var(--txt);
 }
 .mn__btn{
     font-size: 1.8rem;
@@ -76,8 +70,8 @@
     z-index: 2;
     color: #fff;
     font-weight: 900;
-    text-decoration: none;
 }
+
 .mn__btn:hover:after {
     width: 100%;
     border-radius: 10px;
@@ -93,7 +87,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
 }
 .bxs-group {
     font-size: 25rem;
@@ -109,6 +102,7 @@
     animation: animateRight  .7s ease;
 }
 /* Mobile Responsive */
+
 @media screen and (max-width: 1100px) {
     .mn__container {
         display: grid;

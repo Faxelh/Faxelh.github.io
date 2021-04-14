@@ -109,6 +109,7 @@ footer{
     background: linear-gradient(to right, #f80227, #fff400, #ed00f3)
 }
 .droit{
+    border-top:  2px solid var(--txt);
     width: 100%;
     background: var(--copy);
     padding: 8px 10px;

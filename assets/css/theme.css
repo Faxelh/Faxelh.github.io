@@ -37,8 +37,7 @@
   --navh:linear-gradient(to right, #0f0, #ff8, #fff);
   
   --mh1:linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
-  --mh2:-webkit-linear-gradient(to right, #f56708, #da22ff);
-  --mh2:linear-gradient(to right, #ec3d09, #da22ff);
+  --mh2:#ff8176  linear-gradient(to right, #ec3d09, #da22ff);
   --btn1:linear-gradient(to right, #f8a, #ccc, #f8d);
   --btn1:-webkit-linear-gradient(to right, #f59b1d, #666, #f8a);
   --btn1-a:linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
@@ -83,7 +82,7 @@ body.sombre{
  
   --navh:linear-gradient( to right, #d60, #777, #0f0);
   --mh1:linear-gradient(to top, #fff 0%, #0ff 100%);
-  --mh2:linear-gradient(to right, #d90, #f0f);
+  --mh2: #ff8177 linear-gradient(to right, #d90, #f0f);
   --btn1:linear-gradient(to right, #f90, #ddd, #0ff);
   --btn1-a:linear-gradient(to right, #ec3d09, #666, #0f9);
   --card:linear-gradient(to right, #5bf607   0%,#ee4809 50%, #edeaee 100%);
