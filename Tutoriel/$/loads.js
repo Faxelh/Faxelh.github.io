@@ -1,6 +1,6 @@
-
-const lay = document.getElementById("preload");
-setTimeout(function (){
-  lay.classList.add("quitter");
-  lay.style.transform="scale(1)";
-}, 9000);
+window.onload = function(){
+  setTimeout(function(){
+    const chargement = document.getElementsByClassName("load_content")[0];
+    chargement.classList.add("bye");
+  },7000)
+}
