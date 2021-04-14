@@ -2,55 +2,157 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
-.container{
+.load_content{
   position: fixed;
-  background: #000;
-  color: #ffff;
-  width: 100%;
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background: #12062a;
+  z-index:100;
 }
-.preloader{
-  margin: auto;
-  width: 350px;
-  height: 30px;
-  background: rgba(255,255,255,0.1);
+.load_content.bye{
+  transform: rotate3d(200,900,900,360deg)  translateY(-200%);
+  transition: all 2s ease;
+}
+.load_container{
   position: relative;
-  border-radius: 2rem;
+  width: 310px;
 }
-.preloader:before{
+.load_container .load{
+  position: relative;
+  background: linear-gradient(#333, #888,#222);
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  box-shadow: 0 20px 35px rgba(0,0,0,.5);
+  cursor: pointer;
+}
+.load_container .load::before{
   content: '';
   position: absolute;
-  width: 5px;
-  height: 30px;
-  background: linear-gradient(to right, #f8410a, #797575, #2eea0d);
-  animation: preloder 5s infinite;
-  border-radius: 2rem;
+  top: 0; left: 0;
+  width: 100%; height: 50%;
+  background: rgba(255,255,255,.1);
+  pointer-events: none;
+  z-index: 10;
 }
-.preloader p{
-  margin: 0;
-  line-height: 30px;
-  font-size: 25px;
-  font-weight: 600;
+.load_container .load .txt{
+  position: relative;
+  width: 75px;
+  text-align: right;
+  letter-spacing: 1px;
+  font-weight: 300;
+  animation: blinks 2s linear infinite;
+}
+@keyframes blinks {
+  0% {color: #fff;}
+  50% {color: rgba(255, 104, 124, 0);}
+  100% {color: #fff;}
+}
+.load_container .load .per{
+  position: relative;
+  width: calc(100% - 120px);
+  height: 15px;
+  top: 1px;
+  background: #000;
+  border-radius: 20px;
+  margin: 0 20px;
+  box-shadow: inset 0 0 10px #000;
+  overflow: hidden;
+}
+.load_container .load .per .prog{
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0; left: 0;
+  width: 0; height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(90deg,  #f00, #0f1);
+  animation: anime 1s ease-in-out infinite;
 }
-@keyframes  preloder {
-  90%{
+@keyframes anime {
+  0%{
+    width: 0;
+    left: 0;
+  }
+  50%{
     width: 100%;
-    opacity: 1;
+    left: 0;
   }
   100%{
     width: 100%;
-    opacity: 0;
+    left: 100%;
   }
 }
-.quitter{
-  /*transform: translateY(100%);*/
-  opacity: 0;
-  transition: all .5s ease-in-out;
+.load_container .load::after{
+  position: absolute;
+  content: '';
+  width: 10px; height: 10px;
+  background: #0ff;
+  border-radius: 10px;
+  right: 10px; top: 20px;
+  box-shadow: 0 0 10px #0f0,
+  0 0 15px #0f0,
+  0 0 50px #0f0,
+  0 0 70px #0f0,
+  0 0 90px #0f0;
+  animation: anis 1s linear infinite;
+}
+@keyframes anis {
+  0%, 49.99%{
+    background: #0f0;
+    box-shadow: 0 0 10px #0f0,
+    0 0 15px #0f0,
+    0 0 50px #0f0,
+    0 0 70px #0f0,
+    0 0 90px #0f0;
+  }
+  50%,100%{
+    background: #111;
+    box-shadow: none;
+  }
+}
+@media  screen and (min-width: 600px) {
+  .load_container{
+    width: 420px;
+  }
+  .load_container .load{
+    padding: 20px;
+  }
+  .load_container .load .per{
+    height: 20px;
+  }
+  .load_container .load::after{
+    right: 18px; top: 25px;
+  }
+}
+@media  screen and (min-width: 768px) {
+  .load_container{
+    width: 500px;
+  }
+  .load_container .load .per{
+    margin: 0 50px;
+  }
+  .load_container .load .txt{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .load_container .load::after{
+    right: 25px; top: 26px;
+  }
+}
+@media  screen and (min-width: 1000px) {
+  .load_container{
+    width: 600px;
+  }
+  .load_container .load .txt{
+    top: -2px;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .load_container .load::after{
+    right: 35px;
+  }
 }
