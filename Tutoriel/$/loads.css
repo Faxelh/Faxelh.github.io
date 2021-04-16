@@ -43,6 +43,7 @@
 .load_container .load .txt{
   position: relative;
   width: 75px;
+  margin-left: -13px;
   text-align: right;
   letter-spacing: 1px;
   font-weight: 300;
