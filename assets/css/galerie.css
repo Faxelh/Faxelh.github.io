@@ -1,5 +1,5 @@
 .galeries{
-    background: var(--hd);
+    background: var(--gal);
     height: 100vh;
 }
 .diapo_galerie{
@@ -62,7 +62,7 @@
 }
 .diapo_galerie .diaporama .larow:hover,
 .diapo_galerie .diaporama .rarow:hover{
-    background:var(--hd);/* #e30e74*/
+    background:var(--hd);
     cursor: pointer;
 }
 .diapo_galerie .arow{
@@ -74,8 +74,7 @@
     border-bottom: none;
     margin: auto;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 0; right: 0;
     bottom: 30px;
 }
 .diapo_galerie .arow.arowl{
@@ -120,17 +119,11 @@
 }
 /* déplacer la diapositive actuelle à gauche */
 .diapo_galerie .moveLeftCurrentSlide{
-    animation-name: moveLeftCurrent;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
+    animation: moveLeftCurrent .5s linear forwards;
 }
 /*déplacer vers la gauche Diapositive suivante */
 .diapo_galerie .moveLeftNextSlide{
-    animation-name: moveLeftNext;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
+    animation: moveLeftNext .5s linear forwards;
 }
 @keyframes moveLeftCurrent {
     from {
@@ -152,20 +145,13 @@
         opacity: 1;
     }
 }
-
 /*déplacer vers la droite Diapositive actuelle */
 .diapo_galerie .moveRightCurrentSlide{
-    animation-name: moveRightCurrent;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
+    animation: moveRightCurrent .5s linear forwards;
 }
 /*déplacer vers la droite Diapositive précédente */
 .diapo_galerie .moveRightPrevSlide{
-    animation-name: moveRightPrev;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
+    animation: moveRightPrev .5s linear forwards;
 }
 
 @keyframes moveRightCurrent {
@@ -190,9 +176,7 @@
 }
 /** faire glisser le texte du bas  **/
 .slideTextFromBottom {
-    animation-name: slideTextFromBottom;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-out;
+    animation: slideTextFromBottom .7s ease-out;
 }
 @keyframes slideTextFromBottom {
     from {
@@ -206,9 +190,7 @@
 }
 /** faire glisser le texte du haut  ****/
 .slideTextFromTop {
-    animation-name: slideTextFromTop;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-out;
+    animation: slideTextFromTop .7s ease-out;
 }
 @keyframes slideTextFromTop {
     from {
@@ -226,10 +208,7 @@
         border-radius: 30px 0 0 30px;
     }
 }
-
-
-
-
+/**********  Go to next  *********/
 .audroit {
     position: fixed;
     bottom: 10%;
@@ -238,7 +217,7 @@
     border-radius: 50px;
     align-items: center;
     justify-content: center;
-    background: #fff;
+    background: var(--hd-s);
     width: 40px;
     height: 40px;
     display: none;
@@ -246,7 +225,7 @@
 }
 .audroit .bx-chevron-down {
     font-size: 3rem;
-    color: #000;
+    color: var(--txt);
     font-weight: 600;
     padding-top: 10%;
 }
