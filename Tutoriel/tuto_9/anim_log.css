@@ -1,116 +1,118 @@
-@import url("../$/inter_anim.css");
 * {
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
+	outline: none;
+	list-style: none;
+	resize: none; ;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	font-family:"Caveat", cursive;
 }
 body {
-	font-family:"Caveat", cursive;
-	box-sizing: border-box;
-	background: linear-gradient(#141e30, #243b55);
+	background:  #243b55;
 }
 
 .login-box {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 550px;
-	padding: 45px;
+	top: 50%; left: 50%;
+	width: 310px;
+	padding: 15px;
 	transform: translate(-50%, -50%);
 	background: rgba(0,0,0,.5);
-	box-shadow: 0 15px 25px rgba(0,0,0,.6);
-	border-radius: 30px;
+	box-shadow: 0 15px 25px rgba(45, 5, 25, 0.6);
+	border-radius: 50px;
 }
 .login-box h2 {
-	margin: 0 0 30px;
-	font-size: 3rem;
+	margin: 20px 0 20px;
+	font-size: 2rem;
 	text-align: center;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: #fff;
 }
 .login-box .user-box {
 	position: relative;
-	
 }
-.login-box .user-box input {
+.login-box .user-box input,
+.login-box .user-box  textarea {
 	width: 100%;
 	padding: 10px 0;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	margin-bottom: 15px;
-	border: none;	outline: none;
+	border: none;
 	border-bottom: 1px solid #fff;
 	background: #333;
 	color: #fff;
 	border-radius: 10px ;
 }
-.box{
-	font-size: 2rem;
-	color:#fff;
-}
 .login-box .user-box label{
 	position: absolute;
-	top:0;left: 0;
+	top:0; left: 0;
 	padding: 10px 15px;
-	font-size: 1.2rem;
+	font-size: 15px;
 	color: #fff;
 	pointer-events: none;
 	transition: .5s;
 }
-textarea{
-	width:94%;
-	background:#333;
+textarea, input{
 	border: 1px solid  #ccc ;
 	color:#fff;
-	resize: none; outline: none;
-	padding: 10px 15px;
 	border-radius: 10px ;
 }
 textarea::placeholder{
 	color: #fff;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	text-transform: capitalize;
 }
+.login-box .user-box textarea,
+.login-box .user-box input{
+	padding: 10px 10px;
+	top:0; left: 0;
+}
 .login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
-	top: -25px; left: 0;
-	color: #03e9f4;
+.login-box .user-box input:valid ~ label,
+.login-box .user-box textarea:focus ~ label,
+.login-box .user-box textarea:valid ~ label{
+	top: -23px; left: 0;
+	color: #fff;
 	border-bottom: none;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 .login-box form .val {
 	position: relative;
-	display: inline-block;
+	display: flex;
 	padding: 10px 20px;
 	font-size: 1rem;
 	background: linear-gradient(to right, #03e9f4, #acabab, #dc133b);
-	text-decoration: none;
 	text-transform: uppercase;
 	transition: .5s;
-	margin-top: 30px;
-	margin-left: 200px;
+	margin: 0 auto;
 	border: none;
-	letter-spacing: 2px;
 	border-radius: 10px;
 	font-weight: 600;
 }
 .login-box .val:hover {
 	background: linear-gradient(to right, orangered, darkgray,lime);
 	color: #fff;
-	box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4,
-                           	0 0 50px #03e9f4, 0 0 100px #03e9f4;
+	box-shadow: 0 0 5px #03e9f4,
+	                           0 0 25px #03e9f4,
+	                           0 0 50px #03e9f4,
+	                           0 0 100px #03e9f4;
+	letter-spacing: 2px;
+}
+@media (min-width:400px){
+	.login-box {
+		width: 380px;
+	}
+}
+@media (min-width: 600px){
+	.login-box {
+		width: 550px;
+		height: 500px;
+	}
+	.login-box h2 {
+		font-size: 3rem;
+	}
 }
 
-@media (max-width:768px){
-	.login-box {
-		width: 450px;
-		height: 450px;
-		padding: 10px;
-	}
-	.login-box form .val {
-		margin-top: 35px;
-		margin-left: 160px;
-	}
-}

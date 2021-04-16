@@ -1,46 +1,38 @@
-@import url("../$/inter_anim.css");
 * {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     list-style: none;
     text-decoration: none;
     outline: none;
+    font-family: 'Caveat', cursive;
 }
 body{
-    line-height: 1.5;
-    font-family: 'Caveat', cursive;
-    font-weight: 400;
+    background: #ddd;
 }
 body.hidden_scrolling{
     overflow-y: hidden;
 }
 .container{
-    max-width: 1170px;
+    max-width: 1300px;
     margin:auto;
 }
-
 .header{
-    position: absolute;
     width: 100%;
-    left:0;
-    top:0;
     z-index: 1;
-    padding: 15px;
 }
 .header_main{
-    background-color: #fff;
+    background: #ddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    border-radius: 4px;
 }
 .header .logo{
     padding: 0 15px;
 }
 .header .logo a{
-    font-size: 30px;
+    font-size: 2rem;
     text-transform: capitalize;
     color: #e91e63;
     font-weight: 600;
@@ -67,16 +59,14 @@ body.hidden_scrolling{
     height: 12px;
     width: 12px;
     position: relative;
-    margin-left:5px;
+    margin-left: 5px;
     pointer-events: none;
 }
 .header .menu > .menu_item > a .plus:before,
 .header .menu > .menu_item > a .plus:after{
     content:'';
     position: absolute;
-    box-sizing: border-box;
-    left: 50%;
-    top:50%;
+    left: 50%; top:60%;
     background-color: #000;
     height: 2px;
     width: 100%;
@@ -96,23 +86,26 @@ body.hidden_scrolling{
 }
 .header .menu > .menu_item > .sub_menu{
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    width: 220px;
+    width: 200px;
     position: absolute;
-    left:0;
-    top:100%;
+    left: 0;  top: 52px;
     background-color: #fff;
     padding: 10px 0;
     border-top: 3px solid #e91e63;
     transform: translateY(10px);
-    transition: all 0.3s ease;
+    transition: all .3s ease;
     opacity:0;
     visibility: hidden;
+}
+.header .menu > .menu_item:nth-child(5) > .sub_menu{
+    width: 180px;
 }
 @media(min-width: 992px){
     .header .menu > .menu_item_has_children:hover > .sub_menu{
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
+        left: 0;
     }
     .header .menu > .menu_item_has_children:hover > a .plus:after{
         transform: translate(-50%,-50%) rotate(0deg);
@@ -127,7 +120,7 @@ body.hidden_scrolling{
     font-size: 16px;
     font-weight: 600;
     color: #000;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
     text-transform: capitalize;
 }
 .header .open_nav_menu{
@@ -154,7 +147,6 @@ body.hidden_scrolling{
     width: 100%;
     height: 100%;
     background-color: #000;
-    box-sizing: border-box;
 }
 .header .open_nav_menu span:before{
     top:-7px;
@@ -179,8 +171,7 @@ body.hidden_scrolling{
     position: fixed;
     z-index: 999;
     background-color: rgba(0,0,0,0.5);
-    left:0;
-    top:0;
+    left:0; top:0;
     height: 100%;
     width: 100%;
     visibility: hidden;
@@ -204,16 +195,14 @@ body.hidden_scrolling{
     }
     .header .nav_menu{
         position: fixed;
-        right: -280px;
+        right: -300px;
         visibility: hidden;
-        width: 280px;
-        height: 100%;
-        top:0;
+        width: 300px; height: 100%;
         overflow-y: auto;
-        background-color: #222;
-        z-index: 1000;
+        background-color: #2a2b2f;
+        z-index: 1000;   top:0;
         padding: 15px 0;
-        transition: all 0.5s ease;
+        transition: all .5s ease;
     }
     .header .nav_menu.open{
         visibility: visible;
@@ -243,7 +232,8 @@ body.hidden_scrolling{
     .header .menu > .menu_item_has_children.active > a .plus:after{
         transform: translate(-50%,-50%) rotate(0deg);
     }
-    .header .menu > .menu_item > .sub_menu{
+    .header .menu > .menu_item > .sub_menu,
+    .header .menu > .menu_item:nth-child(5) > .sub_menu{
         width: 100%;
         position: relative;
         opacity: 1;

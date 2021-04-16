@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Caveat', cursive;
+}
+body {
+  height: 100vh;
+  background: #ddd;
+}
+
+.pop{
+  position: fixed;
+  top: 52%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Box{
+  width: 310px;
+  height: auto;
+  flex-direction: column;
+  background: #2a2b2f;
+  border-radius: 50px;
+  display: flex;
+  position: relative;
+  box-shadow: 0 5px 10px 5px #0ff;
+}
+.Box .imgBx{
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transform: translateY(-30px);
+}
+.Box .content{
+  height: auto;top: 0;
+  padding: 0 10px 20px;
+}
+.Box .imgBx  img{
+  position: relative;
+  max-width: 130px;
+  border-radius: 40px;
+  background: #2a2b2f;
+  z-index: 1;
+}
+.Box .imgBx::before{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #000;
+}
+.Box .content h3{
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.Box .content h2{
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #f8410a;
+}
+.Box .content h2 span{
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.Box .content p{
+  color: #fff;
+  font-size: 13px;
+}
+.Box .content a{
+  display: inline-block;
+  padding: 5px 20px ;
+  margin: 15px auto;
+  background: #f50;
+  border-radius: 10px;
+  box-shadow: 10px 8px 0  0 #f8a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.Box .content a:hover{
+  transform: scale(.8);
+  box-shadow: 10px 8px 0  0 #0f0;
+}
+.x{
+  position: absolute;
+  top: 20px; right: 20px;
+  background: #ddd;
+  border-radius: 100%;
+  width: 35px; height: 35px;
+  color: #f00;
+  cursor: pointer;
+}
+.bx{
+  position: absolute;
+  top: 1px; right: 2px;
+  font-size: 2rem;
+}
+@media screen and (min-width: 400px){
+  .Box{
+    width: 360px;
+  }
+  .Box .content h3,  .Box .content h2{
+    text-align: center;
+  }
+  .Box .content p,  .Box .content a{
+    line-height: 1.1rem;
+  }
+  .Box .content a{
+    padding: 10px 20px ;
+  }
+}
+
+@media screen and (min-width: 600px){
+  .Box{
+    width: 570px;
+  }
+  .Box .content p,  .Box .content a{
+    line-height: 1.3rem;
+  }
+  .Box .content a{
+    padding: 10px 30px ;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .pop{
+    top: 50%;
+  }
+  .Box{
+    width: 720px;
+    height: 450px;
+    flex-direction: row;
+  }
+  .Box .imgBx{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Box .imgBx  img{
+    max-width: 200px;
+  }
+  .Box .imgBx::before{
+    width: 230px;
+    height: 230px;
+  }
+  .Box .content{
+    width: 550px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Box .content h3{
+    line-height: 4rem;
+  }
+  .Box .content h2{
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .Box .content h2 span{
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .Box{
+    width: 900px;
+    height: 600px;
+  }
+  .Box .imgBx{
+    height: 600px;
+  }
+  .Box .content{
+    width: 650px;
+    height: 550px;
+  }
+  .Box .content h2 span{
+    font-size: 4rem;
+  }
+  .Box .content p{
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}

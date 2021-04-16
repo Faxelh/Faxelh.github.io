@@ -1,24 +1,24 @@
-@import url("../$/inter_anim.css");
 * {
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	outline: none;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	font-family: 'Caveat', cursive;
 }
 body {
 	height: 100vh;
 	display: grid;
 	place-items: center;
-	font-family: 'Caveat', cursive;
-	background: linear-gradient(to right, #f8410a, #797575, #2eea0d);
+	background: #ddd;
 }
 h2{
-	margin: 10px 0 20px;
-	font-weight: 900;
-	font-size: 30px;
+	margin: 20px 0 20px;
+	font-size: 1.5rem;
 	text-align: center;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: #fff;
 }
@@ -26,51 +26,48 @@ input[type=checkbox] {
 	margin-right: 0;
 }
 .gen{
-	background:  #bb0e36 linear-gradient(to right, #0a0a0a, #9a0b0b, #ecd508);
+	background: #2a2b2f;
 	box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
-	padding: 20px;
-	width: 410px;
-	max-width: 100%;
+	padding: 5px;
+	width: 300px;
+	height: 400px;
 }
 .results{
-	background: #612f2f linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
+	background: #202d5f;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	position: relative;
-	font-size: 18px;
-	letter-spacing: 1px;
-	padding: 12px 10px;
-	height: 60px;
+	font-size: 17px;
+	height: 40px;
 	width: 100%;
-	border-radius:10px ;
+	border-radius: 15px ;
 }
 .results #result{
 	word-break: break-word;
-	max-width: calc(100% - 40px);
 	color: #fff;
+	letter-spacing: 1px;
+	margin-left: 20px;
 	font-weight: 600;
 }
 .clip {
-	border: none;
-	width: 40px;
-	height: 40px;
-	top: 10px;
+	border: 1px solid #fff;
+	width: 30px;
+	height: 30px;
+	top: 5px;
 	position: absolute;
 	right: 5px;
 	border-radius: 50px;
-	outline: none;
-	background: #726767 linear-gradient(to right, #4aff06, #e3dcdc, #dc1f08);
+	background: #2a2b2f;
 }
 .clip  .bx{
 	color: #fff;
-	font-size: 33px;
-	font-weight: 600;
+	font-size: 23px;
 	cursor: pointer;
 }
 .btn{
-	border: none;
+	border: 1px solid #fff;
 	cursor: pointer;
 	padding: 8px 10px ;
 	background: #726767 linear-gradient(to right, #4aff06, #e3dcdc, #dc1f08);
@@ -78,14 +75,17 @@ input[type=checkbox] {
 	display: block;
 	width: 70%;
 	margin: 0 auto;
+	font-weight: 600;
 	border-radius: 50px;
-	outline: none;
 	transition: all .3s ease;
 }
 .btn:hover{
-	color: #4e0a0a;
+	color: #fff;
 	letter-spacing: 2px;
-	background: #06ffc9  linear-gradient(to right, #06ffda, #e3dcdc, #dc088e);
+	background: #202d5f;
+}
+.params label{
+	font-size: 1.2rem;
 }
 .param{
 	display: flex;
@@ -93,20 +93,57 @@ input[type=checkbox] {
 	align-items: center;
 	margin: 15px 0;
 	color: #fff;
-	font-weight: 600;
 }
 .param .it{
-	outline: none;
+	border: 1px solid #fff;
 	text-align: center;
-	background: #402a2a linear-gradient(to right, #06ffda, #402a2a, #dc088e);
+	background: #000;
 	color: #fff;
-	font-size: 20px;
-	border-radius: 50px;
+	font-size: 18px;
+	border-radius: 20px;
 	width: 60px;
-	height: 30px;
+	height: 25px;
 }
-@media screen and (max-width: 768px) {
-	.results{
-		font-size: 14px;
+@media screen and (min-width: 400px){
+	.gen{
+		padding: 10px;
+		width: 370px;
+		height: 400px;
 	}
+	.param .it{
+		font-size: 20px;
+	}
+	.params label{
+		font-size: 1.3rem;
+	}
+}
+@media screen and (min-width: 600px){
+	.gen{
+		width: 500px;
+		height: 450px;
+	}
+	.params label{
+		font-size: 1.5rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	h2{
+		font-size: 2rem;
+	}
+	.results #result{
+		margin-left: 35px;
+	}
+	.results {
+		background: #612f2f linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
+		height: 60px;
+	}
+	.clip {
+		width: 40px;
+		height: 40px;
+		top: 10px;
+	}
+	.clip .bx {
+		font-size: 30px;
+	}
+
 }
