@@ -1,70 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Tutoriel page  </title>
+  <title>Faxel Code</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="../assets/@/bn/lv.ico">
-  <link rel="stylesheet" href="tuto.css">
+  <link rel="icon" type="image/x-icon" href="../../@/bn/tz.ico">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <link rel="stylesheet" href="tuto.css">
 </head>
 <body>
+
 <div class="load_content">
-	<div class="load_container">
-		<div class="load">
-			<span class="txt">Chargement</span>
-			<div class="per"><div class="prog"></div></div>
-		</div>
-	</div>
+  <div class="load_container">
+    <div class="load">
+      <span class="txt">Chargement</span>
+      <div class="per"><div class="prog"></div></div>
+    </div>
+  </div>
 </div>
 
-<section>
-	<div class="tuto" id="tutoriel">
-		<h1>Our Tutoriels</h1>
-		<div class="tuto__wrapper">
-			<div class="tuto__card">
-				<h2>Tutoriel 1</h2>
-				<p>In this Tutoriel I will show how to make a responsive dropnav menu with html css & javascript</p>
-				<div class="tuto__btn"><a href="tuto_1/Drop_nav.html">View this Tutoriel</a></div>
-			</div>
-			<div class="tuto__card">
-				<h2>Tutoriel 2</h2>
-				<p>In this Tutoriel I will show how to make a responsive Timeline   with html css only</p>
-				<div class="tuto__btn"><a href="tuto_2/Time_line.html">View this Tutoriel</a></div>
-			</div>
-			<div class="tuto__card">
-				<h2>Tutoriel 3</h2>
-				<p>In this Tutoriel I will show how to make a responsive Product  land page  with html css & JQuery</p>
-				<div class="tuto__btn"><a href="tuto_3/produit_land.html">View this Tutoriel</a></div>
-			</div>
-			<div class="tuto__card">
-				<h2>Tutoriel 4</h2>
-				<p>In this Tutoriel I will show how to make a responsive Nav bar simple  menu with html css & javascript</p>
-				<div class="tuto__btn"><a href="tuto_4/nvb-sple.html">View this Tutoriel</a></div>
-			</div>
-			<div class="tuto__card">
-				<h2>Tutoriel 5</h2>
-				<p>In this Tutoriel I will show how to make a responsive Calendar   with html css & javascript</p>
-				<div class="tuto__btn"><a href="tuto_5/calendrier.html">View this Tutoriel</a></div>
-			</div>
-			<div class="tuto__card">
-				<h2>Tutoriel 6</h2>
-				<p>In this Tutoriel I will show how to make a responsive Password Generate   with html css & javascript</p>
-				<div class="tuto__btn"><a href="tuto_6/mdp_gen.html">View this Tutoriel</a></div>
-			</div>
-			<div class="tuto__card">
-				<h2>Tutoriel 7</h2>
-				<p>In this Tutoriel I will show how to make ? ooop! 	Coming Soon.</p>
-				<div class="tuto__btn"><a href="tuto_7/coming.html">View this Tutoriel</a></div>
-			</div>
-			<div class="tuto__card">
-				<h2>Tutoriel 8</h2>
-				<p>In this Tutoriel I will show how to make ? ooop! Coming Soon.</p>
-				<div class="tuto__btn"><a href="tuto_8/soon.html">View this Tutoriel</a></div>
-			</div>
-		</div>
-	</div>
-</section>
-<script src="$/loads.js"></script>
+<div class="mode"> <li><i class='bx bx-toggle-left changement' id="sombres"></i></li></div>
+
+<div class="tutoriels" >
+  <h1>Our Tutoriels</h1>
+</div>
+<div class='row'>
+
+  <div class='tuto_blue'>
+    <div class='tuto_inner'>
+      <img src='preview/drop_nav.png' width='1366' alt="">
+      <h2>Tutoriel 1</h2>
+      <p>In this Tutoriel I will show how to make a responsive dropnav menu with html css & javascript</p>
+      <button> <a href="tuto_1/Drop_nav.html">Source code</a></button>
+    </div>
+  </div>
+
+  <div class='tuto_orange'>
+    <div class='tuto_inner'>
+      <img src='preview/timeline.png' width='1366' alt="">
+      <h2>Tutoriel 2</h2>
+      <p>In this Tutoriel I will show how to make a responsive Timeline   with html css only</p>
+      <button> <a href="tuto_2/Time_line.html">Source code</a></button>
+    </div>
+  </div>
+
+  <div class='tuto_red'>
+    <div class='tuto_inner'>
+      <img src='preview/produit_land.png' width='1366' alt="">
+      <h2>Tutoriel 3</h2>
+      <p>In this Tutoriel I will show how to make a responsive Product  land page  with html css & JQuery</p>
+      <button> <a href="tuto_3/produit_land.html">Source code</a></button>    </div>
+  </div>
+
+  <div class='tuto_green'>
+    <div class='tuto_inner'>
+      <img src='preview/nvbe-sple.png' width='1366' alt="">
+      <h2>Tutoriel 4</h2>
+      <p>In this Tutoriel I will show how to make a responsive Nav bar simple  menu with html css & javascript</p>
+      <button> <a href="tuto_4/nvb-sple.html">Source code</a></button>
+    </div>
+  </div>
+
+
+  <div class='tuto_yellow'>
+    <div class='tuto_inner'>
+      <img src='preview/mdp_gen.png' width='1366' alt="">
+      <h2>Tutoriel 5</h2>
+      <p>In this Tutoriel I will show how to make a responsive responsive Calendar   with html css & javascript</p>
+      <button> <a href="tuto_5/calendrier.html">Source code</a>  </button>
+    </div>
+  </div>
+
+  <div class='tuto_pink'>
+    <div class='tuto_inner'>
+      <img src='preview/mdp_gen.png' width='1366' alt="">
+      <h2>Tutoriel 6</h2>
+      <p>In this Tutoriel I will show how to make a responsive Password Generate   with html css & javascript</p>
+      <button> <a href="tuto_6/mdp_gen.html">Source code</a></button>
+    </div>
+  </div>
+
+  <div class='tuto_green'>
+    <div class='tuto_inner'>
+      <img src='preview/coming.png' width='1366' alt="">
+      <h2>Tutoriel 7</h2>
+      <p>In this Tutoriel I will show how to make ? ooop! 	Coming Soon.</p>
+      <button> <a href="tuto_7/coming.html">Source code</a></button>
+    </div>
+  </div>
+
+  <div class='tuto_orange'>
+    <div class='tuto_inner'>
+      <img src='https://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300' alt="">
+      <h2>Tutoriel 8</h2>
+      <p>In this Tutoriel I will show how to make ? ooop! Coming Soon.</p>
+      <button> <a href="tuto_8/soon.html">Source code</a></button>
+    </div>
+  </div>
+
+  <div class='tuto_blue'>
+    <div class='tuto_inner'>
+      <img src='https://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300' alt="">
+      <h2>Tutoriel 9</h2>
+      <p>In this Tutoriel I will show how to make a responsive Password Generate   with html css & javascript</p>
+      <button> <a href="tuto_9/">Source code</a></button>
+    </div>
+  </div>
+
+  <div class='tuto_red'>
+    <div class='tuto_inner'>
+      <img src='https://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300' alt="">
+      <h2>Tutoriel 10</h2>
+      <p>In this Tutoriel I will show how to make a responsive Password Generate   with html css & javascript</p>
+      <button> <a href="tuto_10/">Source code</a>  </button>
+      <button> <a href="tuto_10/">Source code</a></button>
+    </div>
+  </div>
+
+</div>
+
+<script src="tuto.js"></script>
 </body>
 </html>

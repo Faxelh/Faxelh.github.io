@@ -1,121 +1,162 @@
+@charset "UTF-8";
 @import url("$/loads.css");
-/* Tutoriel Section */
-.tuto {
-  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 2rem 0;
+
+:root {
+    --ttc: #000;
+    --bdc: #ddd;
+    --wbk:#0ff;
+    --shw: #000;
+
+    --tb: linear-gradient(-45deg, #92DCE5 50%, rgb(220, 212, 212) 50%) ;
+    --to:  linear-gradient(-45deg, #f50 50%,   rgb(220, 212, 212) 50%);
+    --tr:   linear-gradient(-45deg, #E84855 50%,   rgb(220, 212, 212) 50%);
+    --tg:  linear-gradient(-45deg, #70C1B3 50%,   rgb(220, 212, 212) 50%);
+    --ty:  linear-gradient(-45deg, #fc1 50%,   rgb(220, 212, 212) 50%) ;
+    --tp:  linear-gradient(-45deg, #FF386D 50%,   rgb(220, 212, 212) 50%) ;
+
+
 }
-.tuto h1 {
-  background: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
-  -webkit-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-fill-color: #fff;
-  margin-bottom: 5rem;
-  font-size: 5.5rem;
-  position: relative;
+body.sombre{
+    --ttc: #fff;
+    --bdc: #2a2b2f;
+    --wbk:#fff;
+    --shw: #fff;
+
+    --tb: linear-gradient(-45deg, #66989e 50%, rgba(45, 43, 20, 0.5) 50%) ;
+    --to:  linear-gradient(-45deg, #f50 50%, rgba(45, 43, 20, 0.5) 50%);
+    --tr:   linear-gradient(-45deg, #E84855 50%,  rgba(45, 43, 20, 0.5)  50%);
+    --tg:  linear-gradient(-45deg, #5da89b 50%,  rgba(45, 43, 20, 0.5)  50%);
+    --ty:  linear-gradient(-45deg, #fc1 50%, rgba(45, 43, 20, 0.5)   50%) ;
+    --tp:  linear-gradient(-45deg, #FF386D 50%,  rgba(45, 43, 20, 0.5)  50%) ;
+
 }
-.tuto h1::after {
-  content: '';
-  position: absolute;
-  background: #ff8177;
-  bottom: 0;  left: 50%;
-  width: 35%;
-  height: 4px;
-  transition:  width .5s ease;
-  transform: translateX(-50%);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Caveat', cursive;
+    transition: all .5s ease;
 }
-.tuto__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+body {
+    height: 100vh;
+    background-color: var(--bdc);
 }
-.tuto__card {
-  margin: 10px;
-  height: 400px;
-  width: 300px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-  transition:  .3s ease-in;
-}
-.tuto__card:hover {
-  transform: scale(1.075);
-  transition:  .3s ease-in;
-}
-.tuto__card:nth-child(2) {
-  background-image: linear-gradient(to right, #ff0844 , #ffb199 ,#f59b1d);
-}
-.tuto__card:nth-child(3) {
-  background-image: linear-gradient(to right, #f59b1d, #d5d1d1, #2fe50f);
-}
-.tuto__card:nth-child(4) {
-  background-image: linear-gradient(to right, #f51d48, #d5d1d1, #21cda5);
-}
-.tuto__card:nth-child(5) {
-  background-image: linear-gradient(to right, #d319db, #6f5b5b, #18c9a6);
-}
-.tuto__card:nth-child(6) {
-  background: #1fa2ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff); /* Chrome 10-25, Safari 5.1-6 */
-  background-image: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.tuto__card:nth-child(7) {
-  background-image: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-}
-.tuto__card:nth-child(8) {
-  background-image: linear-gradient(to right, #612c35, #6f5b5b, #18c9a6);
-}
-.tuto__card:nth-child(9) {
-  background-image: linear-gradient(to right, #f80227, #fff400, #ed00f3)
-}
-.tuto__card:nth-child(10) {
-  background-image: linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
-}
-.tuto__card h2 {
-  text-align: center;
-  font-size: 2.5rem;
-}
-.tuto__card p {
-  text-align: center;
-  margin-top: 24px;
-  font-size: 18px;
-  color: #000;
-}
-.tuto__btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 90px;
-  border: none; outline: none;
-  text-transform: capitalize;
-  border-radius: 10px;
-  background: #000;
-  font-size: 1rem;
-}
-.tuto__btn  a{
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 14px 24px;
+h2,p{
+    color: var(--ttc);
 }
 
-@media screen and (max-width: 1300px) {
-  .tuto__wrapper {
-    grid-template-columns: 1fr 1fr;
-  }
+.mode {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    cursor: pointer;
 }
-@media screen and (max-width: 768px) {
-  .tuto h1 {
-    font-size: 3rem;
-  }
-  .tuto__wrapper {
-    grid-template-columns:  1fr;
-  }
+.mode  i{
+    padding: 1rem 0 0 1em;
+    cursor: pointer;
+    color: var(--ttc);
+    font-size: 2rem;
+    transition: all .5s ease;
+}
+.load_content{
+    display: none;
+}
+.row {
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+}
+.tutoriels h1 {
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: var(--wbk);
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    position: relative;
+    text-align: center;
+}
+.tutoriels h1::after {
+    content: '';
+    position: absolute;
+    background: #ff8177;
+    bottom: 0;  left: 50%;
+    width: 20%; height: 3px;
+    transition:  width .5s ease;
+    transform: translateX(-50%);
+}
+.tuto_pink,.tuto_blue,
+.tuto_yellow, .tuto_green,
+.tuto_red, .tuto_orange{
+    box-shadow: 1px 5px 15px var(--ttc);
+    width: 15rem;
+    height: auto;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    flex: auto;
+}
+.tuto_blue {
+    background: var(--tb);
+}
+.tuto_orange {
+    background: var(--to);
+}
+.tuto_red {
+    background:var(--tr);
+}
+.tuto_green {
+    background: var(--tg);
+}
+.tuto_yellow {
+    background:var(--ty);
+}
+.tuto_pink {
+    background:var(--tp);
+}
+.tuto_blue img, .tuto_orange img,
+.tuto_red img, .tuto_green img,
+.tuto_yellow img, .tuto_pink img {
+    max-width: 100%;
+    height: auto !important;
+    text-align: center;
+}
+.tuto_inner {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.tuto_inner button {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    padding: 10px 2.5rem;
+    margin: 1rem 0 0 0;
+    background: none;
+    cursor: pointer;
+    transition: background ease-in 0.25s;
+}
+.tuto_inner button:hover {
+    background: var(--bdc);
+    color: #2B2D42;
+}
+.tuto_inner button:before {
+    font-family: FontAwesome, sans-serif;
+    content: "";
+    position: absolute;
+    font-size: 1.5em;
+    margin: 0 -1.5em;
+}
+.tuto_inner button:hover:before {
+    color: #f8a;
+}
+.tuto_inner button a {
+    color: var(--ttc);
+    font-weight: 600;
 }
