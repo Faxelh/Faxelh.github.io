@@ -1,5 +1,5 @@
 let calendar = document.querySelector('.calendar')
-const month_names = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+const month_names = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'June', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Decembre']
 isLeapYear = (year) => {
 	return (year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 && year % 400 ===0)
 }
@@ -24,9 +24,9 @@ generateCalendar = (month, year) => {
 			day.classList.add('calendar-day-hover')
 			day.innerHTML = i - first_day.getDay() + 1
 			day.innerHTML += `<span></span>
-                           <span></span> 
-                           <span></span> 
-                           <span></span>`
+                            <span></span>
+                            <span></span>
+                            <span></span>`
 			if (i - first_day.getDay() + 1 === currDate.getDate() && year === currDate.getFullYear() && month === currDate.getMonth()) {
 				day.classList.add('curr-date')
 			}
@@ -61,7 +61,7 @@ document.querySelector('#next-year').onclick = () => {
 	++curr_year.value
 	generateCalendar(curr_month.value, curr_year.value)
 }
-let dark_mode_toggle = document.querySelector('.dark-mode-switch')
+let dark_mode_toggle = document.querySelector('.sombre_mode')
 dark_mode_toggle.onclick = () => {
 	document.querySelector('body').classList.toggle('clair')
 	document.querySelector('body').classList.toggle('sombre')

@@ -8,11 +8,18 @@
 	<link rel="stylesheet" href="calendrier.css">
 </head>
 <body class="clair">
+<div class="content" id="backs">
+	<div class="content-list">
+		<div class="dot-1"></div>
+		<div class="dot-2"></div>
+		<div class="dot-3"></div>
+	</div>
+</div>
 <!-- Calendar Section -->
 <section>
 	<div class="calendar">
 		<div class="calendar-header">
-			<span class="month-picker" id="month-picker">Janvier</span>
+			<span class="month-picker" id="month-picker">Avril</span>
 			<div class="year-picker">
 				<span class="year-change" id="prev-year"><pre><</pre></span>
 				<span id="year">2021</span>
@@ -21,28 +28,27 @@
 		</div>
 		<div class="calendar-body">
 			<div class="calendar-week-day">
+				<div>Dim</div>
 				<div>Lun</div>
 				<div>Mar</div>
 				<div>Mer</div>
 				<div>Jeu</div>
 				<div>Ven</div>
 				<div>Sam</div>
-				<div>Dim</div>
 			</div>
 			<div class="calendar-days"></div>
 		</div>
 		<div class="calendar-footer">
 			<div class="toggle">
 				<span>Mode Sombre</span>
-				<div class="dark-mode-switch">
-					<div class="dark-mode-switch-ident"></div>
-				</div>
+				<div class="sombre_mode"><div class="identifiant"></div></div>
 			</div>
 		</div>
 		<div class="month-list"></div>
 	</div>
 </section>
-<script src="../inter_anim.js"></script>
+
 <script src="calendrier.js"></script>
+<script src="../$/inter_anim.js"></script>
 </body>
 </html>
