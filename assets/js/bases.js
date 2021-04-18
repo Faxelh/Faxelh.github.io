@@ -49,4 +49,3 @@ audroit.addEventListener('click', function(){
     behavior:"smooth"
   });
 });
-
