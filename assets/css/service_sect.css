@@ -60,6 +60,7 @@
     font-size: 1.8rem;
     color: var(--stxt);
     font-weight: 300;
+    font-family: 'Ubuntu', cursive;
 }
 .container .card .box .content h4{
     color: var(--stxt);
@@ -75,6 +76,7 @@
 }
 .container .card .box .content ul li{
     color: var(--stxt);
+    font-family: 'Ubuntu', cursive;
     margin: 5px 0;
 }
 .container .card .box .content ul li .bx-check{

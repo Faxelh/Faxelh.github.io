@@ -26,15 +26,15 @@
     background: linear-gradient(to right, #f80, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -mo-text-fill-color: transparent;
 }
 .folio__desc{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     background: -webkit-linear-gradient(to right, #838086, #c90a56); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4e4e50, #ff2256); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     -moz-text-fill-color: transparent;
     -webkit-text-fill-color: var(--ports-txt);
+    font-family: 'Ubuntu', cursive;
 }
 .folio .mn__btn{
     background: var(--ports-btn);
@@ -71,7 +71,7 @@
         font-size: 10rem ;
     }
     .folio__desc{
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 2rem;
     }
     .folio .mn__btn{

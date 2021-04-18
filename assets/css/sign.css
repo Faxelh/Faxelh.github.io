@@ -1,6 +1,6 @@
 .main{
     background-color: var(--signs);
-    padding: 10rem 0;
+    padding: 8rem 0;
 }
 .mn__container{
     display: grid;
@@ -11,7 +11,7 @@
     height: 90%;
     z-index: 1;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     padding: 0 50px;
 }
 .mn__content{
@@ -25,8 +25,9 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     -webkit-text-stroke-color: var(--txt);
-    text-transform: capitalize;
+    text-transform: uppercase;
     margin-bottom: 32px;
+    font-family: 'Ubuntu', cursive;
 }
 .mn__content h2{
     font-size: 5rem;
@@ -36,12 +37,12 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--txt);
-
 }
 .mn__content p{
     margin-top: 1rem;
     font-size: 2rem;
     color:var(--txt);
+    font-family: 'Montserrat', cursive;
 }
 .mn__btn{
     font-size: 1.8rem;
@@ -53,7 +54,6 @@
     cursor: pointer;
     position: relative;
     transition: all .4s;
-    animation:  animateBottom 2s ease;
 }
 .mn__btn::after{
     position: absolute;
@@ -71,7 +71,6 @@
     color: #fff;
     font-weight: 900;
 }
-
 .mn__btn:hover:after {
     width: 100%;
     border-radius: 10px;
@@ -99,7 +98,6 @@
     background: #ff512f;
     background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
     background-image: var(--card);
-    animation: animateRight  .7s ease;
 }
 /* Mobile Responsive */
 

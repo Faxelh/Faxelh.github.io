@@ -1,3 +1,4 @@
+
 .galeries{
     background: var(--gal);
     height: 100vh;
@@ -46,14 +47,12 @@
 }
 .diapo_galerie .diaporama .larow,
 .diapo_galerie .diaporama .rarow{
-    width: 30px;
     background: var(--hd-s);
     position: absolute;
-    left: 0;
+    left: 0;      top: 50%;
     z-index: 1;
     transition: background .5s;
-    height: 70px;
-    top: 50%;
+    height: 70px;    width: 30px;
     transform: translateY(-50%);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;

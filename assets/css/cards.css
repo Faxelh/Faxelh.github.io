@@ -33,6 +33,7 @@ h1{
 h3{
     font-weight: normal;
     text-align: justify;
+    font-family: 'Ubuntu', cursive;
 }
 .flap {
     width: 100%;

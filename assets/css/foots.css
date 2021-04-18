@@ -1,3 +1,4 @@
+
 footer{
     background: var(--footer);
     padding: 30px 0;
@@ -36,6 +37,7 @@ footer{
     margin-bottom: 10px;
 }
 .foot_col ul li a{
+    font-family: 'Ubuntu', cursive;
     font-size: 16px;
     text-transform: capitalize;
     color: #fff;
@@ -45,6 +47,7 @@ footer{
     position: relative;
 }
 .foot_col ul li a:hover{
+    font-family: 'Sacramento',cursive;
     color: #fff;
     padding-left: 15px;
 }
@@ -109,7 +112,7 @@ footer{
     background: linear-gradient(to right, #f80227, #fff400, #ed00f3)
 }
 .droit{
-    border-top:  2px solid var(--txt);
+    border-top: var(--bdt);
     width: 100%;
     background: var(--copy);
     padding: 8px 10px;
@@ -122,10 +125,11 @@ footer{
 .droit p:nth-child(1) a{
     font-weight: bold;
     color: #176653;
-    text-decoration: none;
+    font-family: 'Ubuntu', cursive;
 }
 .droit p:nth-child(1) a:hover{
-    color: #00ffcc;
+    color: #0ff;
+    font-family: 'Sacramento', cursive;
 }
 .droit p:nth-child(2) b:nth-child(1){
     color: #ec3a05;
@@ -133,10 +137,12 @@ footer{
 .droit p:nth-child(2) b:nth-child(2){
     color: #a1fc00;
 }
-.droit p:nth-child(2) b:nth-child(3){
+.droit p:nth-child(2) b:nth-child(4){
     color: rgba(226, 14, 198, 0.86);
+    font-family: 'lora', cursive;
 }
 @media (min-width:768px ){
+
     footer{
         padding: 50px 0;
     }
@@ -153,7 +159,10 @@ footer{
         padding: 0 15px;
     }
     .droit{
-        font-size: 21px;
+        font-size: 20px;
+    }
+    .droit p:nth-child(2) b:nth-child(4){
+        font-size: 1rem;
     }
 }
 @media (min-width:992px ){
@@ -161,13 +170,11 @@ footer{
         font-size: 24px;
     }
 }
-@media (min-width:1000px ){
-    .droit{
-        font-size: 26px;
-    }
-}
 @media (min-width:1200px ){
     .droit{
-        font-size: 35px;
+        font-size: 30px;
+    }
+    .droit p:nth-child(2) b:nth-child(4){
+        font-size: 1.5rem;
     }
 }

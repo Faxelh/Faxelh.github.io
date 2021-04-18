@@ -16,7 +16,6 @@
 @font-face {
   font-family: "Caveat";
   src: url("../../fonts/Caveat.woff2");
-  font-weight: Bold;
 }
 @font-face {
   font-family: "Montserrat";
@@ -26,6 +25,10 @@
   font-family: "Sacramento";
   src: url("../../fonts/sacramento.ttf");
 }
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../../fonts/Ubuntu.ttf");
+}
 /*--------------------------------------------------------------*/
 * {
   margin: 0;
@@ -34,7 +37,7 @@
   text-decoration: none;
   list-style-type: none;
   outline: none;
-  font-family: 'Caveat', cursive;
+  font-family: 'Sacramento', cursive;
   transition: all .6s ease ;
 }
 body {
@@ -62,6 +65,7 @@ nav.sticky{
 .logo{
   font-size: 2rem;
   background: var(--lg);
+  font-family: 'Ubuntu';
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
@@ -101,14 +105,16 @@ nav.sticky{
   padding: 10px;
   display: block;
   font-weight: 600;
+  font-family: 'Ubuntu', cursive;
 }
 #nvbars .nav_list .nav_cont .nav_link::after {
+  font-family: 'Montserrat', cursive;
   content: attr(data-text);
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%) scale(0);
   color:var(--aft);
-  font-size: 6rem;
+  font-size: 5.5rem;
   letter-spacing: 8rem;
   z-index: -1;
   transition: .3s ease letter-spacing;
@@ -132,8 +138,7 @@ nav.sticky{
 }
 /* Hamburger  */
 #nvbars .hburger {
-  height: 50px;
-  width: 50px;
+  height: 50px;  width: 50px;
   border: 3px solid #fff;
   border-radius: 50%;
   position: relative;
@@ -192,7 +197,6 @@ nav.sticky{
 #nvbars .hburger.active .bar::after {
   top: 0;
 }
-
 /* Case de recherche */
 .search_box {
   display: flex;
@@ -249,7 +253,7 @@ nav.sticky{
     padding: 5px 15px;
   }
 }
-@media  screen and (min-width: 1000px) {
+@media  screen and (min-width: 992px) {
   .logo{
     font-size: 3rem;
   }
@@ -271,14 +275,16 @@ nav.sticky{
     display: inline-block;
   }
   #nvbars .nav_list .nav_cont .nav_link {
+    font-family: 'Sacramento', cursive;
     letter-spacing: 0;
     padding: 5px;
     text-transform: capitalize;
   }
   #nvbars .nav_list .nav_cont .nav_link:after {
+    font-family: 'Ubuntu', cursive;
     content: attr(data-text);
-    left: 55%;
-    font-size: 4rem;
+    left: 61%;
+    font-size: 3.2rem;
     letter-spacing: 5rem;
   }
   .search_box input {

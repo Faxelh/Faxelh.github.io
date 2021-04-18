@@ -1,5 +1,6 @@
 
 :root {
+    --bg: #fff;
     --aft: rgba(225, 225, 225, .8);
     --pre:#0ff;
     --change:#fff;
@@ -14,6 +15,7 @@
     --shlink:#0f9;
     --indicator:  linear-gradient(to right, #000, #0f9, #202d5f);
     --bds: 1px dotted #0ff;
+    --bdt: 1px dotted var(--txt);
     --bsw: none;
 
     --hero:linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
@@ -47,6 +49,7 @@
 
 }
 body.sombre{
+    --bg: #000;
     --aft: rgba(255, 255, 255, 0.2);
     --pre:#d50;
     --change:#0a4;
@@ -61,6 +64,7 @@ body.sombre{
     --sigm:#202d5f;
     --indicator:  linear-gradient(to right, #0f9, #f50, #ddd);
     --bds: 1px solid #fff;
+    --bdt: 1px solid var(--txt);
     --bsw:   0 5px 20px #0ff,
                    0 5px 40px #0ff,
                    0 5px 60px #0ff,

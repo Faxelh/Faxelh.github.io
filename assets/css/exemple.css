@@ -10,6 +10,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #0ff;
+    font-family: 'Ubuntu', cursive;
 }
 .exemple_contact .form {
     max-width: 300px;
@@ -17,6 +18,7 @@
 }
 .exemple_contact .form input,
 .exemple_contact .form select {
+    font-family: 'Ubuntu', cursive;
     width: 100%;
     margin: 5px 0;
     padding: 10px;
