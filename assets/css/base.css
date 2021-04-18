@@ -44,6 +44,7 @@ body {
   color: var(  --change);
   font-size: 20px;
   cursor: pointer;
+  box-shadow: var(--bsw);
   transition: all .6s ease ;
 }
 /* Nav section */
@@ -80,12 +81,9 @@ nav.sticky{
 #nvbars .nav_list .nav_cont {
   position: absolute;
   background: var(--hd);
-  width: 100vw;
-  height: 100vh;
-  left: 100%;
-  top: 60px;
-  z-index: 1;
-  display: flex;
+  width: 100vw; height: 100vh;
+  left: 100%; top: 60px;
+  z-index: 1; display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -264,7 +262,8 @@ nav.sticky{
   #nvbars .nav_list .nav_cont {
     position: initial;
     display: block;
-    height: auto;     width: fit-content;
+    height: auto;
+    width: fit-content;
     margin: 0 50px;
     background: transparent;
   }
@@ -274,10 +273,11 @@ nav.sticky{
   #nvbars .nav_list .nav_cont .nav_link {
     letter-spacing: 0;
     padding: 5px;
+    text-transform: capitalize;
   }
   #nvbars .nav_list .nav_cont .nav_link:after {
     content: attr(data-text);
-    left: 75%;
+    left: 55%;
     font-size: 4rem;
     letter-spacing: 5rem;
   }
