@@ -10,7 +10,7 @@
     --hd: #d97;
     --hdi: rgba(17, 16, 16, 0.2);
     --hd-s: coral;
-    --gal: #ddd;
+    --gal: rgba(127, 123, 123, 0.8);
     --sigm:#ddd;
     --shlink:#0f9;
     --indicator:  linear-gradient(to right, #000, #0f9, #202d5f);
