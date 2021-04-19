@@ -1,0 +1,8 @@
+.indique {
+    top: 60px; left:0;
+    background: var(--indicator);
+    height: 6px;
+    z-index: 1000;
+    transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: fixed;
+}

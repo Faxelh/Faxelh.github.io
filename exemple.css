@@ -1,0 +1,89 @@
+
+.exemple_contact {
+    padding: 20px 10px;
+    background: var(--exemple);
+}
+.exemple_contact h2{
+    font-size: 3rem ;
+    text-align: center;
+    margin-bottom: 30px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0ff;
+    font-family: 'Ubuntu', cursive;
+}
+
+.exemple_contact .form {
+    max-width: 300px;
+    margin: auto;
+}
+.exemple_contact .form input,
+.exemple_contact .form select {
+    font-family: 'Ubuntu', cursive;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px dotted  #0ff;
+}
+.exemple_contact .form select {
+    margin-bottom: 20px;
+}
+.exemple_contact .form .dates input {
+    color: #f0f;
+    font-weight: 600;
+}
+.exemple_contact .btn_valid{
+    background-color: #e5153f;
+    padding: 0 25px;
+    margin-left: 100px;
+    border-radius: 50px;
+    border: 1px solid var(--txt);
+    font-weight: 600;   cursor: pointer;
+    font-size: 1.2rem;  color: var(--txt);
+    transition: background-color .4s ease-in-out;
+    font-family: 'Ubuntu', cursive;
+}
+.exemple_contact .btn_valid:hover {
+    background-color: transparent;
+    box-shadow: 0 5px 20px  #e5153f,
+    0 5px 40px  #e5153f,
+    0 5px 60px  #e5153f,
+    0 5px 80px  #e5153f,
+    0 5px 100px  #e5153f;
+}
+@media (min-width: 768px) {
+    .exemple_contact .form {
+        max-width: 700px;
+    }
+    .exemple_contact .form .names,
+    .exemple_contact .form .dates ,
+    .exemple_contact .form .mailer,
+    .exemple_contact .form .select{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .exemple_contact .form .names input,
+    .exemple_contact .form .dates input,
+    .exemple_contact .form .mailer input ,
+    .exemple_contact .form .select select{
+        width: 300px;
+    }
+    .exemple_contact .btn_valid{
+        margin-left: 300px;
+    }
+}
+@media (min-width: 1024px) {
+    .exemple_contact {
+        padding: 50px 10px;
+    }
+    .exemple_contact h2{
+        font-size: 5rem ;
+    }
+}
+@media (min-width: 1300px) {
+    .exemple_contact .btn_valid{
+        margin-left: 300px;
+    }
+}

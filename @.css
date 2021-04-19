@@ -1,0 +1,31 @@
+.map{
+  background: var(--hd);
+}
+#gmap_canvas{
+  border: none;
+  scroll: no;
+  margin: 0;
+}
+/*Lateral Gauche */
+.laterale {
+  width: 40px;
+  height: 100%;
+  background-color: var(--hdi);
+  display: flex;
+  position: fixed;
+  right: 0;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  z-index: 99;
+}
+.gauche {
+  font-weight: 600;
+  color: var(--txt);
+  font-size: 2rem;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.gauche:hover {
+  color: var(--sbtn);
+}

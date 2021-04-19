@@ -1,0 +1,28 @@
+.bktp {
+    position: fixed;
+    right: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border: none;
+    overflow: hidden;
+    transition: .5s ease;
+    animation: bktp 2.5s infinite;
+    
+}
+@keyframes bktp {
+    0%{box-shadow: 0 0 0 0 rgb(220, 206, 210);}
+    60%{box-shadow: 0 0 0 1rem rgb(251, 0, 84);}
+    100%{box-shadow: 0 0 0 0 rgb(243, 236, 239);}
+}
+.bktp.show {
+    bottom: 40px;
+    opacity:1;
+    right: 40px;
+    cursor: pointer;
+}
+img{
+    width: 2rem;
+}
