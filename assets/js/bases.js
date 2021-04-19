@@ -49,3 +49,19 @@ audroit.addEventListener('click', function(){
     behavior:"smooth"
   });
 });
+
+/*Js de la case de RECHERCHE */
+const opens = document.querySelector(".opened");
+const closed = document.querySelector(".closed");
+const forms = document.querySelector("form");
+closed.onclick = ()=>{
+  opens.classList.remove("hiden");
+  closed.classList.remove("view");
+  forms.classList.remove("showed");
+  closed.style.color = "#f00";
+}
+opens.onclick = ()=>{
+  forms.classList.add("showed");
+  opens.classList.add("hiden");
+  closed.classList.add("view");
+}
