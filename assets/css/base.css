@@ -8,6 +8,7 @@
 @import "../css/service_sect.css";@import "../css/loader.css";
 @import "../css/theme.css";@import "../css/@.css";
 @import "../css/curseur.css";@import "../css/galerie.css";
+@import "../css/search.css";@import "../css/search_g.css";
 /*--------------------------------------------------------------*/
 @font-face {
   font-family: "lora";
@@ -216,62 +217,7 @@ nav.sticky{
 #nvbars .hburger.active .bar::after {
   top: 0;
 }
-/* Case de recherche */
-.search_box {
-  display: flex;
-  margin: auto 0;
-  height: 30px;
-}
-.search_box input {
-  background: var(--txt);
-  color:var(--cb);
-  padding: 5px 5px 5px 10px;
-  font-size: 13px;
-  width: 100px;  height: 100%;
-  border-radius: 30px;
-  border: var(--bds);
-}
-.search_box .search-btn {
-  font-size: 18px;
-  background: var(--search);
-  color: var(--txt);
-  padding: 5px 10px;
-  height: 100%;
-  position: relative;
-  cursor: pointer;
-  border: var(--bds);
-  font-weight: 600;
-  border-radius: 30px;
-}
-
 /* Media Query For Desktop */
-@media  screen and (min-width: 400px){
-  .search_box input {
-    padding: 10px 10px 10px 10px;
-    font-size: 15px;
-    width: 130px;
-  }
-  .search_box .search-btn {
-    padding: 5px 11px;
-  }
-}
-@media  screen and (min-width: 600px){
-  .search_box input {
-    padding: 10px 10px 10px 20px;
-    width: 180px;
-  }
-  .search_box .search-btn {
-    padding: 5px 11px;
-  }
-}
-@media  screen and (min-width: 768px){
-  .search_box input {
-    width: 200px;
-  }
-  .search_box .search-btn {
-    padding: 5px 15px;
-  }
-}
 @media  screen and (min-width: 992px) {
   .logo{
     font-size: 3rem;
@@ -310,19 +256,5 @@ nav.sticky{
     font-family: 'Ubuntu';
     right: 48%;
     bottom: -500%;
-  }
-  .search_box input {
-    width: 100px;
-  }
-  .search_box .search-btn {
-    padding: 5px 10px;
-  }
-}
-@media  screen and (min-width: 1200px){
-  .search_box input {
-    width: 220px;
-  }
-  .search_box .search-btn {
-    padding: 5px 15px;
   }
 }
