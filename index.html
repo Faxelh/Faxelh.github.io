@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Faxel Horizon </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="assets/@/bn/tz.ico">
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+</head>
+<body>
+<!-- Indicateur Section -->
+<div class="indique"></div>
+<!-- Curseur Section -->
+<div class="cursor"></div>
+<!-- Galerie Section -->
+<div class="loader transi ">
+  <div class="loader_wrap">
+    <ul class="loader_list">
+      <li class="loader_item">F</li>
+      <li class="loader_item">A</li>
+      <li class="loader_item">X</li>
+      <li class="loader_item">E</li>
+      <li class="loader_item">L</li>
+    </ul>
+    <p class="light">Chargement...</p>
+  </div>
+</div>
+<!-- Navigation barre Section -->
+<nav id="nvbars">
+  <div class="navis">
+    <div class="nav_bar">
+      <div class="logo"> Horizon</div>
+      <div class="opened"><b>Search</b></div>
+      <div class="closed"><b>Fermer</b></i></div>
+      <form action="#">
+        <input type="search" class="searchs" placeholder="Search" required>
+        <button type="submit" class="validate bx bx-search"></button>
+      </form>
+      <li><i class='bx bx-moon changement' id="theme"></i></li>
+      <div class="nav_list">
+        <div class="hburger"><div class="bar"></div></div>
+        <ul class="nav_cont">
+          <li class="nav_item"><a class="nav_link actives" href="#home" data-text="Home" data-hor="Home">Home</a></li>
+          <li class="nav_item"><a class="nav_link" href="#service" data-text="Services" data-hor="Services">Services</a></li>
+          <li class="nav_item"><a class="nav_link" href="#tutoriel" data-text="Tutoriels"  data-hor="Tutoriels">Tutoriels</a></li>
+          <li class="nav_item"><a class="nav_link" href="#" data-text="Hacking" data-hor="Hacking">Hacking</a></li>
+          <li class="nav_item"><a class="nav_link" href="#portfolio" data-text="Portfolio" data-hor="Portfolio">Portfolio</a></li>
+          <li class="nav_item"><a class="nav_link" href="#" data-text="Programmation" data-hor="Programmation">Programmation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="audroit" ><a href="#mon_droit"><i class="bx bx-chevron-down"></i></a></div>
+  </div>
+</nav>
+<!-- Barre Latterale Gauche Section -->
+<div class="laterale" >
+  <a href="#"><i class="gauche  bx bx-home"></i></a>
+  <a href="#"><i class="gauche  bx bx-user"></i></a>
+  <a href="#"><i class="gauche  bx bx-bookmark"></i></a>
+  <a href="#"><i class="gauche  bx bx-hourglass"></i></a>
+  <a href="#"><i class="gauche  bx bx-search opened"></i></a>
+</div >
+
+<!-- Galerie Section -->
+<section class="galeries">
+  <div class="diapo_galerie">
+    <h2 class="recente" data-recent="Aperçue des postes récentes">Aperçue des postes récentes </h2>
+    <div class="diaporama">
+      <div id="play" onclick="PlayPause();"></div>
+      <div onclick="plusS(-1);" class="sp-btn larow"><span class="arow arowl"></span></div>
+      <div onclick="plusS(1);" class="sp-btn rarow"><span class="arow arowr"></span></div>
+      <div class="debut_diaporama"><p class="legende slideTextFromTop"></p></div>
+      <div class="diaporama_content">
+        <img src="assets/@/bn/i1.jpg" alt="1366X768"><p class="legende">Texte de la légende N°1</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/bn/i2.jpg" alt="1366X768"><p class="legende">Texte de la légende N°2</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/bn/i3.jpg" alt="1366X768"><p class="legende">Texte de la légende N°3</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/bn/i4.jpg" alt="1366X768"><p class="legende">Texte de la légende N°4</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/img/img-1.jpg" alt="1366X768"><p class="legende">Texte de la légende N°5</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/bn/sh.jpg" alt="1366X768"><p class="legende">Texte de la légende N°6</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/bn/wb.png" alt="1366X768"><p class="legende">Texte de la légende N°7</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/bn/bn.png" alt="1366X768"><p class="legende">Texte de la légende N°8</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/bn/ck.svg" alt="1366X768"><p class="legende">Texte de la légende N°9</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/img/banner.jpg" alt="1366X768"><p class="legende">Texte de la légende N°10</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/img/img-2.jpg" alt="1366X768"><p class="legende">Texte de la légende N°11</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/img/img-3.jpg" alt="1366X768"><p class="legende">Texte de la légende N°12</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/img/img-4.jpg" alt="1366X768"><p class="legende">Texte de la légende N°13</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/img/img-5.jpg" alt="1366X768"><p class="legende">Texte de la légende N°14</p>
+      </div>
+      <div class="diaporama_content">
+        <img src="assets/@/img/img-6.jpg" alt="1366X768"><p class="legende">Texte de la légende N°15</p>
+      </div>
+    </div>
+    <div id="diaporamas"></div>
+  </div>
+</section>
+<!-- Hero Section -->
+<section>
+  <div class="hero" id="home">
+    <div class="hero__cont">
+      <div>
+        <h2 class="fax" data-faxel="Faxel"></h2>
+      </div>
+      <h1 class="hero__hd">Citation <span>inspirante</span></h1>
+      <p class="hero__desc">“Impossible” est pour ceux qui ne veulent pas vraiment.<br> John Keats</p>
+      <button class="mn__btn"><a href="assets/p/about_us/about.html">About Us</a></button>
+    </div>
+  </div>
+</section>
+<!-- Sign-Us  Section -->
+<section>
+  <div class="main" id="sign-up">
+    <div class="mn__container">
+      <div class="mn__content">
+        <h1>Join Our Team</h1>
+        <h2>Sign Up Today</h2>
+        <p>See what makes us different</p>
+        <button class="mn__btn"><a href="assets/p/sign_us/signus.html">Sign Up</a></button>
+      </div>
+      <div class="mn__img--container">
+        <div class="mn__img--card" id="card-2">
+          <i class='bx bxs-group'></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Tutoriels Section -->
+<section>
+  <div class="tutos" id="tutoriel">
+    <h1>Our Tutoriels</h1>
+    <div class="tutos__wrap">
+      <div class="tutos__cards">
+        <h2>You need Tutoriel </h2>
+        <p>
+          Don't read success Stories, You will only get a message.
+          Read failure stories, you will get Ideas to get Success.
+        </p>
+        <div class="tutos__btns"><button><a href="Tutoriel/tuto.html">View here</a> </button></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- My Portfolio  Section -->
+<section id="portfolio">
+  <div class="folio" >
+    <div class="folio__cont">
+      <h1 class="folio__hd">Faxel <span>Horizon</span></h1>
+      <p class="folio__desc">
+        Essaye encore. Échoue de nouveau. Échoue mieux.
+        Rien ne vaut plus que ce jour. La vérité est dans la simplicité.
+        Le fou se questionne, le sage demande. Rêve sans peur.
+        Pas de pression, pas de diamants.
+      </p>
+      <button class="mn__btn"><a href="M/me.html">View My Portfolio</a></button>
+    </div>
+  </div>
+</section>
+<!-- My Card  Section -->
+<section class="perso">
+  <div class="perso_container">
+    <div class="perso_content">
+      <h1>Faxel</h1>
+      <h3>
+        I love designing websites and keep things as simple as possible.
+        My goals is to focus on minimalism and conveying the message that you want to send.
+        Don't read success Stories, You will ol-nly get a message. Read failure stories, you will get Ideas to get Success.
+      </h3>
+    </div>
+    <div class="flap"></div>
+  </div>
+</section>
+<!--   Section for our Services -->
+<section class="service_sect" id="service">
+  <div class="container">
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <div class="icon"> <i class="bx bxl-telegram" aria-hidden="true"></i></div>
+          <h3>Premium Services</h3>
+          <h4><sup>$</sup>5</h4>
+          <ul><li><i class="bx bx-check" aria-hidden="true"></i>Live Support</li></ul>
+          <a href="assets/p/Service/bases.html">View our Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Exemple form  section-->
+<section class="exemple_contact" id="contactme">
+  <h2>Contact Me</h2>
+  <form class="form">
+    <div class="names">
+     <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required/>
+      <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required/>
+    </div>
+    <div class="dates">
+      <p><input type="date" name="check-in-date" id="checkIn" required /></p>
+      <p><input type="text" name="message" id="msg" placeholder="XXX-XXX-XXXX-XX" required/></p>
+    </div>
+    <div class="mailer">
+     <input type="email" name="email" id="email" placeholder="Enter your email" required/>
+      <div class="select">
+        <label for="select"></label>
+        <select name="select" id="select">
+          <option value="Student">Student</option>
+          <option value="Manager" >Manager </option>
+          <option value="Scientific">Scientific </option>
+          <option value="Hacker" selected>Hacker</option>
+          <option value="Web Designer" >Web Designer</option>
+          <option value="Other" >Other</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="btn_valid">Send</button>
+  </form>
+</section>
+<!-- Map  section-->
+<div class = "map">
+  <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Abidjan,%20Ivory%20Coast&t=k&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
+</div>
+<!-- Footer Section-->
+<section id="condition">
+  <footer>
+    <div class="foot_container">
+      <div class="dispo">
+        <div class="foot_col">
+          <h4><span>A</span>cces Quick</h4>
+          <ul>
+            <li><a href="assets/p/Contact_Us/c__us.html">contact us</a></li>
+            <li><a href="#">condition</a></li>
+            <li><a href="assets/p/Service/bases.html">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="foot_col">
+          <h4><span>G</span>et help</h4>
+          <ul>
+            <li><a href="assets/p/FAQ/faq.html">FAQ</a></li>
+            <li><a href="assets/p/Help-center/help.html">Others Help</a></li>
+            <li><a href="assets/p/about_us/about.html">about us</a></li>
+          </ul>
+        </div>
+        <div class="foot_col">
+          <h4><span>O</span>nline shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="foot_col">
+          <h4><span>F</span>ollow us</h4>
+          <div class="s_lien">
+            <a href="https://www.facebook.com/threatz0"><i class="bx bxl-facebook "></i></a>
+            <a href="https://www.twitter.com/faxelhs"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/faxelh"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/faxelh"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://t.me/faxelh"><i class="bx bxl-telegram"></i></a>
+            <a href="https://www.snapchat.com/add/mctony64"><i class="bx bxl-snapchat"></i></a>
+            <a href="https://wa.me/22555709610"><i class="bx bxl-whatsapp"></i></a>
+            <a href=" https://stackoverflow.com/users/13364230/faxel?"><i class="bx bxl-stack-overflow"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Copyright Section -->
+  <div class="droit" id="mon_droit" data-aos="fade-up" data-aos-delay="650">
+    <p>Designed with <b>♥</b> by <a href="https://t.me/faxelh">Faxel</a></p>
+    <p><b>&copy;</b> <b>2019</b><script>new Date().getFullYear()>2019&&document.write("-" + new Date().getFullYear());</script> <b>Threat Z3R0</b>.All Rights Reserved.</p>
+  </div>
+</section>
+<!-- Get in touch section-->
+<section>
+  <div class="social-section">
+    <div id="social-panel">
+      <p>Designed with <b>♥</b> by<a target="_blank" href="https://faxel.netlify.app"> Faxel</a></p>
+      <button class="close_btn"><img src="assets/@/bn/x.png" alt=""></button>
+      <h4 class="hor2"></h4>
+      <ul>
+        <li><a href="https://www.patreon.com/faxelh" target="_blank"><i class='bx bxl-patreon' style='color:rgba(212,18,213,0.92)'></i></a></li>
+        <li><a href="https://twitter.com/faxelhs" target="_blank"><i class='bx bxl-twitter' style='color:rgba(18,187,213,0.92)'></i></a></li>
+        <li><a href="https://t.me/threatz3r0" target="_blank"><i class='bx bxl-telegram' style='color:rgba(23,189,189,0.91)'></i></a></li>
+        <li><a href="https://facebook.com/threatz0" target="_blank"><i class='bx bxl-facebook-circle' style='color:#1873b8'></i></a></li>
+        <li><a href="https://instagram.com/faxelh" target="_blank"><i class='bx bxl-instagram' style='color:rgba(211,12,79,0.84)'></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <button class="get_in "  id="get"><b class="hor3"></b></button>
+</section>
+
+<!-- Cookies consent Section -->
+<section>
+  <div class="pop">
+    <div class="xs">&times;</div>
+    <img src="assets/@/bn/ck.svg" alt="cookies">
+    <h2>Hi! This site uses cookies.</h2>
+    <p>
+      Cookies allow the website publisher to do useful things like find out whether the computer (and probably its user) has visited the site before.
+      We use cookies to ensure you can get the best experience on our site. If you keep using this site we assume that you agree to our use of cookies.
+      <a href="">Privacy Policy </a>
+    </p>
+    <div class="bouton">
+      <button class="btn">Sweet... cookies!</button>
+      <button class="btn ghost" id="accepter">
+        No. Thank! <span>Don't click me</span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- Back To Top button -->
+<button class="bktp"><img src="assets/@/bn/btp.png" alt=""></button>
+<!-- My Script JS -->
+<script src="assets/js/bktp.js"></script>
+<script src="assets/js/them.js"></script>
+<script src="assets/js/galerie.js"></script>
+<script src="assets/js/curseur.js"></script>
+<script src="assets/js/indique.js"></script>
+<script src="assets/js/get_in.js"></script>
+<script src="assets/js/typed.js"></script>
+<script src="assets/js/bases.js"></script>
+<script src="assets/js/cookies.js"></script>
+</body>
+</html>
