@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity:0;
+    opacity: 0;
     border: none;
     overflow: hidden;
     transition: .5s ease;

@@ -1,23 +1,36 @@
 /******** Gets in touch button **********/
 .get_in {
     background: linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
-    border: 2px solid #333;
-    box-shadow: 0 16px 22px -17px #fc8e45;
-    color: #fff;
-    cursor: none;
-    font-size: 14px;
-    line-height: 5px;
-    padding: 15px 25px;
+    border: 1px solid var(--txt);
+    animation: boxs 3s linear infinite;
+    color: var(--txt);
+    font-size: 15px;
+    padding: 5px 20px;
     position: fixed;
-    bottom: 35px;
+    bottom: 42px;
     left: 10px;
     z-index: 999;
+    overflow-y: hidden;
+    overflow-x: hidden;
     font-weight: 900;
     border-radius: 20px;
+    cursor: pointer;
 }
 .get_in:hover {
-    color: #000;
     background: linear-gradient(to right, #fc8e45, #e5dddd, #57ea17);
+}
+@keyframes boxs {
+    0%,   100%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0 5px 20px  #0ff,
+        0 5px 40px  #0ff,
+        0 5px 60px  #0ff,
+        0 5px 80px  #0ff,
+        0 5px 100px  #0ff;
+    }
+
 }
 /************** SOCIAL PANEL CSS ***************/
 .social-section {
@@ -34,8 +47,12 @@
 #social-panel {
     background: linear-gradient(to right, #fc8e45, #e5dddd, #57ea17);
     border-radius: 25px;
-    box-shadow: 0 16px 31px -17px rgb(97, 0, 65);
-    border: 5px solid #333;
+    box-shadow: 0 5px 20px  #0ff,
+    0 5px 40px  #0ff,
+    0 5px 60px  #0ff,
+    0 5px 80px  #0ff,
+    0 5px 100px  #0ff;
+    border: 5px solid var(--txt);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,13 +62,13 @@
     max-width: calc(100% - 10px);
 }
 #social-panel button.close_btn {
-    border: 3px solid #61002a;
+    border: 3px solid #720129;
     border-radius: 50%;
     cursor: pointer;
     font-size: 20px;
     position: absolute;
     top: 5px; right: 5px;
-    background: #333;
+    background: #720129;
     height: 25px;
 }
 #social-panel button.close_btn img{
@@ -63,17 +80,18 @@
     background-color: #720129;
     border-radius: 0 0 10px 10px;
     color: #fff;
-    font-size: 13px;
-    line-height: 18px;
-    padding: 2px 17px 6px;
+    font-size: 17px;
+    padding: 0 10px;
     position: absolute;
     top: 0; left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    width: 200px; height: 30px;
+    width: 200px; height: 25px;
 }
 #social-panel p a {
-    color: #FF7500;
+    color: #e50;
+    font-weight: 900;
+    font-family: 'Ubuntu', cursive;
 }
 #social-panel ul {
     display: flex;
@@ -82,14 +100,14 @@
     margin: 0 10px;
 }
 #social-panel ul li a {
-    border: 2px solid #000;
+    border: 1px solid var(--txt);
     border-radius: 50%;
-    background: #9a9696;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:35px; width:35px;
-    box-shadow: 0 9px 12px -9px #ee0849;
+    height: 35px; width: 35px;
+    box-shadow: inset  0 5px 20px  #ee0849,
+    0 5px 80px  #ee0849;
 }
 #social-panel ul li .bx{
     border-radius: 100%;
@@ -102,9 +120,10 @@
 }
 #social-panel .hor2 {
     padding: 30px;
+    font-family: 'Ubuntu', cursive;
     margin: 0;
     height: 10vh;
-    color: #d40d3f;
+    color: var(--cb);
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -150,7 +169,7 @@
 
 @media (min-width:1200px ){
     .social-section {
-     bottom: 90px;
+        bottom: 90px;
     }
     #social-panel {
         height: 200px;  width: 400px;
