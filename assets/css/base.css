@@ -114,10 +114,26 @@ nav.sticky{
   top: 50%; left: 50%;
   transform: translate(-50%, -50%) scale(0);
   color:var(--aft);
-  font-size: 5.5rem;
+  font-size: 5rem;
   letter-spacing: 8rem;
   z-index: -1;
   transition: .3s ease letter-spacing;
+}
+#nvbars .nav_list .nav_cont .nav_link::before {
+  content: attr(data-hor);
+  position: absolute;
+  right: 45%;
+  bottom: 55%;
+  width: 100%;
+  font-size: 1.2rem;
+  color: transparent;
+  opacity: 0;
+  -webkit-text-stroke: 1px var(--aft);
+  transition: .3s ease;
+  transition-property: opacity, transform;
+  z-index: -1;
+  text-align: center;
+  transform: rotate(90deg) scale(2.5);
 }
 #nvbars .nav_list .nav_cont .nav_link.sticky::after {
   color:var(--aft);
@@ -125,6 +141,9 @@ nav.sticky{
 #nvbars .nav_list .nav_cont .nav_item:hover .nav_link::after {
   transform: translate(-50%, -50%) scale(.5);
   letter-spacing: initial;
+}
+#nvbars .nav_list .nav_cont .nav_item:hover .nav_link::before {
+  opacity: 1;
 }
 #nvbars .nav_list .nav_cont .nav_link.actives,
 #nvbars .nav_list .nav_cont .nav_link.actives:hover{
@@ -283,9 +302,14 @@ nav.sticky{
   #nvbars .nav_list .nav_cont .nav_link:after {
     font-family: 'Ubuntu', cursive;
     content: attr(data-text);
-    left: 61%;
-    font-size: 3.2rem;
+    left: 61.5%;
+    font-size: 3.1rem;
     letter-spacing: 5rem;
+  }
+  #nvbars .nav_list .nav_cont .nav_link::before {
+    font-family: 'Ubuntu';
+    right: 48%;
+    bottom: -500%;
   }
   .search_box input {
     width: 100px;
