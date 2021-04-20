@@ -1,32 +1,30 @@
-@import "theme.css";
+
 .nav_bar form{
     position: absolute;
-    right: 10%;
-    opacity: 0;
-    top: 200px;
-    display: flex;
-    height: 40px;
+    right: 10%;     top: 1000%;
+    opacity: 0; height: 40px;
     padding: 2px;
+    display: flex;
     background: var(--sear);
     pointer-events: none;
     border-radius: 10px;
     min-width: 18%!important;
-    border: 1px solid rgba(155,155,155,0.2);
-    transition:  top .5s ease,  opacity .2s ease;
+    border: var(--bds);
+    transition:  top .5s ease,  opacity 0s ease;
 }
 .nav_bar  form .searchs{
     width: 100%;
     height: 100%;
     padding: 0 5px;
-    color: #fff;
+    color: var(--bg);
     font-size: 15px;
     background: none;
     border-radius: 10px;
     font-family: 'Ubuntu', cursive;
-    border: 2px solid rgba(9, 9, 9, 0.2);
+    border: none;
 }
 .nav_bar  form .searchs::placeholder{
-    color: #fff;
+    color: var(--bg);
     font-family: 'Sacramento', cursive;
 }
 .nav_bar  form .validate{
@@ -42,9 +40,8 @@
     background: #0f0;
 }
 .nav_bar form.showed{
-    top: 80px;
+    top: 80px;  right: 3%;
     opacity: 1;
-    right: 3%;
     pointer-events: auto;
 }
 .nav_bar form:before{
@@ -169,14 +166,28 @@ Galaxy II, Galaxy S III, Microsoft Lumia 950, Nexus 5,
         width: 70%!important;
     }
 }
+@media (min-width:992px ){
+    .nav_bar form.showed{
+        right: 14%;
+        width: 60%!important;
+    }
+    .nav_bar form:before{
+        left: 0;
+    }
+}
 /*Responsive  iPad Pro */
 @media screen  and (min-width: 1024px){
     .nav_bar form.showed{
         right: 16%;
-        width: 65%!important;
+        width: 58%!important;
     }
     .nav_bar form:before{
-        left: 12%;
+        left: 0;
+    }
+}
+@media screen  and (min-width: 1100px){
+    .nav_bar form.showed{
+        width: 57%!important;
     }
 }
 /* Responsive Laptop with MDPI screen, Laptop with touch */
@@ -184,9 +195,6 @@ Galaxy II, Galaxy S III, Microsoft Lumia 950, Nexus 5,
     .nav_bar form.showed{
         width: 50%!important;
         right: 22%;
-    }
-    .nav_bar form:before{
-        left: 0;
     }
 }
 /* Responsive Laptop with HiDPI screen */

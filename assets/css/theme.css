@@ -10,6 +10,7 @@
     --hd: #d97;
     --hdi: rgba(17, 16, 16, 0.2);
     --hd-s: coral;
+    --sear: #202d5f;
     --gal: rgba(127, 123, 123, 0.8);
     --sigm:#ddd;
     --shlink:#0f9;
@@ -60,6 +61,7 @@ body.sombre{
    --gal: #2a2b2f;
     --hdi: rgba(255, 255, 255, .3);
     --hd-s: #202d5f;
+    --sear: coral;
     --shlink:#0f9;
     --sigm:#202d5f;
     --indicator:  linear-gradient(to right, #0f9, #f50, #ddd);
@@ -69,7 +71,7 @@ body.sombre{
                    0 5px 40px #0ff,
                    0 5px 60px #0ff,
                    0 5px 80px #0ff,
-                 inset  0 5px 100px #0ff;
+                   0 5px 100px #0ff;
     --hero:#2a2b2f;
     --signs:#2a2b2f;
     --tutos:#2a2b2f;
