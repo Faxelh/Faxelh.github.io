@@ -1,3 +1,4 @@
+@import "theme.css";
 .nav_bar form{
     position: absolute;
     right: 10%;
@@ -19,10 +20,10 @@
     padding: 0 5px;
     color: #fff;
     font-size: 15px;
-    border: none;
     background: none;
     border-radius: 10px;
     font-family: 'Ubuntu', cursive;
+    border: 2px solid rgba(9, 9, 9, 0.2);
 }
 .nav_bar  form .searchs::placeholder{
     color: #fff;
@@ -43,7 +44,7 @@
 .nav_bar form.showed{
     top: 80px;
     opacity: 1;
-    right: 4%;
+    right: 3%;
     pointer-events: auto;
 }
 .nav_bar form:before{
@@ -86,77 +87,117 @@
     text-align: center;
     cursor: pointer;
 }
+
+/* Responsive Moto G4, Galaxy S5, Blackberry Z30, Galaxy Note 3,
+Galaxy II, Galaxy S III, Microsoft Lumia 950, Nexus 5,
+*/
+@media screen  and (min-width: 360px){
+    .nav_bar form.showed{
+        right: 8%;
+    }
+    .nav_bar form:before{
+        right: 50%;
+    }
+}
+/* Responsive iphone 6/7/8, iPhone X  */
+@media screen  and (min-width: 375px){
+    .nav_bar form.showed{
+        right: 10%;
+    }
+}
+/* Responsive  LG Optimus L70 Nexus 4*/
+@media screen  and (min-width: 384px){
+    .nav_bar form.showed{
+        right: 10%;
+    }
+    .nav_bar form:before{
+        right: 52%;
+    }
+}
+/* Responsive iphone 6/7/8 plus , Pixel 2, Pixel 2 XL, Nexus 5X, Nexus 6,
+  Nexus 6P,
+  */
 @media screen  and (min-width: 400px){
     .nav_bar form.showed{
         right: 15%;
     }
     .nav_bar form:before{
-       right: 50%;
+        right: 50%;
     }
 }
-@media screen  and (min-width: 500px){
+/*Responsive  Nokia N9 */
+@media screen  and (min-width: 480px){
     .nav_bar form.showed{
-        right: 20%;
+        right:10%;
+        width: 80%!important;
     }
+    .nav_bar form:before{
+        right: 55%;
+    }
+}
+/* Surface Duo */
+@media screen  and (min-width: 540px){
     .nav_bar form:before{
         right: 58%;
     }
+    .nav_bar form.showed{
+        right: 20%;
+        width: 60%!important;
+    }
 }
+/* Responsive Blackberry  playbook, Microsoft Lumia 550, Nexus 7*/
 @media screen  and (min-width: 600px){
     .nav_bar form.showed{
-        right: 25%;
-    }
-    .nav_bar form:before{
-        right: 62%;
+        width: 80%!important;
+        right: 10%;
     }
 }
-@media screen  and (min-width: 700px){
+/* responsive for iPad, iPad mini,  */
+@media screen  and (min-width: 768px){
     .nav_bar form.showed{
-        right: 30%;
+        right: 28%;
+        width: 50%!important;
     }
     .nav_bar form:before{
-        right: 65%;
+        right: 61%;
     }
 }
+/* Kindle Fire HDX  */
 @media screen  and (min-width: 800px){
     .nav_bar form.showed{
-        right: 35%;
+        right: 16%;
+        width: 70%!important;
     }
 }
-@media screen  and (min-width: 900px){
+/*Responsive  iPad Pro */
+@media screen  and (min-width: 1024px){
     .nav_bar form.showed{
-        right: 40%;
+        right: 16%;
+        width: 65%!important;
     }
     .nav_bar form:before{
-        right: 60%;
+        left: 12%;
     }
 }
-@media screen  and (min-width: 1000px){
-    .nav_bar  form,
+/* Responsive Laptop with MDPI screen, Laptop with touch */
+@media screen  and (min-width: 1280px){
     .nav_bar form.showed{
-        top: initial;
-        right: 0;
-        opacity: 1;
-        position: relative;
-        width: 10%!important;
+        width: 50%!important;
+        right: 22%;
     }
-    .nav_bar form:after,
-    .nav_bar form:before,
-    .nav_bar .closed.view,
-    .nav_bar  .closed,
-    .nav_bar  .opened{
-        display: none;
+    .nav_bar form:before{
+        left: 0;
     }
 }
-@media screen  and (min-width: 1200px){
-    .nav_bar  form,
-    .nav_bar form.showed{
-        width: 25%!important;
-    }
-}
+/* Responsive for my Laptop */
 @media screen  and (min-width: 1300px){
-    .nav_bar  form,
     .nav_bar form.showed{
-        width: 30%!important;
+        width: 55%!important;
+    }
+}
+/* Responsive Laptop with HiDPI screen */
+@media screen  and (min-width: 1440px){
+    .nav_bar form.showed{
+        right: 21.6%;
     }
 }
