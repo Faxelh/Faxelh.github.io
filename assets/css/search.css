@@ -7,7 +7,7 @@
     display: flex;
     height: 40px;
     padding: 2px;
-    background: var(--hd-s);
+    background: var(--sear);
     pointer-events: none;
     border-radius: 10px;
     min-width: 18%!important;
@@ -33,7 +33,7 @@
     padding: 0 15px;
     color: #fff;
     font-size: 20px;
-    background: #d97;
+    background: var(--hd);
     border: var(--bds);
     border-radius: 10px;
     cursor: pointer;
@@ -54,14 +54,14 @@
     width: 0; height: 0;
     z-index: -1;
     border: 10px solid transparent;
-    border-bottom-color: var(--hd-s);
+    border-bottom-color: var(--sear);
     margin: -20px 0 0;
 }
 .nav_bar form:after{
     position: absolute;
     content: '';  height: 60px;
     padding: 2px;
-    background: var(--hd);
+    background: var(--sear);
     border-radius: 10px;
     min-width: calc(100% + 20px);
     z-index: -2;

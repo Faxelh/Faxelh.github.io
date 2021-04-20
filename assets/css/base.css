@@ -248,8 +248,8 @@ nav.sticky{
   #nvbars .nav_list .nav_cont .nav_link:after {
     font-family: 'Ubuntu', cursive;
     content: attr(data-text);
-    left: 61.5%;
-    font-size: 3.1rem;
+    left: 58%;
+    font-size: 4rem;
     letter-spacing: 5rem;
   }
   #nvbars .nav_list .nav_cont .nav_link::before {
