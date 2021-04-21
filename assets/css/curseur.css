@@ -1,7 +1,7 @@
 
 
 .cursor{
-  z-index: 99999999;
+  z-index: 9999999;
   position: fixed;
   background: #2696E8;
   width: 20px;

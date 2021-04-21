@@ -1,6 +1,6 @@
 
 footer{
-    background: var(--footer);
+    background: var(--corps);
     padding: 30px 0;
 }
 .dispo{
@@ -14,7 +14,7 @@ footer{
 }
 .foot_col h4{
     font-size: 25px;
-    color: #fff;
+    color: var(--txt);
     text-transform: capitalize;
     margin-bottom: 30px;
     font-weight: 600;
@@ -40,7 +40,7 @@ footer{
     font-family: 'Ubuntu', cursive;
     font-size: 16px;
     text-transform: capitalize;
-    color: #fff;
+    color: var(--txt);
     font-weight: 300;
     display: block;
     transition: all .5s ease;
@@ -48,7 +48,6 @@ footer{
 }
 .foot_col ul li a:hover{
     font-family: 'Sacramento',cursive;
-    color: #fff;
     padding-left: 15px;
 }
 .foot_col ul li a:hover::before{
@@ -113,13 +112,21 @@ footer{
 .droit{
     border-top: var(--bdt);
     width: 100%;
-    background: var(--copy);
+    background: var(--corps);
     padding: 8px 10px;
     text-align: center;
-    color: var(--copya);
+    color: var(--txt);
     justify-content: space-evenly;
     display: flex;
     font-size: 8px;
+}
+.droit p{
+    border-top: var(--bdt);
+    border-bottom: var(--bdt);
+    border-right: var(--bdt);
+    border-left: var(--bdt);
+    padding: 8px 10px;
+    font-family: 'Ubuntu', cursive;
 }
 .droit p:nth-child(1) a{
     font-weight: bold;
@@ -134,7 +141,7 @@ footer{
     color: #ec3a05;
 }
 .droit p:nth-child(2) b:nth-child(2){
-    color: #a1fc00;
+    color: #0f9;
 }
 .droit p:nth-child(2) b:nth-child(4){
     color: rgba(226, 14, 198, 0.86);

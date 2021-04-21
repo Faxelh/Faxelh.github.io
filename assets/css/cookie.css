@@ -1,6 +1,6 @@
 
 .pop{
-    background-color: #fff;
+    background-color: var(--bg);
     box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     padding: 10px 10px;

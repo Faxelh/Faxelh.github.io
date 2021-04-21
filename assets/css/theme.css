@@ -1,7 +1,8 @@
 
 :root {
+    --corps:#ddd;
     --bg: #fff;
-    --aft: rgba(225, 225, 225, .8);
+    --aft: rgba(198, 109, 94, 0.8);
     --pre:#0ff;
     --change:#fff;
     --cb: #fff;
@@ -9,28 +10,19 @@
     --txt:#000;
     --hd: #d97;
     --hdi: rgba(17, 16, 16, 0.2);
-    --hd-s: coral;
+    --hd-s: #fa7c4d;
     --sear: #202d5f;
-    --gal: rgba(127, 123, 123, 0.8);
     --sigm:#ddd;
-    --shlink:#0f9;
+
     --indicator:  linear-gradient(to right, #000, #0f9, #202d5f);
     --bds: 1px dotted #0ff;
     --bdt: 1px dotted var(--txt);
     --bsw: none;
 
-    --hero:linear-gradient(to right, #fc4560, #aa9a9a, #b4963a);
-    --signs:#afabab;
-    --tutos: linear-gradient(-225deg, #231557 , #44107a , #ff1361 , #fff800 100%);
-    --ports: linear-gradient(to right, #f90, #ddd, #0f1);--ports-txt:#000;
     --ports-btn:#ff1ead  linear-gradient(to right, #f51d48, #333, #21cda5);
     --ports-btn-after:#ff1ead  linear-gradient(to right, #f59b1d, #333, #2fe50f);
 
-    --cards: linear-gradient(to right, #0a0a0a, #9a0b0b, #ecd508);
-    --serv: #ddd; --servcard:#2a2b2f; --stxt:#fff;
-    --exemple: linear-gradient(to right, #ff0844 0%, #0ff 100%);
-    --footer: linear-gradient(to right, #612c35, #6f5b5b, #18c9a6);
-    --copy: linear-gradient(to right, #f54804, #faf5f5, #0a4) ;  --copya:#000;
+    --servcard:#2a2b2f; --stxt:#fff;
 
     --lg: #ff8177  linear-gradient(to top, #fff 0%, #0f0 100%);
     --lg-s: #ef0e55 linear-gradient(to top, #ff8 0%, #0f9 100%);
@@ -50,46 +42,42 @@
 
 }
 body.sombre{
+    --corps:#2a2b2f;
+
     --bg: #000;
-    --aft: rgba(255, 255, 255, 0.2);
+    --aft: rgba(0, 0, 0, .75);
     --pre:#d50;
     --change:#0a4;
     --cb: #f00;
     --sbtn:#f90;
     --txt:#fff;
     --hd: #2a2b2f;
-   --gal: #2a2b2f;
+
     --hdi: rgba(255, 255, 255, .3);
     --hd-s: #202d5f;
-    --sear: coral;
-    --shlink:#0f9;
+    --sear: #f87b4e;
+
     --sigm:#202d5f;
     --indicator:  linear-gradient(to right, #0f9, #f50, #ddd);
     --bds: 1px solid #fff;
     --bdt: 1px solid var(--txt);
-    --bsw:   0 5px 20px #0ff,
-                   0 5px 40px #0ff,
-                   0 5px 60px #0ff,
-                   0 5px 80px #0ff,
-                   0 5px 100px #0ff;
-    --hero:#2a2b2f;
-    --signs:#2a2b2f;
-    --tutos:#2a2b2f;
-    --ports:#2a2b2f;--ports-txt:#fff;
+    --bsw:   0 5px 20px #0f0,
+    0 5px 40px #0f0,
+    0 5px 60px #0f0,
+    0 5px 80px #0f0,
+    0 5px 100px #0f0;
+
+    --ports-txt:#fff;
     --ports-btn: #ff1ead linear-gradient(to right, #f51d48, #ddd, #21cda5);
     --ports-btn-after:#ff1ead  linear-gradient(to right, #e51, #ddd, #2fe50f);
 
-    --cards: #2a2b2f;
-    --serv: #2a2b2f; --servcard:#ddd; --stxt:#000;
-    --exemple: #2a2b2f;
-    --footer: #2a2b2f;;
-    --copy:#2a2b2f ; --copya:#fff;
+    --servcard:#ddd; --stxt:#000;
 
     --lg: #ff8177  linear-gradient(to top, #0ff 0%, #fff 100%);
     --lg-s: #ef0e55 linear-gradient(to top, #ff8 0%, #0f9 100%);
     --active:linear-gradient( to right, #0ff, #f0f, #f00);
     --search: linear-gradient(to right, #000, #f00, #ecd508);
-    --sign: #833ab4 linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+
     --signw: #833ab4  -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     --divh4: #f97  linear-gradient(to right, #ddd, #ff8,#0ff);
 

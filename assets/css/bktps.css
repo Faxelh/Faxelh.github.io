@@ -9,6 +9,7 @@
     border: none;
     overflow: hidden;
     transition: .5s ease;
+    z-index: 100;
     animation: bktp 2.5s infinite;
     
 }

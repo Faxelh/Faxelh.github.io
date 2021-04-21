@@ -1,6 +1,6 @@
 /* Tutoriels  section*/
 .tutos {
-    background: var(--tutos);
+    background: var(--corps);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@
     -webkit-background-clip: text;
     -moz-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-fill-color: #fff;
+    -webkit-text-fill-color: var(--txt);
     margin-bottom: 5rem;
     font-size: 3rem;
     border-radius: 5px;
@@ -22,7 +22,7 @@
 .tutos h1::after {
     content: '';
     position: absolute;
-    background: #8bff77;
+    background: #0f9;
     bottom: 0;  left: 50%;
     width: 0;
     height: 4px;
@@ -45,7 +45,7 @@
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde, #fc00ff);
+    background-image: linear-gradient(to right, #0ff, #fc00ff);
     transition:  .3s ease-in;
 }
 .tutos__cards:hover {
@@ -72,7 +72,8 @@
     text-transform: capitalize;
     border-radius: 10px;
     background: #000;
-    font-size: 2rem;     border: none;
+    font-size: 2rem;
+    border: none;
     cursor: pointer;
 }
 .tutos__cards button a{
@@ -119,7 +120,6 @@
         font-size: 3rem;
     }
 }
-
 @media screen and (min-width: 1000px) {
     .tutos h1 {
         font-size: 7rem;

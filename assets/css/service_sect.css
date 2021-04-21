@@ -1,5 +1,5 @@
 .service_sect{
-    background: var(--serv);
+    background: var(--corps);
 }
 .container{
     display: flex;

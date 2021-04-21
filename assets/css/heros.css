@@ -1,6 +1,6 @@
-/* Heros Section */
+/* Citation Section */
 .hero {
-    background: var(--hero);
+    background: var(--corps);
     padding: 4rem 0;
 }
 .fax{
@@ -19,7 +19,6 @@
     text-align: center;
     transform: rotate(90deg) scale(2);
 }
-
 .hero__cont {
     display: flex;
     flex-direction: column;
@@ -33,7 +32,7 @@
     margin-bottom: 2rem;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: var(--txt);
 }
 .hero__hd span {
     background: #ee0979; /* fallback for old browsers */
@@ -65,9 +64,6 @@
     position: relative;
     transition: all .4s;
 }
-.mn__btn:hover {
-    color: #fff;
-}
 .mn__btn::after{
     position: absolute;
     content: '';
@@ -81,9 +77,6 @@
     position: relative;
     color: #333;
     font-weight: 900;
-}
-.mn__btn a:hover{
-    color: #fff;
 }
 .mn__btn:hover:after {
     width: 100%;

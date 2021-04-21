@@ -1,5 +1,5 @@
 .perso{
-    background: var(--cards);
+    background: var(--corps);
     height: 90vh;
     place-items: center;
 }
@@ -11,8 +11,8 @@
     overflow: hidden;
     border-radius: 20px;
     cursor: none;
-    box-shadow: 0 0 20px 20px #ddd;
-    background: linear-gradient(to right, #f54804, #faf5f5, #31ec08);
+    box-shadow: 0 0 20px 20px;
+    background: var(--corps);
 }
 .perso_content {
     position: absolute;
@@ -26,13 +26,14 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-color: var(--txt);
     text-align: center;
     font-size: 4rem;
 }
 h3{
     font-weight: normal;
     text-align: justify;
+    color: var(--txt);
     font-family: 'Ubuntu', cursive;
 }
 .flap {

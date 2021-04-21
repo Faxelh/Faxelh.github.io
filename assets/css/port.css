@@ -1,6 +1,6 @@
 /*Port Folio Section */
 .folio {
-    background: var(--ports);
+    background: var(--corps);
     padding: 2rem  0;
 }
 .folio__cont {

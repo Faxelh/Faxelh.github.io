@@ -1,7 +1,7 @@
 
 .exemple_contact {
     padding: 20px 10px;
-    background: var(--exemple);
+    background: var(--corps);
 }
 .exemple_contact h2{
     font-size: 3rem ;
@@ -9,10 +9,9 @@
     margin-bottom: 30px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #0ff;
+    -webkit-text-stroke-color: #d97;
     font-family: 'Ubuntu', cursive;
 }
-
 .exemple_contact .form {
     max-width: 300px;
     margin: auto;
@@ -24,7 +23,7 @@
     margin: 5px 0;
     padding: 10px;
     border-radius: 15px;
-    border: 1px dotted  #0ff;
+    border: 1px dotted  #d97;
 }
 .exemple_contact .form select {
     margin-bottom: 20px;

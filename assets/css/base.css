@@ -8,7 +8,7 @@
 @import "../css/service_sect.css";@import "../css/loader.css";
 @import "../css/theme.css";@import "../css/@.css";
 @import "../css/curseur.css";@import "../css/galerie.css";
-@import "../css/search.css";@import "../css/search_g.css";
+@import "../css/search.css";@import "../css/nav_left.css";
 /*--------------------------------------------------------------*/
 @font-face {
   font-family: "lora";
@@ -42,22 +42,25 @@
   transition: all .6s ease ;
 }
 body {
-  background: var(--bg);
+  background: var(--corps);
 }
 .changement{
   color: var(  --change);
   font-size: 20px;
   cursor: pointer;
-  box-shadow: var(--bsw);
   transition: all .6s ease ;
 }
-/* Nav section */
+.changement:hover{
+box-shadow: var(--bsw);
+}
+/* Navigation menu section */
 nav {
   position: fixed;
   z-index: 9999;
-  width: 100vw;
+  width: 100%;
   height: auto;
   background: var(--hd);
+  box-shadow: 0 0 10px var(--txt);
 }
 nav.sticky{
   background: var(--hd-s);
@@ -69,7 +72,6 @@ nav.sticky{
   font-family: 'Ubuntu';
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 #nvbars .nav_bar {
   display: flex;
@@ -86,13 +88,13 @@ nav.sticky{
 #nvbars .nav_list .nav_cont {
   position: absolute;
   background: var(--hd);
-  width: 100vw; height: 100vh;
+  width: 100%; height: 105vh;
   left: 100%; top: 60px;
   z-index: 1; display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
   transition: .5s ease left;
 }
 #nvbars .nav_list .nav_cont.active {
@@ -168,7 +170,7 @@ nav.sticky{
   z-index: 100;
   cursor: pointer;
   transform: scale(.75);
-  margin-right: 15px;
+  margin-right: 33px;
 }
 #nvbars .hburger:after {
   position: absolute;
@@ -217,7 +219,7 @@ nav.sticky{
 #nvbars .hburger.active .bar::after {
   top: 0;
 }
-/* Media Query For Desktop */
+/* Media Query  */
 @media  screen and (min-width: 992px) {
   .logo{
     font-size: 3rem;
@@ -256,5 +258,10 @@ nav.sticky{
     font-family: 'Ubuntu';
     right: 48%;
     bottom: -500%;
+  }
+}
+@media  screen and (min-width: 768px){
+  #nvbars .hburger {
+    margin-right: 100px;
   }
 }

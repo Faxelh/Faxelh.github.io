@@ -1,0 +1,142 @@
+
+header {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    height: 100vh;
+    padding: 1rem 1rem 0;
+    background-color: var(--aft);
+    box-shadow: 0 0 50px ;
+    z-index: 98;
+    transition: .4s;
+    opacity: 0;
+}
+.nav_left__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.nav_left__container::-webkit-scrollbar {
+    display: none;
+}
+.nav_left__logo{
+    margin-bottom: 1rem;
+}
+.nav_left__logo,
+.nav_left_logo__name{
+    font-weight: 600;
+    font-size: 1.4rem;
+    background: var(--lg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Ubuntu',cursive;
+}
+.nav_left__list,
+.nav_left__items {
+    display: grid;
+    row-gap: 1.2rem;
+}
+.nav_left__subtitle {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--txt);
+    font-weight: 600;
+    border-radius: 10px;
+    background: var(--lg);
+}
+.nav_left__link {
+    display: flex;
+    align-items: center;
+    color: var(--txt);
+}
+.nav_left__link:hover {
+    color: var(--cb);
+}
+.nav_left__icon{
+    font-size: 1.1rem;
+    margin-right: .5rem;
+}
+.nav_left__name,
+.nav_left__log{
+    font-size: 12px;
+    font-family: 'Ubuntu',cursive;
+    white-space: nowrap;
+    color: #fff;
+}
+.nav_left__logout{
+    margin-top: 1rem;
+}
+.nav_left__log{
+    font-size: 20px;
+}
+.nav_left__dropdown {
+    overflow: hidden;
+    max-height: 20px;
+    transition: all .4s ease-in-out;
+}
+.nav_left__dropdown_collapse {
+    background-color: var(--txt);
+    border-radius: .5rem;
+    width: 26vw;
+    margin-top: 1rem;
+}
+.nav_left__dropdown_content {
+    display: grid;
+    row-gap: 2px;
+    padding: .5rem 1rem .5rem 1rem;
+}
+.nav_left__dropdown_item {
+    font-size: 15px;
+    color: var(--bg);
+}
+.nav_left__dropdown_item:hover {
+    color: var(--cb);
+}
+.nav_left__dropdown_icon {
+    margin-left: auto;
+    transition: .4s;
+    color: #845c7f;
+}
+.nav_left__dropdown:hover {
+    max-height: 10rem;
+}
+.nav_left__dropdown:hover .nav_left__dropdown_icon {
+    transform: rotate(180deg);
+    color: #0ff;
+}
+.activation {
+    color: #0ff
+}
+.right_show{
+    right: 0;
+    opacity: 1;
+    transition: all .5s ease;
+}
+.right_show  .nav_left__icon {
+    font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+    .nav_left__icon{
+        margin-left: -.1rem;
+    }
+    .nav_left__dropdown_collapse {
+        width: 10vw;
+    }
+    .right_show{
+        right: 7%;
+    }
+}
+@media screen and (min-width: 800px) {
+    .right_show{
+        right: 5%;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .right_show{
+        right: 0;
+    }
+}

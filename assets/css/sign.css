@@ -1,5 +1,5 @@
 .main{
-    background-color: var(--signs);
+    background: var(--corps);
     padding: 8rem 0;
 }
 .mn__container{
@@ -100,7 +100,6 @@
     background-image: var(--card);
 }
 /* Mobile Responsive */
-
 @media screen and (max-width: 1100px) {
     .mn__container {
         display: grid;

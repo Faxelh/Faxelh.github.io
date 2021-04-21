@@ -1,7 +1,8 @@
 
 .nav_bar form{
     position: absolute;
-    right: 10%;     top: 1000%;
+    right: 20%;
+    top: 900%;
     opacity: 0; height: 40px;
     padding: 2px;
     display: flex;
@@ -10,7 +11,7 @@
     border-radius: 10px;
     min-width: 18%!important;
     border: var(--bds);
-    transition:  top .5s ease,  opacity 0s ease;
+    transition:  top .5s ease,  opacity 1s ease;
 }
 .nav_bar  form .searchs{
     width: 100%;
@@ -151,6 +152,9 @@ Galaxy II, Galaxy S III, Microsoft Lumia 950, Nexus 5,
 }
 /* responsive for iPad, iPad mini,  */
 @media screen  and (min-width: 768px){
+    .nav_bar form{
+        right: 50%;
+    }
     .nav_bar form.showed{
         right: 28%;
         width: 50%!important;
