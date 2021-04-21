@@ -15,7 +15,7 @@
 <!-- Curseur Section -->
 <div class="cursor"></div>
 <!-- Galerie Section -->
-<div class="loader transi ">
+<!--<div class="loader transi ">
   <div class="loader_wrap">
     <ul class="loader_list">
       <li class="loader_item">F</li>
@@ -26,19 +26,22 @@
     </ul>
     <p class="light">Chargement...</p>
   </div>
-</div>
+</div>-->
 <!-- Navigation barre Section -->
 <nav id="nvbars">
   <div class="navis">
     <div class="nav_bar">
       <div class="logo"> Horizon</div>
       <div class="opened"><b>Search</b></div>
-      <div class="closed"><b>Fermer</b></i></div>
+      <div class="closed"><b>Close</b></div>
       <form action="#">
         <input type="search" class="searchs" placeholder="Search" required>
         <button type="submit" class="validate bx bx-search"></button>
       </form>
-      <li><i class='bx bx-moon changement' id="theme"></i></li>
+      <li>
+        <i class='bx bx-moon changement' id="theme"></i>
+        <i class='bx bx-grid-alt changement' id="menu_left"></i>
+      </li>
       <div class="nav_list">
         <div class="hburger"><div class="bar"></div></div>
         <ul class="nav_cont">
@@ -55,14 +58,79 @@
   </div>
 </nav>
 <!-- Barre Latterale Gauche Section -->
-<div class="laterale" >
-  <a href="#"><i class="gauche  bx bx-home"></i></a>
-  <a href="#"><i class="gauche  bx bx-user"></i></a>
-  <a href="#"><i class="gauche  bx bx-bookmark"></i></a>
-  <a href="#"><i class="gauche  bx bx-hourglass"></i></a>
-  <a href="#"><i class="gauche  bx bx-search opened"></i></a>
-</div >
+  <header class="nav_left__container" id="navbar_left">
+    <div>
+      <a href="#" class="nav_left__link nav_left__logo">
+        <i class='bx bx-disc nav_left__icon' ></i>
+        <span class="nav_left_logo__name">Horizon</span>
+      </a>
 
+      <div class="nav_left__list">
+        <div class="nav_left__items">
+          <h3 class="nav_left__subtitle">Profile</h3>
+
+          <a href="#" class="nav_left__link activation">
+            <i class='bx bx-home nav_left__icon' ></i>
+            <span class="nav_left__name">Accueil</span>
+          </a>
+
+          <div class="nav_left__dropdown">
+            <a href="#" class="nav_left__link">
+              <i class='bx bx-user nav_left__icon' ></i>
+              <span class="nav_left__name">Profile</span>
+              <i class='bx bx-chevron-down nav_left__icon nav_left__dropdown_icon'></i>
+            </a>
+
+            <div class="nav_left__dropdown_collapse">
+              <div class="nav_left__dropdown_content">
+                <a href="#" class="nav_left__dropdown_item">Mot de passe</a>
+                <a href="#" class="nav_left__dropdown_item">E-mail</a>
+                <a href="#" class="nav_left__dropdown_item">Compte</a>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="#" class="nav_left__link">
+            <i class='bx bx-message-rounded nav_left__icon' ></i>
+            <span class="nav_left__name">Messages</span>
+          </a>
+        </div>
+
+        <div class="nav_left__items">
+          <h3 class="nav_left__subtitle">Menu</h3>
+          <div class="nav_left__dropdown">
+            <a href="#" class="nav_left__link">
+              <i class='bx bx-bell nav_left__icon' ></i>
+              <span class="nav_left__name">Notifications</span>
+              <i class='bx bx-chevron-down nav_left__icon nav_left__dropdown_icon'></i>
+            </a>
+
+            <div class="nav_left__dropdown_collapse">
+              <div class="nav_left__dropdown_content">
+                <a href="#" class="nav_left__dropdown_item">Bloquer</a>
+                <a href="#" class="nav_left__dropdown_item">Silence</a>
+                <a href="#" class="nav_left__dropdown_item">Programmation</a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="nav_left__link">
+            <i class='bx bx-compass nav_left__icon' ></i>
+            <span class="nav_left__name">Explorer</span>
+          </a>
+          <a href="#" class="nav_left__link">
+            <i class='bx bx-download nav_left__icon' ></i>
+            <span class="nav_left__name">Téléchargement</span>
+          </a>
+        </div>
+
+        <a href="#" class="nav_left__link nav_left__logout">
+          <i class='bx bx-log-out nav_left__icon' ></i>
+          <span class="nav_left__log">Se deconnecter</span>
+          </a>
+      </div>
+    </div>
+ </header>
 <!-- Galerie Section -->
 <section class="galeries">
   <div class="diapo_galerie">
@@ -125,9 +193,7 @@
 <section>
   <div class="hero" id="home">
     <div class="hero__cont">
-      <div>
-        <h2 class="fax" data-faxel="Faxel"></h2>
-      </div>
+      <div><h2 class="fax" data-faxel="Faxel"></h2></div>
       <h1 class="hero__hd">Citation <span>inspirante</span></h1>
       <p class="hero__desc">“Impossible” est pour ceux qui ne veulent pas vraiment.<br> John Keats</p>
       <button class="mn__btn"><a href="assets/p/about_us/about.html">About Us</a></button>
@@ -145,9 +211,7 @@
         <button class="mn__btn"><a href="assets/p/sign_us/signus.html">Sign Up</a></button>
       </div>
       <div class="mn__img--container">
-        <div class="mn__img--card" id="card-2">
-          <i class='bx bxs-group'></i>
-        </div>
+        <div class="mn__img--card" id="card-2"><i class='bx bxs-group'></i></div>
       </div>
     </div>
   </div>
@@ -349,5 +413,6 @@
 <script src="assets/js/typed.js"></script>
 <script src="assets/js/bases.js"></script>
 <script src="assets/js/cookies.js"></script>
+<script src="assets/js/nav_left.js"></script>
 </body>
 </html>
