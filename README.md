@@ -1,5 +1,5 @@
 
-[![Demo](https://img.shields.io/badge/Demo-%40Faxel-orangered?logo=world)](https://faxel.netlify.app)   
+[![Demo](https://img.shields.io/badge/Demo-%40faxel-orangered?logo=world)](https://faxel.netlify.app)   
 
 ### `Mobile Preview in Dark Mode`
 <p align="center"> 
