@@ -1,5 +1,5 @@
 
-.nav_bar form{
+ .nav_bar form{
     position: absolute;
     right: 20%;
     top: 900%;
@@ -11,9 +11,9 @@
     border-radius: 10px;
     min-width: 18%!important;
     border: var(--bds);
-    transition:  top .5s ease,  opacity 1s ease;
+    transition:  top .5s ease,  opacity .1s ease;
 }
-.nav_bar  form .searchs{
+ .nav_bar  form .searchs{
     width: 100%;
     height: 100%;
     padding: 0 5px;
@@ -24,11 +24,11 @@
     font-family: 'Ubuntu', cursive;
     border: none;
 }
-.nav_bar  form .searchs::placeholder{
+ .nav_bar  form .searchs::placeholder{
     color: var(--bg);
     font-family: 'Sacramento', cursive;
 }
-.nav_bar  form .validate{
+ .nav_bar  form .validate{
     padding: 0 15px;
     color: #fff;
     font-size: 20px;
@@ -41,14 +41,14 @@
     background: #0f0;
 }
 .nav_bar form.showed{
-    top: 80px;  right: 3%;
+    top: 72px;  right: 3%;
     opacity: 1;
     pointer-events: auto;
 }
 .nav_bar form:before{
     position: absolute;
     content: "";
-    top: -13px; right: 47%;
+    top: -13px; right: 48.5%;
     width: 0; height: 0;
     z-index: -1;
     border: 10px solid transparent;
@@ -85,7 +85,6 @@
     text-align: center;
     cursor: pointer;
 }
-
 /* Responsive Moto G4, Galaxy S5, Blackberry Z30, Galaxy Note 3,
 Galaxy II, Galaxy S III, Microsoft Lumia 950, Nexus 5,
 */
@@ -94,7 +93,7 @@ Galaxy II, Galaxy S III, Microsoft Lumia 950, Nexus 5,
         right: 8%;
     }
     .nav_bar form:before{
-        right: 50%;
+        right: 51%;
     }
 }
 /* Responsive iphone 6/7/8, iPhone X  */
@@ -102,19 +101,17 @@ Galaxy II, Galaxy S III, Microsoft Lumia 950, Nexus 5,
     .nav_bar form.showed{
         right: 10%;
     }
-}
-/* Responsive  LG Optimus L70 Nexus 4*/
-@media screen  and (min-width: 384px){
-    .nav_bar form.showed{
-        right: 10%;
-    }
     .nav_bar form:before{
         right: 52%;
     }
 }
-/* Responsive iphone 6/7/8 plus , Pixel 2, Pixel 2 XL, Nexus 5X, Nexus 6,
-  Nexus 6P,
-  */
+/* Responsive  LG Optimus L70, Nexus 4*/
+@media screen  and (min-width: 384px){
+    .nav_bar form:before{
+        right: 53.5%;
+    }
+}
+/* Responsive iphone 6/7/8 plus */
 @media screen  and (min-width: 400px){
     .nav_bar form.showed{
         right: 15%;
@@ -123,74 +120,83 @@ Galaxy II, Galaxy S III, Microsoft Lumia 950, Nexus 5,
         right: 50%;
     }
 }
+ /*Responsive Pixel 2 ,  Pixel 2 XL ,Nexus 5X, Nexus 6,  Nexus 6P*/
+ @media screen  and (min-width: 411px){
+     .nav_bar form:before{
+         right: 52%;
+     }
+ }
+ @media screen  and (min-width: 425px){
+     .nav_bar form:before{
+         right: 55%;
+     }
+ }
 /*Responsive  Nokia N9 */
 @media screen  and (min-width: 480px){
     .nav_bar form.showed{
-        right:10%;
+        right: 10%;
         width: 80%!important;
     }
-    .nav_bar form:before{
-        right: 55%;
-    }
 }
-/* Surface Duo */
+/*responsive  Surface Duo */
 @media screen  and (min-width: 540px){
     .nav_bar form:before{
         right: 58%;
     }
     .nav_bar form.showed{
-        right: 20%;
-        width: 60%!important;
+        right: 15%;
+        width: 70%!important;
     }
 }
-/* Responsive Blackberry  playbook, Microsoft Lumia 550, Nexus 7*/
+/* Responsive Blackberry  playbook,  Nexus 7*/
 @media screen  and (min-width: 600px){
     .nav_bar form.showed{
         width: 80%!important;
         right: 10%;
     }
 }
-/* responsive for iPad, iPad mini,  */
+ /* Responsive  Microsoft Lumia 550*/
+ @media screen  and (min-width: 640px){
+     .nav_bar form:before{
+         right: 60%;
+     }
+ }
+/* responsive for iPad, iPad mini*/
 @media screen  and (min-width: 768px){
-    .nav_bar form{
-        right: 50%;
-    }
     .nav_bar form.showed{
-        right: 28%;
-        width: 50%!important;
-    }
-    .nav_bar form:before{
-        right: 61%;
-    }
-}
-/* Kindle Fire HDX  */
-@media screen  and (min-width: 800px){
-    .nav_bar form.showed{
-        right: 16%;
+        right: 15%;
         width: 70%!important;
     }
+    .nav_bar form:before{
+        right: 0;
+        left: 33%;
+    }
 }
+ /* responsive Kindle Fire HDX , Nexus 10 */
+ @media screen  and (min-width: 800px){
+     .nav_bar form:before{
+         right: 64%;
+     }
+ }
 @media (min-width:992px ){
     .nav_bar form.showed{
-        right: 14%;
+        right: 15%;
         width: 60%!important;
     }
     .nav_bar form:before{
         left: 0;
     }
 }
-/*Responsive  iPad Pro */
-@media screen  and (min-width: 1024px){
-    .nav_bar form.showed{
-        right: 16%;
-        width: 58%!important;
-    }
-    .nav_bar form:before{
-        left: 0;
-    }
-}
+ /*Responsive  iPad Pro */
+ @media (min-width:1024px ){
+     .nav_bar form.showed{
+         right: 18.5%;
+         width: 60%!important;
+     }
+ }
 @media screen  and (min-width: 1100px){
     .nav_bar form.showed{
+        right: 17%;
         width: 57%!important;
     }
 }
@@ -198,12 +204,48 @@ Galaxy II, Galaxy S III, Microsoft Lumia 950, Nexus 5,
 @media screen  and (min-width: 1280px){
     .nav_bar form.showed{
         width: 50%!important;
-        right: 22%;
+        right: 26%;
     }
 }
 /* Responsive Laptop with HiDPI screen */
 @media screen  and (min-width: 1440px){
     .nav_bar form.showed{
-        right: 21.6%;
+        right: 25%;
     }
 }
+ /* Responsive 4K */
+ @media screen  and (min-width: 2560px){
+     .nav_bar form.showed{
+         right: 21.5%;
+     }
+ }
+ /* Responsive Galaxy  Fold */
+ @media  only screen  and (max-width: 280px){
+     .nav_bar form.showed{
+         right: 14%;
+         width: 80%!important;
+     }
+     .nav_bar form:before{
+         right: 41%;
+     }
+ }
+ /* Responsive Nokia Lumia 520 */
+ @media  only screen  and (max-width: 320px){
+     .nav_bar form.showed{
+         right: 5%;
+         width: 90%!important;
+     }
+     .nav_bar form:before{
+         right: 48%;
+     }
+ }
+ /* Responsive JioPhone 2 */
+ @media  only screen  and (max-width: 240px){
+     .nav_bar form.showed{
+         right: 12%;
+         width: 80%!important;
+     }
+     .nav_bar form:before{
+         right: 43%;
+     }
+ }

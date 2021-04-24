@@ -6,13 +6,14 @@
     --pre:#0ff;
     --change:#fff;
     --cb: #fff;
-    --sbtn:#f59;
+    --sbtn:#c77;
     --txt:#000;
     --hd: #d97;
     --hdi: rgba(17, 16, 16, 0.2);
     --hd-s: #fa7c4d;
     --sear: #202d5f;
     --sigm:#ddd;
+    --scrollbar:#265;
 
     --indicator:  linear-gradient(to right, #000, #0f9, #202d5f);
     --bds: 1px dotted #0ff;
@@ -45,7 +46,7 @@ body.sombre{
     --corps:#2a2b2f;
 
     --bg: #000;
-    --aft: rgba(0, 0, 0, .75);
+    --aft: rgba(227, 221, 221, 0.75);
     --pre:#d50;
     --change:#0a4;
     --cb: #f00;
@@ -55,8 +56,8 @@ body.sombre{
 
     --hdi: rgba(255, 255, 255, .3);
     --hd-s: #202d5f;
-    --sear: #f87b4e;
-
+    --sear: #c75;
+    --scrollbar:#c75;
     --sigm:#202d5f;
     --indicator:  linear-gradient(to right, #0f9, #f50, #ddd);
     --bds: 1px solid #fff;
