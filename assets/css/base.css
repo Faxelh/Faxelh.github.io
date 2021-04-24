@@ -9,7 +9,7 @@
 @import "../css/theme.css";@import "../css/@.css";
 @import "../css/curseur.css";@import "../css/galerie.css";
 @import "../css/search.css";@import "../css/nav_left.css";
-
+@import "../css/autre_theme/autres-theme.css";
 /*--------------------------------------------------------------*/
 @font-face {
   font-family: "lora";
