@@ -31,7 +31,7 @@
 <nav id="nvbars">
   <div class="navis">
     <div class="nav_bar">
-      <div class="logo"> Horizon</div>
+      <div class="logo"><a href="#">Horizon</a></div>
       <div class="opened"><b>Search</b></div>
       <div class="closed"><b>Close</b></div>
       <form action="#">
@@ -124,13 +124,46 @@
           </a>
         </div>
 
-        <a href="#" class="nav_left__link nav_left__logout">
-          <i class='bx bx-log-out nav_left__icon' ></i>
-          <span class="nav_left__log">Se deconnecter</span>
-          </a>
+        <h3 class="nav_left__subtitle"> Autre Theme</h3>
+        <div id="theme_wrapper">
+          <div data-mode="clair" id="mode_clair" class="themes"></div>
+          <div data-mode="bleue" id="mode_bleue" class="themes"></div>
+          <div data-mode="vert" id="mode_vert" class="themes"></div>
+          <div data-mode="violet" id="mode_violet" class="themes"></div>
+        </div>
       </div>
     </div>
  </header>
+
+<!-- Section d'embrassement -->
+
+<section>
+  <div class="embrasser_section">
+    <div class="embrasser">
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+    </div>
+
+    <div class="embrasser">
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+    </div>
+
+    <div class="embrasser">
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+    </div>
+
+    <div class="embrasser">
+      <span style="--i:1;"></span>
+      <span style="--i:2;"></span>
+      <span style="--i:3;"></span>
+    </div>
+  </div>
+</section>
 <!-- Galerie Section -->
 <section class="galeries">
   <div class="diapo_galerie">
@@ -358,7 +391,7 @@
     </div>
   </footer>
   <!-- Copyright Section -->
-  <div class="droit" id="mon_droit" data-aos="fade-up" data-aos-delay="650">
+  <div class="droit" id="mon_droit"  target="_blank">
     <p>Designed with <b>♥</b> by <a href="https://t.me/faxelh">Faxel</a></p>
     <p><b>&copy;</b> <b>2019</b><script>new Date().getFullYear()>2019&&document.write("-" + new Date().getFullYear());</script> <b>Threat Z3R0</b>.All Rights Reserved.</p>
   </div>
@@ -414,5 +447,6 @@
 <script src="assets/js/bases.js"></script>
 <script src="assets/js/cookies.js"></script>
 <script src="assets/js/nav_left.js"></script>
+<script src="assets/js/autre_theme.js"></script>
 </body>
 </html>
