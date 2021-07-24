@@ -263,10 +263,10 @@ let temps = 59;
 
 Telechargement.addEventListener("click", () => {
     Telechargement.style.display = "none";
-    compteArebours.innerHTML = "Le téléchargement débute dans <span>" + temps + "</span> seconde.";
+    compteArebours.innerHTML = "Le téléchargement débute dans <span>" + temps + "</span> s.";
     let tempsTelechargement = setInterval(function timeCount() {
         temps -= 1;
-        compteArebours.innerHTML = "Le téléchargement débute dans <span>" + temps + "</span> seconde.";
+        compteArebours.innerHTML = "Le téléchargement débute dans <span>" + temps + "</span> s.";
         if (temps <= 0) {
             clearInterval(tempsTelechargement);
             Patientez.style.display = "block";
