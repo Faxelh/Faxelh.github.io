@@ -88,6 +88,7 @@ body{
     font-size: 1rem;
     font-weight: 600;
     display: none;
+    color: var(--p-text-color);
 }
 .down_manual_link{
     color: #ef0937;
