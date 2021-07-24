@@ -1,0 +1,196 @@
+.icon-pack{
+    padding:10px 0;
+}
+
+.icon-pack ul {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.icon-pack ul li{
+    margin: 15px;
+    display:inline-block ;
+}
+.icon-pack ul li a .bx {
+    font-size: 2.5rem;
+    color: var(--c-text-color);
+    line-height: 40px;
+    transition:.5s;
+}
+.icon-pack ul li a {
+    position:relative;
+    margin: 0 5px;
+    display:block;
+    width:40px;height:40px;
+    border-radius: 2px 4px 2px 0;
+    background: var(--cookie-pop);
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow:-10px 10px 10px var(--changed-shadow);
+    transition:.5s;
+    cursor: pointer;
+}
+.icon-pack ul li a:before{
+    content:"";
+    position:absolute;
+    top:5px;left:-10px;
+    height:100%;width:10px;
+    border-radius:2px 2px 0 0;
+    background: var(--cookie-pop);
+    transform: rotate(0deg) skewX(-45deg);
+    -webkit-transform: rotate(0deg) skewY(-45deg);
+    transition:.5s;
+}
+.icon-pack ul li a:after{
+    content:"";
+    position:absolute;
+    bottom:-10px;right:5px;
+    height:10px;width:100%;
+    border-radius:2px 2px 2px 0;
+    background: var(--cookie-pop);
+    transform: rotate(0deg) skewX(-45deg);
+    transition:.5s;
+}
+.icon-pack ul li a:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    box-shadow: -30px 30px 30px var(--input-val);
+}
+
+.icon-pack ul li:hover .bx{
+    color:#fff;
+}
+.icon-pack ul li:hover:nth-child(1) a{
+    background:#3b5999;
+}
+.icon-pack ul li:hover:nth-child(2) a{
+    background:#dd4b39;
+}
+.icon-pack ul li:hover:nth-child(3) a{
+    background:#e4405f;
+}
+.icon-pack ul li:hover:nth-child(4) a{
+    background:#55acee;
+}
+
+.icon-pack ul li:hover:nth-child(1) a:before{
+    background:#2e4a86;
+}
+.icon-pack ul li:hover:nth-child(2) a:before{
+    background:#c13929
+}
+.icon-pack ul li:hover:nth-child(3) a:before{
+    background:#d02d4c;
+}
+.icon-pack ul li:hover:nth-child(4) a:before{
+    background:#4184b7;
+}
+
+.icon-pack ul li:hover:nth-child(1) a:after{
+    background:#4a69ad;
+}
+.icon-pack ul li:hover:nth-child(2) a:after{
+    background:#e8432f
+}
+.icon-pack ul li:hover:nth-child(3) a:after{
+    background:#f1395c;
+}
+.icon-pack ul li:hover:nth-child(4) a:after{
+    background:#4d9bde;
+}
+
+/*follow_box_container*/
+.follow_box_container{
+    height:100vh;width:100%;
+    flex-direction: column;
+    align-items: center ;
+    position:absolute ;
+    justify-content: center ;
+    background: var(--body-color);
+    transition: all 1s ease-in-out;
+    backdrop-filter: blur(35px);
+    z-index: 18; top: -100vh;
+    display: flex;
+}
+.follow_box{
+    background: var(--cookie-pop);
+    height:80%;width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center ;
+    border-radius: 50px;
+}
+.follow_box div{
+    width: 100%;
+}
+.follow_box .Thank{
+    height: 50%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background: var(--input-val);
+    position: relative;
+}
+.Thank .part{
+    position: absolute;
+    width: 100%;height: 100%;
+    bottom: 0;right: 0;
+    background: var(--cookie-pop);
+    text-align: center;
+    vertical-align: middle;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    padding-top: 50px;
+    border-top-left-radius: 30px;
+    border: 2px dotted #fff;
+}
+.part .heading{
+    font-size: 6rem;
+    color: var(--c-text-color);
+}
+.Thank img{
+    width: 150px;height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20px;left: 25%;
+    border: 2px solid #fff;
+}
+.follow_box .infos{
+    height: 40%;
+    background: var(--cookie-pop);
+    border: 2px dotted #fff;
+}
+.follow_box .infos .message{
+    color: #fff;
+    text-align: center;
+    padding-top: 8%;
+    font-size: 2rem;
+}
+.follow_box .actions{
+    height: 12%;
+    background: var(--aside-color);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    font-weight: 600;
+    justify-content: space-around;
+    align-items: center;
+}
+.follow_box .actions .closed{
+    color: white;
+    background: var(--input-val-h);
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.follow_box .actions .followed {
+    Color: #fff;
+    background: var(--input-val);
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.follow_box_container.togglePopup{
+    top: 0;
+}

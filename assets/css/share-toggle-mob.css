@@ -1,0 +1,92 @@
+/*----- Share option -------*/
+.share-option{
+    border: 1px solid var(--cookie-pop);
+    margin: 5px auto;
+    padding: 5px 0;
+    background: var(--iconslider);
+}
+.share-option a{
+    color: var(--c-text-color);
+    font-weight: 600;
+    margin-left: 35px;
+    font-family: "Bebas Neue", cursive;
+}
+.share-option a::after{
+    content: "";
+    background: url(../Img/link.svg) 0 0 no-repeat;
+    background-size: 20px;
+    display: inline-block;
+    height: 20px; width: 20px;
+    margin-left: 10px;
+}
+
+/*----- Toggles Mobile Fun -------*/
+#toggles{
+    position: fixed;
+    bottom: 3rem; left: 20px;
+    height: 10px; width: 10px;
+    border-radius: 50%;
+    background: var(--cookie-pop);
+    display: none; z-index: 10;
+    cursor: pointer;
+    transition: all .5s;
+}
+#toggles.active-toggle{
+    right: 20px;bottom: 3.5rem;
+    height: 0; width: 0;
+}
+#toggles::after{
+    content: '';
+    position: absolute;
+    top: 8px; left: 0;
+    height: 10px; width: 10px;
+    border-radius: 50%;
+    background: var(--input-val);
+}
+#toggles.active-toggle::after{
+    height: 5px; width: 28px;
+    transform: rotate(-45deg);
+    top: 0;
+}
+#toggles::before{
+    content: '';
+    position: absolute;
+    top: -8px; left: 0;
+    height: 10px; width: 10px;
+    border-radius: 50%;
+    background: var(--input-val-h);
+}
+#toggles.active-toggle::before{
+    height: 5px; width: 28px;
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.mob-nav{
+    position: fixed;
+    bottom: 3rem; left: 50px;
+    background: var(--input-val-h);
+    padding: 15px;
+    font-size: 18px;
+    display: none; z-index: 11;
+    box-shadow: 10px 5px 5px 0 rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 768px){
+    .mob-nav.active-mob,
+    #toggles{
+        display: block;
+    }
+    .mob-nav ul li {
+        margin: 10px 0;
+    }
+    .mob-nav ul li a{
+        color: var(--text-color);
+        margin: 15px 0;
+        text-transform: uppercase;
+    }
+    .mob-nav ul li.active-mob a{
+        color: var(--input-val);
+        font-weight: 600;
+    }
+}
