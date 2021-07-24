@@ -1,0 +1,172 @@
+
+.dropmenu_container{
+	position: absolute;
+	top: 20%; left: 50%;
+	transform: translate(-50%, -50%);
+	border: 5px double var(--cookie-pop);
+	border-radius: 10px;
+}
+.dropmenu_container .drop-btn{
+	width: 315px; max-width: 400px;
+	background: var(--dropmenu-bg);
+	border-radius: 10px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--dropmenu-text);
+	padding: 0 20px;
+}
+.dropmenu_container .drop-btn span{
+	float: right;
+	line-height: 50px;
+	font-size: 28px;
+	cursor: pointer;
+	transform:  rotate(0deg);
+	transition: transform .5s;
+}
+.dropmenu_container .drop-btn span.shower{
+	transform:  rotate(-180deg);
+}
+.dropmenu_container .tooltip{
+	position: absolute;
+	right: 25px; bottom: -27px;
+	height: 15px; width: 15px;
+	background: var(--cookie-pop);;
+	transform: rotate(45deg);
+	display: none;
+}
+.dropmenu_container .tooltip.shower{
+	visibility: visible;
+	display: block;
+}
+.dropmenu_container .wrapper{
+	position: absolute;
+	width: 315px; max-width: 400px;
+	overflow: hidden;
+	border-radius: 15px;
+	background: var(--dropmenu-bg);
+	visibility: hidden;
+	display: flex; top: 300%;
+	transition: top .5s;
+}
+.dropmenu_container .wrapper.shower{
+	visibility: visible;
+	top: 70px;
+}
+.wrapper ul{
+	width: 800px; max-width: 900px;
+	padding: 10px;
+	transition: all .5s ease;
+}
+.wrapper ul li{
+	line-height: 50px;
+	padding-left: 3rem!important;
+}
+.wrapper ul li a{
+	position: relative;
+	color: var(--dropmenu-text);
+	font-size: 18px;
+	font-weight: 500;
+	padding: 0 10px;
+	display: flex;
+	border-radius: 15px;
+	align-items: center;
+}
+.wrapper ul li:hover a{
+	background: var(--dropmenu-bg-h);
+}
+ul li a .icons{
+	height: 40px;width: 40px;
+	margin-right: 15px;
+	background: var(--dropmenu-icon);
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border-radius: 50%;
+}
+ul li a .icons span{
+	line-height: 40px;
+	font-size: 1.8rem;
+	color: var(--dropmenu-text);
+}
+ul li a .ibx{
+	position: absolute;
+	right: 10px; font-size: 25px;
+	pointer-events: none;
+}
+.wrapper ul.setting-drop,
+.wrapper ul.help-drop{
+	display: none;
+}
+.wrapper .arrow{
+	padding-left: 3.5rem!important;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--dropmenu-text);
+	cursor: pointer;
+	text-transform: capitalize;
+}
+.wrapper .arrow span{
+	margin-right: 15px;
+	height: 40px;width: 40px;
+	background: var(--dropmenu-icon);
+	text-align: center;
+	border-radius: 50%;
+	line-height: 40px;
+}
+
+@media (min-width: 768px){
+	.wrapper ul{
+		width: 400px;
+		max-width: 400px;
+		padding: 10px;
+		padding-left: 0!important;
+	}
+	.wrapper ul li{
+		padding-left: 0;
+	}
+	.wrapper .arrow{
+		padding-left: 1rem;
+	}
+	.dropmenu_container .drop-btn{
+		width: 400px;max-width: 400px;
+		line-height: 55px;
+		padding: 0 20px;
+	}
+	.dropmenu_container .wrapper{
+		width:400px;max-width: 400px;
+	}
+}
+@media (max-width: 320px){
+	.wrapper ul li{
+		padding-left: 2rem!important;
+	}
+	.wrapper .arrow{
+		padding-left: 2.7rem!important;
+	}
+	.dropmenu_container .drop-btn{
+		width: 305px;
+	}
+	.dropmenu_container .wrapper{
+		width: 305px;
+	}
+}
+@media (max-width: 280px){
+	.wrapper ul li{
+		width: 300px;
+		margin-left: -50px;
+	}
+	.wrapper ul.setting-drop,
+	.wrapper ul.help-drop{
+		display: none;
+		margin-left: 5rem;
+		padding-left: 3rem!important;
+	}
+	.wrapper .arrow{
+		padding-left: 2.7rem!important;
+	}
+	.dropmenu_container .drop-btn,
+	.dropmenu_container .wrapper{
+		width: 270px;
+	}
+}

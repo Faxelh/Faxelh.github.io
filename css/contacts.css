@@ -1,0 +1,170 @@
+/* Contact Section*/
+.contacts .contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.contacts .contact-container .contact_left{
+    width: 30%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.contacts .contact-container .contact_left .contact-details{
+    width: 250px; height: 150px;
+    border: 2px solid var(--text-color);
+    border-radius: 4px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+.contacts .contact-container .contact_left .contact-details i{
+    height: 40px;width: 40px;
+    line-height: 40px;
+    font-size: 3rem;
+    color: var(--p-text-color);
+    text-align: center;
+    margin-bottom: 5px;
+}
+.contacts .contact-container .contact_left .contact-details .con-det{
+    word-break: break-all;
+    color: var(--p-text-color);
+}
+.contacts .contact-container .contact_right{
+    width: 70%;
+}
+.contacts .contact-container .contact_right iframe{
+    filter: grayscale(100%);
+}
+.contacts .contact-container .contact_right h1{
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.contacts .contact-container .contact_right form textarea,
+.contacts .contact-container .contact_right form input{
+    width: 100%; height: 40px;
+    margin: 10px 0;
+    background: var(--a-text-color);
+    border: 2px solid var(--p-text-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    padding: 10px 15px;
+}
+.contacts .contact-container .contact_right form textarea{
+    height: 150px;
+}
+
+.contacts .contact-container .contact_right form textarea:focus,
+.contacts .contact-container .contact_right form input:focus{
+    background: var(--p-text-color);
+    padding: 10px 15px;
+    color: var(--a-text-color);
+}
+section.contacts .contact-container .contact_right form textarea::placeholder,
+section.contacts .contact-container .contact_right form input::placeholder{
+    padding: 10px 10px;
+}
+.contacts .contact-container .contact_right form button{
+    padding: 10px; width: 100px;
+    margin: auto 15px auto 150px;
+    background-color: transparent;
+    border: 2px solid var(--p-text-color);
+    color: var(--p-text-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contacts .contact-container .contact_right form button:hover{
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
+
+@media (max-width: 1200px) {
+    .contacts .contact-container .contact_right form button{
+        margin: auto 130px auto 100px;
+    }
+}
+@media (max-width: 1000px) {
+    .contacts .contact-container{
+        flex-direction: column;
+    }
+    .contacts .contact-container .contact_left,
+    .contacts .contact-container .contact_right{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contacts .contact-container .contact_right form button{
+        margin: auto 120px auto 160px;
+    }
+    .contacts .contact-container .contact_left .contact-details{
+        width: 450px;
+    }
+}
+@media (max-width: 900px) {
+    .contacts .contact-container .contact_right form button{
+        padding: 10px;
+        margin: auto 70px auto 140px;
+    }
+}
+@media (max-width: 800px) {
+    .contacts .contact-container .contact_right form button{
+        margin: auto 70px auto 120px;
+    }
+    .contacts .contact-container .contact_left .contact-details{
+        width: 350px;
+    }
+}
+@media (max-width: 710px) {
+    .contacts .contact-container .contact_right form button{
+        margin: auto 70px auto 80px;
+    }
+}
+@media (max-width: 600px) {
+    .contacts .contact-container .contact_right form button{
+        padding: 8px;
+        margin: auto 40px auto 50px;
+    }
+    .contacts .contact-container .contact_left .contact-details{
+        width: 250px; height: 100px;
+    }
+}
+@media (max-width: 550px) {
+    .contacts .contact-container .contact_right form button{
+        padding: 8px;
+        margin: auto 25px auto 35px;
+    }
+}
+@media (max-width: 450px) {
+    .contacts .contact-container .contact_right form button{
+        margin: auto 15px auto 30px;
+    }
+}
+@media (max-width: 375px) {
+    .contacts .contact-container .contact_right form button{
+        margin: auto 10px auto 20px;
+    }
+}
+@media (max-width: 350px) {
+    .contacts .contact-container .contact_right form button{
+        margin: auto 5px auto 0;
+    }
+    .contacts .contact-container .contact_left .contact-details {
+        width: 200px;
+    }
+    .contacts .contact-container .contact_right h1{
+        font-size: 1.2rem;
+        margin: 5px 0;
+    }
+}
+@media (max-width: 280px) {
+    .contacts .contact-container .contact_right form button{
+        margin: 15px auto auto 27px;
+    }
+}

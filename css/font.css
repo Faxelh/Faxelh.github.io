@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../Font/Bebas Neue.ttf");
+}
+@font-face {
+    font-family: "Fivo Sans";
+    src: url("../Font/Fivo Sans.otf");
+}
+@font-face {
+    font-family: "Nunito";
+    src: url("../Font/Nunito-Bold.ttf");
+}
+@font-face {
+    font-family: "Quicksand";
+    src: url("../Font/Quicksand.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../Font/Roboto Thin.ttf");
+}
+@font-face {
+    font-family: "Sacramento";
+    src: url("../Font/sacramento.ttf");
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../Font/Ubuntu.ttf");
+}

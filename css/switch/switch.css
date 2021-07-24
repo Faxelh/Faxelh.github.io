@@ -1,0 +1,155 @@
+
+.style-switcher{
+    position: fixed;
+    top: 8px; right: 0;
+    z-index: 5; padding: 5px;
+    background: var(--switcher);
+    border: 1px dashed var(--switcher-bd);
+    border-right: none;
+    border-radius: 5px 5px 5px 10px;
+    transform: translateX(100%);
+    transition: all .5s ease;
+    font-family: "Quicksand", cursive;
+}
+.style-switcher.open{
+    transform: translateX(0);
+}
+.style-switcher h4,
+.style-switcher h5{
+    font-size: 17px;
+    color: var(--text-color);
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--changed);
+}
+.style-switcher h5{
+    text-transform: initial;
+    text-align: center;
+}
+.style-switcher ul{
+    display: block;
+    margin-bottom: 5px;
+}
+.style-switcher ul li{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.style-switcher ul li a{
+    height: 20px; width: 20px;
+    display: block;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+.style-switcher .toggle-switcher{
+    position: absolute;
+    height: 40px; width: 40px;
+    background: var(--switcher);
+    left: -40px; top: -1px;
+    border: 1px solid var(--text-color);
+    border-right: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+    box-shadow: inset -4px -5px 8px var(--changed-shadow),
+                inset 4px 5px 9px var(--changed-shadow);
+}
+.style-switcher .toggle-switcher #icon-switcher{
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.changed{
+    position: absolute;
+    top: 5.2rem; right: 8px;
+    transition: .3s; cursor: pointer;
+    color: var(--text-color);
+    padding: 8px; font-size: 1rem;
+    border-radius: 50%;
+    font-weight: 600;
+    box-shadow: inset -4px -5px 8px var(--changed-shadow),
+                inset 4px 5px 9px var(--changed-shadow);
+}
+/*
+@media (max-width: 620px){
+    .style-switcher{
+        top: 4rem;
+    }
+}
+*/
+/*
+.style-switcher{
+    position: fixed;
+    top: 8px; right: 0;
+    z-index: 2; padding: 8px;
+    background: var(--switcher);
+    border: 1px dashed var(--switcher-bd);
+    border-right: none;
+    border-radius: 5px 5px 5px 10px;
+    transform: translateX(100%);
+    transition: all .3s ease;
+    font-family: "Quicksand", cursive;
+}
+.style-switcher.open{
+    transform: translateX(0);
+}
+.style-switcher h4,
+.style-switcher h5{
+    font-size: 17px;
+    color: var(--text-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--changed);
+}
+.style-switcher h5{
+    text-transform: initial;
+    text-align: center;
+}
+.style-switcher ul{
+    display: block;
+    margin-bottom: 5px;
+}
+.style-switcher ul li{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.style-switcher ul li a{
+    height: 25px; width: 25px;
+    display: block;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+.style-switcher .toggle-switcher{
+    position: absolute;
+    height: 40px; width: 40px;
+    background: var(--switcher);
+    left: -40px; top: -1px;
+    border: 1px solid var(--text-color);
+    border-right: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+    box-shadow: inset -4px -5px 8px var(--changed-shadow),
+    inset 4px 5px 9px var(--changed-shadow);
+}
+.style-switcher .toggle-switcher .bx{
+    font-size: 2rem;
+    line-height: 40px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.changed{
+    position: absolute;
+    top: 5.35rem; right: 8px;
+    transition: .3s; cursor: pointer;
+    z-index: 3; color: var(--text-color);
+    padding: 8px; font-size: 1rem;
+    border-radius: 50%;
+    font-weight: 600;
+    box-shadow: inset -4px -5px 8px var(--changed-shadow),
+    inset 4px 5px 9px var(--changed-shadow);
+}
+*/
