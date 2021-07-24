@@ -1,9 +1,0 @@
-.map{
-  background: var(--corps);
-}
-#gmap_canvas{
-  border: none;
-  scroll: no;
-  margin: 0;
-}
-
