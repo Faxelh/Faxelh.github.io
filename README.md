@@ -8,5 +8,5 @@
 
 ### `Desktop Preview `
 <p align="center"> 
-  <img src="https://raw.githubusercontent.com/threat0/threat0.github.io/master/assets/Img"/>
+  <img src="https://raw.githubusercontent.com/threat0/threat0.github.io/master/assets/Img/pc.png"/>
 </p>
