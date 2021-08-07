@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>MON PORTFOLIO</title>
+	<title>My Blog</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/main.css">
-	<link rel="icon" type="image/x-icon" href="assets/Img/fav.ico">
+	<link rel="icon" type="image/x-icon" href="assets/Img/fav.png">
 	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="assets/css/switch/orange.css">
 	<link rel="stylesheet" class="alternate-style" title="pink" href="assets/css/switch/pink.css" disabled>
@@ -18,7 +18,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
-<!--========== Preloader ==========--->
+<div id="cursor-circle"></div>
+<!--========== Preloader ==========-->
 <div class="preloader3">
 	<div class="pre_loader">
 		<span class="load_item" style="--i: 1;">L</span>
@@ -51,6 +52,8 @@
 			<li><a href="#Schedule"><i class="bx bxs-school"></i> Schedule </a></li>
 			<li><a href="#slide"><i class="bx bx-award"></i> Icon Slider Bookmark</a></li>
 			<li><a href="#store"><i class="bx bx-award"></i> Store </a></li>
+			<li><a href="#faq"><i class="bx bx-question-mark"></i> Faq </a></li>
+			<li><a href="#layer"><i class="bx bx-layer"></i> Layer </a></li>
 		</ul>
 		<a href="https://twitter.com/faxelhs" class="follow" target="_blank">
 			<span class="follow_txt"><i class="bx bxl-twitter"></i>Follow me on Twitter</span>
@@ -91,12 +94,13 @@
 						<div class="row">
 							<div class="about-text nette">
 								<h3>I'm Faxel and i'm <span id="typing-about">Hacker & Web Developer</span></h3>
-								<p>
+								<p class="about-p">
 									I'm very passionate and dedicated to my work. With 1 years experience as a
 									professional Web developer, I have acquired the skills and knowledge necessary
 									to make your project a success. I enjoy every step of the design process, from
 									discussion and collaboration.
 								</p>
+								<button class="about-read-more" >Read More</button>
 							</div>
 						</div>
 						<div class="row">
@@ -1061,6 +1065,15 @@
 					</form>
 					<div id="bookmarks"></div>
 				</div>
+				<!----------  To-do List ------------>
+				<div class="row"><div class="section-title nette"><h2>ToDo List</h2></div></div>
+				<div class="todo--container">
+					<div id="todo--newtask">
+						<input type="text" placeholder="Tâche à faire.." id="todo--input">
+						<button id="todo--push">Add</button>
+					</div>
+					<div id="todo--tasks"></div>
+				</div>
 			</div>
 		</section>
 		<!--==========  Store Section  ========== -->
@@ -1150,6 +1163,60 @@
 					<span class="cart-total-price">$0</span>
 				</div>
 				<button class="store-btn btn-primary btn-purchase" type="button">PURCHASE</button>
+			</div>
+		</section>
+		
+		<!--==========  FAQ Section ========== -->
+		<section class="service section" id="faq">
+			<div class="container">
+				<div class="row"><div class="section-title nette"><h2>FAQ</h2></div></div>
+				<div class="row">
+					
+						<div class="faq--wrapper">
+							<button class="faq--toggle">What is the return policy?
+								<i class="bx bx-plus-circle faq--icon"></i>
+							</button>
+							<div class="faq--content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
+							</div>
+						</div>
+						<div class="faq--wrapper">
+							<button class="faq--toggle">How do I apply the coupon?
+								<i class="bx bx-plus-circle faq--icon"></i>
+							</button>
+							<div class="faq--content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error doloremque, quibusdam qui necessitatibus autem aperiam reprehenderit? Ipsum maiores dolore inventore ea. Accusantium fuga eius laboriosam iusto blanditiis doloremque ullam?</p>
+							</div>
+						</div>
+						<div class="faq--wrapper">
+							<button class="faq--toggle">How do I become a member?
+								<i class="bx bx-plus-circle faq--icon"></i>
+							</button>
+							<div class="faq--content">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
+							</div>
+						</div>
+				
+				</div>
+			</div>
+		</section>
+		<!--==========  Service Section ========== -->
+		<section class="section" id="layer">
+			<div class="container">
+				<div class="row"><div class="section-title nette"><h2>Layer</h2></div></div>
+				<div class="row">
+					<div class="layer-container">
+						<div class="layer one show">
+							<h2>Layer One</h2>
+							<p>A context-shift transition. Use the dots below or your keyboard arrows.</p>
+						</div>
+						<div class="layer two"><h2>Layer Two</h2></div>
+						<div class="layer three"><h2>Layer Three</h2></div>
+						<div class="layer four"><h2>Layer Four</h2></div>
+						<div class="layer five"><h2>Layer Five</h2></div>
+					</div>
+					<ul class="bullets"></ul>
+				</div>
 			</div>
 		</section>
 	</div>
@@ -1356,5 +1423,8 @@
 <script src="assets/js/contact.js"></script>
 <script src="assets/js/store.js"></script>
 <script src="assets/js/clock.js"></script>
+<script src="assets/js/layer.js"></script>
+<script src="assets/js/faq.js"></script>
+<script src="assets/js/readmore.js"></script>
 </body>
 </html>
