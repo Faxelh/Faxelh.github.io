@@ -19,7 +19,7 @@
 .cookie_pop p {
     font-size: 12px;
     color: var(--cookie-text-color);
-    font-family: 'Ubuntu', cursive;
+    font-family: 'Uu', cursive;
 }
 .cookie_pop a{
     color: var(--input-val);

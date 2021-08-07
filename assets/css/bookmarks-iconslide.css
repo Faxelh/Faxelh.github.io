@@ -23,7 +23,7 @@
 #bookmarks_form  h3{
     color: var(--bd-portfolio);
     text-align: center;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "BN", sans-serif;
     font-size: 2rem;
 }
 #bookmarks_form  input{
@@ -31,13 +31,13 @@
     padding: 10px 20px;
     font-weight: 600;
     border-radius: 5px;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Uu", sans-serif;
 }
 #bookmarks_form ::placeholder{
     color: #777;
     opacity: .7;
     font-weight: 100;
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
 }
 #bookmarks_form input[type=submit]{
     background: hsl(240, 2%, 12%);
@@ -127,4 +127,88 @@
 .slider-icon .section--icons i.slide-icon {
     transform: translate(-50%, -50%) scale(1);
     transition: transform .5s .5s;
+}
+
+/*To-do List */
+.todo--container{
+    width: 40%;
+    min-width: 450px;
+    margin: 0 auto 0 auto;
+}
+#todo--newtask{
+    position: relative;
+    background: var(--todo-bg);
+    padding: 15px 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 35px var(--c-text-color);
+}
+#todo--newtask #todo--input{
+    width: 70%;height: 45px;
+    font-family: 'FS',sans-serif;
+    font-size: 15px;
+    border: 2px solid var(--c-text-color);
+    padding: 12px;
+    color: #222;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+#todo--newtask #todo--push{
+    position: relative;
+    float: right;
+    width: 20%;height: 45px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 2rem;
+    background: var(--cookie-pop);
+    color: var(--c-text-color);
+    cursor: pointer;
+    font-family: 'Uu',sans-serif;
+}
+#todo--tasks{
+    background: var(--input-val-h);
+    padding: 15px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 35px var(--input-val);
+    width: 100%;
+    position: relative;
+}
+.todo--task{
+    background: var(--iconslider);
+    height: 40px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--c-text-color);
+}
+.todo--task #todo--taskname{
+    color: var(--c-text-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.todo--task span{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.todo--completed{
+    text-decoration: line-through;
+}
+.todo--delete{
+    cursor: pointer;
+    font-size: 2rem;
+    background: transparent;
+    color: var(--c-text-color);
+    margin-top: 8px;
+}
+.todo--task #todo--push{
+    background: #8052ec;
+    color: var(--c-text-color);
+    height: 100%; width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
 }

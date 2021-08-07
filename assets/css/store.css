@@ -1,18 +1,8 @@
-/*
-.content-section {
-	margin: 1em;
-}
-.container {
-	max-width: 00px;
-	margin: 0 auto;
-	padding: 0 1rem;
-}
-*/
+
 .shop-item {
 	margin: 10px 0;
 	background:  var(--bookmarks-c);
 	border-radius: 10px;
-	/*	margin: 20px auto 40px auto;*/
 }
 .shop-item-title {
 	display: block;
@@ -37,7 +27,6 @@
 	font-weight: 600;
 	font-size: 2rem;
 }
-
 
 .shop-items {
 	display: flex;
@@ -123,15 +112,7 @@
 	margin: 10px auto 10px auto;
 	font-size: 2rem;
 }
-/*#
-.store-btn.btn-primary {
-	background: transparent ;#56CCF2
-	border-radius: .3em; #EB5757
-	font-weight: bold;
-}
-.store-btn.btn-primary:hover {
-	background-color: #2D9CDB;
-}*/
+
 .store-btn.btn-danger {
 	color: var(--input-val);
 	background: transparent;

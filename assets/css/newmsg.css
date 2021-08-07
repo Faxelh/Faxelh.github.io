@@ -22,7 +22,7 @@
 	margin-right: 5px;
 	color: var(--cookie-pop); /*fa5b07*/
 	text-transform: capitalize;
-	font-family: "Roboto", sans-serif;
+	font-family: "Ro", sans-serif;
 }
 
 .new-mail__top {
@@ -42,7 +42,7 @@
 	color: var(--text-color);
 	font-weight: 600;
 	font-size: 1rem;
-	font-family: "Fivo Sans", sans-serif;
+	font-family: "FS", sans-serif;
 }
 .new-mail-exp__item {
 	align-items: center;
@@ -88,9 +88,8 @@
 	border-radius: 5px;
 	padding: 10px 20px;
 	width: 100%; color: var(--lightbox-bg);
-	font-family: "Roboto", sans-serif;
+	font-family: "Ro", sans-serif;
 }
-
 
 .select {
 	border: 1px solid #874;
@@ -100,7 +99,7 @@
 	padding-right: 5px;
 	position: relative;
 	background: var(--p-text-color);
-	font-family: "Roboto", sans-serif;
+	font-family: "Ro", sans-serif;
 }
 .select__item {
 	all: unset; color: #599;
@@ -214,7 +213,7 @@
 	line-height: 1;
 	padding: 5px 20px;
 	color: var(--text-color);
-	font-family: "Bebas Neue", sans-serif;
+	font-family: "BN", sans-serif;
 }
 .btn-sends.btn-sending {
 	background: var(--cookie-pop);

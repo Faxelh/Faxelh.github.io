@@ -2,7 +2,7 @@
 window.addEventListener("load", function(){
     this.setTimeout(() => {
         this.document.querySelector(".preloader3").style.display="none";
-    },1000)
+    },2000)
 })
 // Portfolio item filter
 let filterContainer = document.querySelector(".portfolio-filter"),
@@ -68,14 +68,12 @@ function prevItem(){
     }
     changeItem();
 }
-
 function toggleLightbox(){
     lightbox.classList.toggle("open");
 }
 
-
 function changeItem(){
-    imgSrc=portfolioItems[itemIndex].querySelector(".port-img img").getAttribute("src");
+    let imgSrc = portfolioItems[itemIndex].querySelector(".port-img img").getAttribute("src");
     console.log(imgSrc);
     lightboxImg.src=imgSrc;
     lightboxText.innerHTML=portfolioItems[itemIndex].querySelector("h4").innerHTML;
@@ -97,11 +95,9 @@ const nav = document.querySelector(".nav"),
 totalSection = allSection.length;
 
 for(let i = 0; i<totalNavList; i++){
-    // console.log(navList[i]);
     const a = navList[i].querySelector("a");
-    // console.log(a);
     a.addEventListener("click",function(){
-        // Supprimer la classe de section arrière
+        //Supprimer la classe de section arrière
         for(let i = 0; i<totalSection; i++){
             allSection[i].classList.remove("back-section")
         }
@@ -159,7 +155,6 @@ function asideSectionTogglerBtn(){
         allSection[i].classList.toggle("open")
     }
 }
-
 // Selecteur et Applicateur de Style
 let SetSwitcher = (ToggleSwitch, StyleSwitch, ToggleSwitchIcon, navTogglerBtn, AsideBtn) =>{
     document.getElementById(AsideBtn);

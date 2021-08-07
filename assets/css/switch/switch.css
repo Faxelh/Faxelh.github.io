@@ -2,7 +2,7 @@
 .style-switcher{
     position: fixed;
     top: 8px; right: 0;
-    z-index: 5; padding: 5px;
+    z-index: 6; padding: 5px;
     background: var(--switcher);
     border: 1px dashed var(--switcher-bd);
     border-right: none;

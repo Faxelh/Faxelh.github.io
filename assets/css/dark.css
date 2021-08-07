@@ -32,7 +32,10 @@
 	--dropmenu-text: #fff;
 	--dropmenu-icon: #777;
 	
-
+	--todo-bg: #8052ec;
+	--faq-color: #111;
+	--faq-toggle: #0f0;
+	--faq-toggle-not: #fff;
 	--iconslider: #a79a2d;
 	--schedule-h1: #20bcd5;
 	
@@ -74,11 +77,14 @@ body.darken{
 	--dropmenu-text: #b0b3b8;
 	--dropmenu-icon: #ffffff1a;
 	
-	--bdt: 1px solid var(--input-val);
+	--todo-bg: #d161ff;
+	--faq-color: #ddd;
+	--faq-toggle: #599;
+	--faq-toggle-not: #000;
 	--iconslider: #e85;
 	--schedule-h1: #e85;
+	--bdt: 1px solid var(--input-val);
 }
-
 /* FullScreen Enter and Exit */
 .fullscreen_btn {
 	position: fixed;
@@ -100,7 +106,7 @@ body.darken{
 	color: var(--p-text-color);
 	cursor: pointer;
 }
-@media screen   and (max-width: 968px){
+@media screen  and (max-width: 968px){
 	.fullscreen_btn{
 		display: none;
 	}

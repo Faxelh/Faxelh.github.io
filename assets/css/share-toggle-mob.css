@@ -9,7 +9,7 @@
     color: var(--c-text-color);
     font-weight: 600;
     margin-left: 35px;
-    font-family: "Bebas Neue", cursive;
+    font-family: "BN", cursive;
 }
 .share-option a::after{
     content: "";

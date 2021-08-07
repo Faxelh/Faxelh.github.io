@@ -1,28 +1,43 @@
 @font-face {
-    font-family: "Bebas Neue";
+    font-family: "BN";
     src: url("../Font/Bebas Neue.ttf");
 }
 @font-face {
-    font-family: "Fivo Sans";
+    font-family: "FS";
     src: url("../Font/Fivo Sans.otf");
 }
 @font-face {
-    font-family: "Nunito";
+    font-family: "Nb";
     src: url("../Font/Nunito-Bold.ttf");
 }
 @font-face {
-    font-family: "Quicksand";
+    font-family: "Qs";
     src: url("../Font/Quicksand.ttf");
 }
 @font-face {
-    font-family: "Roboto";
+    font-family: "Ro";
     src: url("../Font/Roboto Thin.ttf");
 }
 @font-face {
-    font-family: "Sacramento";
+    font-family: "So";
     src: url("../Font/sacramento.ttf");
 }
 @font-face {
-    font-family: "Ubuntu";
+    font-family: "Uu";
     src: url("../Font/Ubuntu.ttf");
 }
+@font-face {
+    font-family: "Sa";
+    src: url("../Font/Sansita.woff2");
+}
+#cursor-circle{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 25px;height: 25px;
+    z-index: 111;
+    background: rgba(175, 37, 111, 0.7);
+    border-radius: 50%;
+    pointer-events: none;
+    border: 2px solid var(--cookie-pop);
+}
+

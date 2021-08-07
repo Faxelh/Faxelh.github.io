@@ -1,11 +1,12 @@
 @import "dark.css";@import "newmsg.css";
 @import "font.css";@import "advance.css";
 @import "burg.css";@import "cookies.css";
-@import "bookmarks-iconslide.css";@import "loading.css";
+@import "bookmarks-iconslide.css";@import "load.css";
 @import "contacts.css"; @import "switch/switch.css";
  @import "pricing.css"; @import "supernav.css";
 @import "schedule.css";@import "store.css";
-@import "share-toggle-mob.css";
+@import "layer.css";
+@import "share-toggle-mob.css";@import "faq.css";
 @import "search-clock.css";@import "iconpack-followbox.css";
 *,::before,::after{
     margin: 0; padding: 0;
@@ -19,14 +20,15 @@
     width: 4px; height: 4px;
 }
 ::-webkit-scrollbar-track {
-    background: #996;
+    background: #12263a;
 }
 ::-webkit-scrollbar-thumb {
-    background: #d55;
+    background: #599;
 }
 body{
     transition: all .5s ease;
     line-height: 1.5;
+    height: 100vh;
 }
 /* Button */
 .btn{
@@ -132,7 +134,7 @@ section .container{
     font-size: 3rem;
     color: var(--text-color);
     font-weight: 700;
-    font-family: 'Fivo Sans', sans-serif;
+    font-family: 'FS', sans-serif;
     position: relative;
 }
 .section-title h2::before{
@@ -184,29 +186,35 @@ section .container{
     padding: 20px 0;
 }
 .aside .logo a{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     display: inline-block;
     position: relative;
     padding: 0 10px;
     line-height: 50px;
     background: var(--bd-portfolio);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Uu', sans-serif;
+    letter-spacing: 3px;
+    background: linear-gradient(
+        var(--cookie-pop) 16.7%,
+        var(--text-color) 16.7%,
+        var(--text-color) 33.4%,
+        var(--todo-bg) 33.4%,
+        var(--todo-bg) 50.1%,
+        var(--input-val) 50.1%,
+        var(--input-val) 66.8%,
+        var(--dropmenu-bg) 66.8%,
+        var(--dropmenu-bg) 83.5%,
+        var(--iconslider) 83.5%
+    );
+    color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-     animation: texte 50s infinite linear alternate;
-    -webkit-animation: texte 50s infinite linear alternate;
-    background-size: 50px 50px;
-    background-image: repeating-linear-gradient(45deg , transparent 0 , transparent 25% , var(--cookie-pop) 0, var(--input-val) 50% , transparent 0),
-                      repeating-linear-gradient(-45deg , transparent 0 , transparent 25% , var(--input-val-h) 0 , var(--bookmarks-id) 50% , transparent 0);
-    
+    -webkit-text-stroke: 3px var(--cookie-pop);
+    animation: logo 10s linear infinite;
 }
-@keyframes texte {
-    100%{
-        background-position:  100%;
-    }
+@keyframes logo{
+    100%{background-position: 0 30rem;}
 }
-
 .aside .logo a::before{
     content: '';
     height: 25px; width: 25px;
@@ -237,10 +245,10 @@ section .container{
 }
 .aside .nav li a:not(.active){
     /*padding-left: 5px;*/
-    font-family: "Bebas Neue", serif;
+    font-family: "BN", serif;
 }
 .aside .nav li a.active{
-    font-family: "Quicksand", sans-serif;
+    font-family: "Qs", sans-serif;
     color: var(--cookie-pop);
 }
 .aside .nav li a .bx{
@@ -251,12 +259,12 @@ section .container{
     border: 1px solid var(--cookie-pop);
     font-size: 1.3rem;
     font-weight: bolder;
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
 }
 .aside .copyright a{
     color: var(--p-text-color);
     margin-left: 5px;
-    font-family: "Ubuntu", serif;
+    font-family: "Uu", serif;
 }
 .aside .copyright b:nth-child(1){
     color: var(--text-color);
@@ -278,27 +286,48 @@ section .container{
     display: inline-block;
     border: 8px solid #fff;
     box-shadow: inset -4px -5px 8px var(--changed-shadow),
-    inset 4px 5px 9px var(--changed-shadow);
+                inset 4px 5px 9px var(--changed-shadow);
 }
 .home .intro h1{
-    margin: 10px 0 5px;
     font-size: 2rem;
     background: var(--text-color);
-    font-family: 'Ubuntu',cursive;
+    font-family: 'Uu',cursive;
+    position: relative;
+    letter-spacing: .3rem;
+    background: linear-gradient(
+        #fd004c 16.7%,
+        #fe9000 16.7%,
+        #fe9000 33.4%,
+        #fff020 33.4%,
+        #fff020 50.1%,
+        #3edf4b 50.1%,
+        #3edf4b 66.8%,
+        #3363ff 66.8%,
+        #3363ff 83.5%,
+        #b102b7 83.5%
+    );
+    color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--cookie-pop);
+    line-height: 1rem;
+    margin: 10px 0 1rem;
+    animation: faxel 30s linear infinite;
+}
+@keyframes faxel{
+    100%{background-position: 0 30em;}
 }
 .home .intro p {
     font-size: 16px;
     font-weight: 500;
     color: var(--p-text-color);
-    font-family: "Nunito", sans-serif;
+    font-family: "Nb", sans-serif;
 }
 .home .intro p #typing{
     font-weight: 600;
     color: var(--cookie-pop);
     text-transform: capitalize;
-    font-family: "Ubuntu", cursive;
+    font-family: "Uu", cursive;
 }
 .home .intro .social-links{
     margin-top: 25px;
@@ -359,21 +388,36 @@ section .container{
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 600;
-    font-family: "Bebas Neue", cursive;
+    font-family: "BN", cursive;
     color: var(--text-color);
 }
 .about .about-content .about-text h3 #typing-about{
     color: var(--cookie-pop);
     text-transform: capitalize;
-    font-family: "Ubuntu", cursive;
+    font-family: "Uu", cursive;
 }
-.about .about-content .about-text p{
+.about .about-content .about-text .about-p{
     font-size: 16px;
     line-height: 25px;
     color: var(--p-text-color);
-    font-family: "Fivo Sans", sans-serif;
-    border-bottom: 1px solid var(--cookie-text-color);
+    font-family: "FS", sans-serif;
     padding: 10px 0;
+}
+.about .about-content .about-text .about-read-more{
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 7px;
+    background: #ff0268;
+    color: var(--c-text-color);
+    font-weight: 600;
+    display: block;
+    font-size: 1rem;
+    margin: 0 auto 0 auto;
+    font-family: "Qs", cursive;
+}
+.about-hide{
+    display: none;
+    border-bottom: 1px solid var(--cookie-text-color);
 }
 .about .about-content .personal-info{
     flex: 0 0 60%;
@@ -403,13 +447,13 @@ section .container{
     align-items: center;
 }
 .about .about-content .personal-info .button .btn{
-    margin-right: 15px;
-    margin-top: 10px;
+    margin-right: 15px!important;
+    margin-top: 10px!important;
 }
 .about .about-content .skills{
     flex: 0 0 40%;
     max-width: 40%;
-    margin-top: 40px;
+    margin-top: 40px!important;
 }
 .about .about-content .skills .skill-item{
     flex: 0 0 100%;
@@ -421,7 +465,7 @@ section .container{
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
     color: var(--text-color);
 }
 .about .about-content .skills .skill-item .progress{
@@ -429,7 +473,7 @@ section .container{
     border-radius: 5px;
     width: 100%; height: 7px;
     position: relative;
-    font-family: "Sacramento", cursive;
+    font-family: "So", cursive;
 }
 .about .about-content .skills .skill-item .progress .progress-in{
     position: absolute;
@@ -459,7 +503,7 @@ section .container{
     margin-bottom: 30px;
     font-weight: 600;
     color: var(--text-color);
-    font-family: "Fivo Sans", cursive;
+    font-family: "FS", cursive;
 }
 .about .about-content .time-box{
     flex: 0 0 100%;
@@ -499,7 +543,7 @@ section .container{
     margin-bottom: 12px;
     text-transform: capitalize;
     color: var(--p-text-color);
-    font-family: "Sacramento", cursive;
+    font-family: "So", cursive;
 }
 .about .about-content .timeline .timeline-title{
     font-weight: 600;
@@ -516,7 +560,7 @@ section .container{
     font-size: 16px;
     line-height: 25px;
     color: var(--p-text-color);
-    font-family: "Roboto", sans-serif;
+    font-family: "Ro", sans-serif;
 }
 /* Services Container*/
 .service .container{
@@ -564,14 +608,14 @@ section .container{
     margin-bottom: 15px;
     color: var(--text-color);
     font-weight: 700;
-    font-family: "Roboto", sans-serif;
+    font-family: "Ro", sans-serif;
     text-transform: capitalize;
 }
 .service .service-item .service-item-inner p{
     font-size: 16px;
     color: var(--p-text-color);
     line-height: 25px;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Qs", sans-serif;
 }
 
 /* Portfolio Container*/
@@ -596,12 +640,12 @@ section .container{
     padding-bottom: 2px;
     transition: all .3s ease;
     background: transparent;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Qs", sans-serif;
 }
 .portfolio .portfolio-filter button:nth-child(1){
     text-transform: uppercase;
     background:  var(--a-text-color);
-    font-family: "Roboto", sans-serif;
+    font-family: "Ro", sans-serif;
 }
 .portfolio .portfolio-items{
     flex: 0 0 33.33%;
@@ -647,7 +691,7 @@ section .container{
 }
 .portfolio .portfolio-items .inner-portfolio:hover .port-info{
     opacity: 1;
-    font-family: "Roboto", sans-serif;
+    font-family: "Ro", sans-serif;
 }
 .portfolio .portfolio-items .port-info h4{
     font-size: 18px;
@@ -688,7 +732,6 @@ section .container{
     display: flex;
     justify-content: space-evenly;
 }
-
 .portfolio .portfolio-items .inner-card .card {
     width: 100%;
     background: #a79a2d;
@@ -718,7 +761,6 @@ section .container{
         transform: rotateY(30deg) skewX(-5deg) translateY(0);
         box-shadow: 1rem 1rem 1rem var(--bx-contact);
     }
-    
 }
 .portfolio .portfolio-items .inner-card .card::before {
     content: "";
@@ -730,7 +772,6 @@ section .container{
     transform-origin: right;
     box-shadow: -.1rem -.1rem .1rem var(--p-text-color);
 }
-
 .portfolio .portfolio-items .inner-card .card::after {
     content: "";
     height: 1rem; width: 100%;
@@ -741,7 +782,6 @@ section .container{
     transform-origin: bottom;
     box-shadow: -.1rem -.1rem .1rem var(--p-text-color);
 }
-
 .portfolio .portfolio-items .inner-card .card-img {
     width: 100%;
 }
@@ -789,7 +829,6 @@ section .container{
     z-index: 1;
     transition: height .5s;
 }
-
 .portfolio .portfolio-items .gallery-link:hover::before {
     height: 90%;
 }
@@ -804,7 +843,6 @@ section .container{
 .portfolio .portfolio-items .gallery-link:hover::after {
     width: 95%;
 }
-
 .portfolio .portfolio-items .gallery-img {
     width: 100%; height: 250px;
     object-fit: cover;
@@ -814,7 +852,6 @@ section .container{
                 .9rem .9rem .1rem #e92999;
     transition: all .5s;
 }
-
 .portfolio .portfolio-items .gallery-link:hover .gallery-img {
     box-shadow: 1rem 1rem .1rem #e92929,
                 2rem 2rem .1rem #a2e946,
@@ -824,7 +861,6 @@ section .container{
     opacity: .5;
     transform: scale(1.03);
 }
-
 .portfolio .portfolio-items .gallery-name {
     position: absolute;
     top: 1.5rem; left: 3rem;
@@ -938,10 +974,10 @@ section .container{
     background: var(--lightbox-bg);
 }
 .lightbox .lightbox-content .lightbox-caption .caption-text{
-    font-family: "Quicksand", sans-serif;
+    font-family: "Qs", sans-serif;
 }
 .lightbox .lightbox-content .lightbox-caption .caption-counter{
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
 }
 
 .lightbox .lightbox-controls .prev,
@@ -1036,7 +1072,7 @@ section .container{
     color:  var(--c-text-color);
     font-weight: 600;
     font-size: 14px;
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
     left: 15px; bottom: 15px;
 }
 .blog .blog-item .blog-item-inner .blog-info{
@@ -1049,7 +1085,7 @@ section .container{
     color: var(--text-color);
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
 }
 .blog .blog-item .blog-item-inner .blog-info .blog-desc{
     font-size: 14px;
@@ -1057,19 +1093,19 @@ section .container{
     color: var(--p-text-color);
     font-weight: 400;
     margin-bottom: 15px;
-    font-family: "Monterrat", sans-serif;
+    font-family: "Sa", sans-serif;
 }
 .blog .blog-item .blog-item-inner .blog-info .blog-tags{
     font-size: 18px;
     color: #287;
     line-height: 25px;
     font-weight: 600;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "BN", sans-serif;
 }
 .blog .blog-item .blog-item-inner .blog-info .blog-tags a{
     font-size: 14px;
     text-transform: uppercase;
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
 }
 .blog .blog-item .blog-item-inner .blog-info .blog-tags a:nth-child(1){
     color: #fa5b07;
@@ -1100,7 +1136,7 @@ section .container{
     font-weight: 700;
     color: var(--text-color);
     text-transform: capitalize;
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
     margin: 10px 0 5px;
 }
 .contact .contact-info-item p{
@@ -1108,7 +1144,7 @@ section .container{
     line-height: 20px;
     color: var(--p-text-color);
     font-weight: 400;
-    font-family: "Quicksand", cursive;
+    font-family: "Qs", cursive;
 }
 .contact .contact-form{
     flex: 0 0 100%;
@@ -1132,10 +1168,10 @@ section .container{
     padding: 10px 20px;
     font-size: 16px;
     color: var(--p-text-color);
-    font-family: "Quicksand", sans-serif;
+    font-family: "Qs", sans-serif;
 }
 .contact .contact-form .input_item .form-control::placeholder{
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
 }
 .contact .contact-form .input_item textarea.form-control{
     height: 120px;
@@ -1153,7 +1189,7 @@ section .container{
     transition: letter-spacing .5s,
                 background .5s, color .5s;
     color: var(--a-text-color);
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Uu", sans-serif;
 }
 .contact .contact-form .val_btn input[type="submit"]:hover{
     letter-spacing: 4px;
@@ -1169,7 +1205,7 @@ section .container{
     color: var(--error_msg-a);
     margin: 10px auto;
     display: block;
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
 }
 
 /* Responsive CSS */
@@ -1257,7 +1293,6 @@ section .container{
         max-width: 100%!important;
     }
 }
-
 /*---------------Me suivre sur Twitter ----------*/
 .aside .follow {
     border-top: var(--bdt);

@@ -47,7 +47,7 @@
     padding: 10px 20px 10px;
     width: 90%;
     font-weight: 600;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Uu", sans-serif;
     border: 2px solid var(--cookie-pop);
     border-radius: 10px;
     margin-left: 1rem!important;
@@ -62,7 +62,7 @@
     cursor: pointer;
     font-weight: 600;
     color: #fff;
-    font-family: "Fivo Sans", sans-serif;
+    font-family: "FS", sans-serif;
     font-size: 1em;
 }
 .pop-overlay .search--popup .search--form .search--close {

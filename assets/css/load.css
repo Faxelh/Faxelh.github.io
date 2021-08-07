@@ -1,0 +1,39 @@
+
+.preloader3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;width: 100vw;
+	position: fixed;
+	top: 0;left: 0;
+	z-index: 100;
+	transition: all 3s ease;
+	background: var(--cookie-pop);
+}
+.pre_loader {
+	width: 400px;display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.load_item {
+	color: var(--cookie-bg-color);
+	font-weight: 600;
+	font-size: 2rem;
+	margin: 0 2px;
+	bottom: 0;
+	padding: 0 0 5px;
+	border-bottom: 3px solid var(--cookie-bg-color);
+	position: relative;
+	animation: loading 1s calc(var(--i) * .1s) ease-in-out infinite;
+}
+
+@keyframes loading {
+	0%, 100% {
+		border-bottom-width: 3px;
+		bottom: 0;
+	}
+	50% {
+		border-bottom-width: 35px;
+		bottom: 15px;
+	}
+}

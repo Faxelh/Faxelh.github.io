@@ -1,0 +1,39 @@
+
+.faq--wrapper{
+    background: var(--cookie-pop);
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 90%;
+    min-width: 300px;
+    margin: 10px auto 10px auto;
+    box-shadow: 0 5px 25px var(--cookie-pop);
+}
+
+.faq--toggle{
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--faq-color);
+    cursor: pointer;
+    font-family: "Uu",sans-serif;
+    padding: 15px 0;
+}
+.faq--content{
+    position: relative;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 25px;
+    height: 0;
+    color: var(--p-text-color);
+    overflow: hidden;
+    transition: all 1s;
+    font-family: "FS",sans-serif;
+}
+.faq--icon{
+    font-size: 2rem;
+    transition: all 1s;
+}
