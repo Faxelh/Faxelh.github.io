@@ -1,0 +1,68 @@
+/*----- Share option -------*/
+.share-option{
+    border: 1px solid var(--cookie-pop);
+    margin: 5px auto;
+    padding: 5px 0;
+    background: var(--iconslider);
+}
+.share-option a{
+    color: var(--c-text-color);
+    font-weight: 600;
+    margin-left: 35px;
+    font-family: "BN", cursive;
+}
+.share-option a::after{
+    content: "";
+    background: url(../Img/link.svg) 0 0 no-repeat;
+    background-size: 20px;
+    display: inline-block;
+    height: 20px; width: 20px;
+    margin-left: 10px;
+}
+/* Search Script */
+.search--script input{
+    height: 100%; width: 100%;
+    background:none;
+    font-size: 1rem;
+    color: var(--a-text-color);
+    padding: 1rem 1rem;
+}
+.search--script label{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--schedule-h1);
+    cursor: pointer;
+}
+.search--script label:hover{
+    color: var(--iconslider);
+}
+.search--script{
+    position: fixed;
+    top:14%; right: 15%;
+    border-radius: 5px;
+    box-shadow: var(--text-color);
+    background: var(--lightbox-bg);
+    display: flex;
+    align-items: center;
+    height: 2.5rem;width: 50%;
+    z-index: 5;
+    transform: scale(0);
+    transition: transform .5s;
+    transform-origin: top right;
+}
+.search--script.search-active{
+    transform: scale(1);
+}
+@media (max-width: 768px){
+    .search--script{
+        position: absolute;
+        right: 20%;top:18%;
+        width: 17rem;
+    }
+}
+#super-theme-btn{
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 1s;
+}

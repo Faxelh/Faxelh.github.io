@@ -1,0 +1,65 @@
+
+.login--form{
+	position:absolute;
+	right: 1rem;bottom: 8rem;
+	background: var(--cookie-pop);
+	border-radius: 10px;
+	box-shadow: var(--box-shadow);
+	width: 15rem;
+	padding: .5rem;
+	z-index: 5;
+	transform: scale(0);
+	transition: transform .5s;
+	transform-origin: bottom right;
+}
+.login--form.sign--in{
+	transform: scale(1);
+}
+.login--form .login--inputBox{
+	text-align: center;
+	font-family: "Uu", cursive;
+}
+.login--form .login--inputBox span{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: var(--text-color);
+}
+.login--form .login--inputBox input{
+	font-size: 1rem;
+	color: var(--a-text-color);
+	border-radius: 5px;
+	padding: 5px 10px;
+	background: var(--lightbox-bg);
+	width: 100%;
+	font-style: italic;
+}
+.login--form .login--remember{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	color: var(--text-color);
+	text-transform: capitalize;
+	padding: 5px 0;
+	font-family: "Uu", cursive;
+}
+.login--form .login--remember label{
+	color: var(--text-color);
+	font-size: 1rem;
+	cursor: pointer;
+}
+.login--form .login--btn{
+	width: 100px;
+	margin: 5px auto 0;
+	display: block;
+	padding: 5px 1rem;
+	font-size: 1.5rem;
+	color: var(--c-text-color);
+	text-transform: capitalize;
+	font-weight: 600;
+	letter-spacing: 1px;
+	background: var(--input-val);
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: "FS", sans-serif;
+}

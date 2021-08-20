@@ -1,13 +1,13 @@
 @import "dark.css";@import "newmsg.css";
 @import "font.css";@import "advance.css";
 @import "burg.css";@import "cookies.css";
-@import "bookmarks-iconslide.css";@import "load.css";
+@import "todo-iconslide.css";@import "load.css";
 @import "contacts.css"; @import "switch/switch.css";
  @import "pricing.css"; @import "supernav.css";
 @import "schedule.css";@import "store.css";
-@import "layer.css";
-@import "share-toggle-mob.css";@import "faq.css";
-@import "search-clock.css";@import "iconpack-followbox.css";
+@import "layer.css";@import "login.css";
+@import "share.css";@import "faq.css";
+@import "search-clock.css";@import "iconpack.css";
 *,::before,::after{
     margin: 0; padding: 0;
     border: none; list-style: none;
@@ -244,7 +244,6 @@ section .container{
     text-transform: uppercase;
 }
 .aside .nav li a:not(.active){
-    /*padding-left: 5px;*/
     font-family: "BN", serif;
 }
 .aside .nav li a.active{
@@ -890,7 +889,6 @@ section .container{
     visibility: visible;
     transition: opacity 1s 1s;
 }
-
 /* Lightbox Container*/
 .lightbox{
     position: fixed;
@@ -1116,98 +1114,6 @@ section .container{
 .blog .blog-item .blog-item-inner .blog-info .blog-tags a:nth-child(3){
     color: #0f8;
 }
-/* Contact Section */
-.contact .contact-info-item{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    text-align: center;
-    margin-bottom: 30px;
-}
-.contact .contact-info-item .icon{
-    display: inline-block;
-}
-.contact .contact-info-item .icon .bx{
-    font-size: 40px;
-    color: var(--bx-contact);
-    cursor: pointer;
-}
-.contact .contact-info-item h4{
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--text-color);
-    text-transform: capitalize;
-    font-family: "FS", sans-serif;
-    margin: 10px 0 5px;
-}
-.contact .contact-info-item p{
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--p-text-color);
-    font-weight: 400;
-    font-family: "Qs", cursive;
-}
-.contact .contact-form{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.contact .contact-form .col-1{
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-.contact .contact-form .col-2{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.contact .input_item{
-    margin-bottom: 8px;
-}
-.contact .contact-form .input_item .form-control{
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid var(--a-text-color);
-    padding: 10px 20px;
-    font-size: 16px;
-    color: var(--p-text-color);
-    font-family: "Qs", sans-serif;
-}
-.contact .contact-form .input_item .form-control::placeholder{
-    font-family: "FS", sans-serif;
-}
-.contact .contact-form .input_item textarea.form-control{
-    height: 120px;
-}
-.contact .contact-form .val_btn input[type="submit"]{
-    padding: 10px 10px;
-    text-align: center;
-    background: var(--input-val);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin: 0 auto;
-    display: block;
-    border-radius: 10px;
-    transition: letter-spacing .5s,
-                background .5s, color .5s;
-    color: var(--a-text-color);
-    font-family: "Uu", sans-serif;
-}
-.contact .contact-form .val_btn input[type="submit"]:hover{
-    letter-spacing: 4px;
-    cursor: pointer;
-    background: var(--input-val-h);
-    color: var(--text-color);
-}
-.contact #error_msg{
-    background: var(--error_msg);
-    text-align: center;
-    font-size: 1rem;
-    border-radius: 10px;
-    color: var(--error_msg-a);
-    margin: 10px auto;
-    display: block;
-    font-family: "FS", sans-serif;
-}
-
 /* Responsive CSS */
 @media (max-width: 1199px){
     .section .container{
@@ -1257,7 +1163,6 @@ section .container{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .contact .contact-form .col-1,
     .portfolio .portfolio-items,
     .service .service-item{
         flex: 0 0 100%!important;
@@ -1279,14 +1184,7 @@ section .container{
         margin-bottom: 10px;
     }
 }
-@media (max-width: 840px){
-    .contact .contact-info-item{
-        flex: 0 0 100%!important;
-        max-width: 100%!important;
-    }
-}
 @media (max-width: 560px){
-    .contact .contact-info-item,
     .blog .blog-item,
     .portfolio .portfolio-items{
         flex: 0 0 100%!important;

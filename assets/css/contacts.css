@@ -1,4 +1,4 @@
-/* Contact Section*/
+
 .contacts .contact-container{
     display: flex;
     justify-content: center;
@@ -40,56 +40,73 @@
 .contacts .contact-container .contact_right iframe{
     filter: grayscale(100%);
 }
-.contacts .contact-container .contact_right h1{
+.contacts .contact-container .contact_right .hi-title{
+    position: relative;
     font-size: 2rem;
     color: var(--text-color);
     text-align: center;
+    padding-bottom: 5px;
     margin: 10px 0;
 }
-
+.contacts .contact-container .contact_right .hi-title::before{
+    content: "";bottom: 0;
+    position: absolute;
+    width: 5rem;height: 3px;
+    background: var(--text-color);
+    left: calc(50% - 40px);
+}
+.contacts .contact-container .contact_right .hi-title::after{
+    content: "";
+    position: absolute;
+    width: 1.5rem;height: 1rem;
+    background: var(--cookie-pop);
+    border: 4px solid var(--text-color);
+    left: calc(50% - 12px);
+    bottom: -6px;
+}
 .contacts .contact-container .contact_right form textarea,
 .contacts .contact-container .contact_right form input{
-    width: 100%; height: 40px;
-    margin: 10px 0;
+    width: 100%; height: 35px;
+    margin: 4px 0;
     background: var(--a-text-color);
-    border: 2px solid var(--p-text-color);
-    border-radius: 4px;
+    border: 1px solid var(--p-text-color);
+    border-radius: 5px;
     color: var(--text-color);
-    padding: 10px 15px;
+    padding: 10px 10px;
 }
 .contacts .contact-container .contact_right form textarea{
-    height: 150px;
+    height: 140px;
 }
-
-.contacts .contact-container .contact_right form textarea:focus,
-.contacts .contact-container .contact_right form input:focus{
-    background: var(--p-text-color);
-    padding: 10px 15px;
-    color: var(--a-text-color);
-}
-section.contacts .contact-container .contact_right form textarea::placeholder,
-section.contacts .contact-container .contact_right form input::placeholder{
+.contacts .contact-container .contact_right form textarea::placeholder,
+.contacts .contact-container .contact_right form input::placeholder{
     padding: 10px 10px;
 }
 .contacts .contact-container .contact_right form button{
-    padding: 10px; width: 100px;
-    margin: auto 15px auto 150px;
-    background-color: transparent;
-    border: 2px solid var(--p-text-color);
+    padding: 5px 20px;
+    display: block;
+    margin: 0 auto;
+    background: transparent;
+    border: 3px solid var(--p-text-color);
     color: var(--p-text-color);
     border-radius: 5px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 .contacts .contact-container .contact_right form button:hover{
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-top-color: transparent;
+    border-left: 1px solid var(--p-text-color);
+    border-right: 1px solid var(--p-text-color);
+    border-top: 1px solid var(--p-text-color);
 }
-
-@media (max-width: 1200px) {
-    .contacts .contact-container .contact_right form button{
-        margin: auto 130px auto 100px;
-    }
+.contacts .contact-container .contact_right #error_msg{
+    background: var(--error_msg);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 360px;
+    color: var(--error_msg-a);
+    margin: 5px auto;
+    display: block;
+    font-family: "FS", sans-serif;
 }
 @media (max-width: 1000px) {
     .contacts .contact-container{
@@ -100,71 +117,21 @@ section.contacts .contact-container .contact_right form input::placeholder{
         width: 100%;
         margin-bottom: 20px;
     }
-    .contacts .contact-container .contact_right form button{
-        margin: auto 120px auto 160px;
-    }
     .contacts .contact-container .contact_left .contact-details{
         width: 450px;
     }
 }
-@media (max-width: 900px) {
-    .contacts .contact-container .contact_right form button{
-        padding: 10px;
-        margin: auto 70px auto 140px;
-    }
-}
 @media (max-width: 800px) {
-    .contacts .contact-container .contact_right form button{
-        margin: auto 70px auto 120px;
-    }
     .contacts .contact-container .contact_left .contact-details{
         width: 350px;
     }
 }
-@media (max-width: 710px) {
-    .contacts .contact-container .contact_right form button{
-        margin: auto 70px auto 80px;
-    }
-}
-@media (max-width: 600px) {
-    .contacts .contact-container .contact_right form button{
-        padding: 8px;
-        margin: auto 40px auto 50px;
-    }
-    .contacts .contact-container .contact_left .contact-details{
-        width: 250px; height: 100px;
-    }
-}
-@media (max-width: 550px) {
-    .contacts .contact-container .contact_right form button{
-        padding: 8px;
-        margin: auto 25px auto 35px;
-    }
-}
-@media (max-width: 450px) {
-    .contacts .contact-container .contact_right form button{
-        margin: auto 15px auto 30px;
-    }
-}
-@media (max-width: 375px) {
-    .contacts .contact-container .contact_right form button{
-        margin: auto 10px auto 20px;
-    }
-}
 @media (max-width: 350px) {
-    .contacts .contact-container .contact_right form button{
-        margin: auto 5px auto 0;
-    }
     .contacts .contact-container .contact_left .contact-details {
         width: 200px;
     }
-    .contacts .contact-container .contact_right h1{
+    .contacts .contact-container .contact_right .hi-title{
         font-size: 1.2rem;
         margin: 5px 0;
-    }
-}
-@media (max-width: 280px) {
-    .contacts .contact-container .contact_right form button{
-        margin: 15px auto auto 27px;
     }
 }

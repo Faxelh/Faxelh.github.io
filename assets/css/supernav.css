@@ -1,13 +1,14 @@
 
 .SuperNav {
-    width: 100%;height: 8rem;
+    width: 100%;height: 5rem;
     background: var(--aside-color);
     position: fixed;
-    top: -16rem;z-index: 11;
+    top: -16rem;z-index: 8;
     display: flex;
+    border-radius: 1rem;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 25px 10px 0 var(--p-text-color);
+    box-shadow: 0 5px 2rem 0 var(--p-text-color);
     transition: top .5s;
 }
 .SuperNav.move-down {
@@ -22,38 +23,38 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: color .5s, opacity .25s;
+    transition: color 1s, opacity 1s;
 }
 .move-down .SuperNav--link {
     opacity: 1;
 }
 .move-down .SuperNav--link:nth-child(1) {
-    transition: opacity .4s .5s, color .4s;
+    transition: opacity .4s .5s, color .5s;
 }
 .move-down .SuperNav--link:nth-child(2) {
-    transition: opacity .4s .6s, color .4s;
+    transition: opacity .5s .6s, color .6s;
 }
 .move-down .SuperNav--link:nth-child(3) {
-    transition: opacity .4s .7s, color .4s;
+    transition: opacity .6s .7s, color .7s;
 }
 .move-down .SuperNav--link:nth-child(4) {
-    transition: opacity .4s .8s, color .4s;
-}
-.move-down .SuperNav--link:nth-child(5) {
-    transition: opacity .4s .9s, color .4s;
+    transition: opacity .8s .8s, color .8s;
 }
 .SuperNav--link:hover {
     color: var(--iconslider);
 }
+.SuperNav--link.wel{
+    color: var(--input-val);
+}
 .SuperNav--link i {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: var(--cookie-pop);
 }
 .SuperNav--link span {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     margin-top: 5px;
 }
-
 /* Super Hamburger*/
 .Super{
     width: 2rem; height: 2rem;
@@ -62,13 +63,13 @@
     top: 1rem; right: 3rem;
     border-radius: 40rem 40rem 5rem 5rem;
     cursor: pointer; z-index: 5;
-    transition: top .5s .25s, box-shadow .5s .25s;
+    transition: top .5s .4s, box-shadow .5s .4s, right .3s .3s;
     box-shadow: 1px 3px 1rem var(--input-val),
                -1px -3px 1rem var(--input-val);
 }
 .Super.move-down {
-    top: 10rem;
-    transition: top .5s;
+    top: 7.5rem;right: 15rem;
+    transition: top .5s .4s, box-shadow .5s .4s, right .3s .3s;
     box-shadow: 1px 3px 1rem var(--input-val-h),
                -1px -3px 1rem var(--input-val-h);
 }
@@ -79,7 +80,7 @@
     position: absolute;
     top: -11rem;left: calc(50% - 2px);
     box-shadow: 0 0 0 2px var(--input-val);
-    transition: top .5s .25s, box-shadow .5s .25s;
+    transition: top .5s .4s, box-shadow .5s .4s, right .3s .3s;
 }
 .Super.move-down:before {
     box-shadow: 0 0 0 2px var(--input-val-h);

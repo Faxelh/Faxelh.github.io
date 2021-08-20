@@ -1,71 +1,74 @@
 
 .dropmenu_container{
-	position: absolute;
+	/*position: fixed;
 	top: 20%; left: 50%;
 	transform: translate(-50%, -50%);
 	border: 5px double var(--cookie-pop);
-	border-radius: 10px;
+	*/
+	position: relative;
 }
 .dropmenu_container .drop-btn{
-	width: 315px; max-width: 400px;
+	width: 100%;; max-width: 400px;
 	background: var(--dropmenu-bg);
 	border-radius: 10px;
 	line-height: 50px;
-	font-size: 20px;
+	font-size: 1.5rem;
 	font-weight: 500;
+	margin: 0 auto 0 auto;
 	color: var(--dropmenu-text);
-	padding: 0 20px;
+	padding: 0 1rem;
 }
 .dropmenu_container .drop-btn span{
 	float: right;
 	line-height: 50px;
-	font-size: 28px;
+	font-size: 2rem;
 	cursor: pointer;
-	transform:  rotate(0deg);
+	transform: rotate(0deg);
 	transition: transform .5s;
 }
 .dropmenu_container .drop-btn span.shower{
-	transform:  rotate(-180deg);
+	transform: rotate(-180deg);
 }
 .dropmenu_container .tooltip{
-	position: absolute;
-	right: 25px; bottom: -27px;
+	position: relative;
+	top: 0;right: 0;left: 0;
 	height: 15px; width: 15px;
 	background: var(--cookie-pop);;
 	transform: rotate(45deg);
+	margin: 0 auto;
 	display: none;
+	transition: top .4s .5s;
 }
 .dropmenu_container .tooltip.shower{
-	visibility: visible;
-	display: block;
+	display: block;top: 7px
 }
 .dropmenu_container .wrapper{
-	position: absolute;
-	width: 315px; max-width: 400px;
+	position: relative;
+	width: 100%; max-width: 400px;
 	overflow: hidden;
 	border-radius: 15px;
 	background: var(--dropmenu-bg);
-	visibility: hidden;
-	display: flex; top: 300%;
-	transition: top .5s;
+	opacity: 0;top: 200px;
+	display: flex;
+	margin: 0 auto 0 auto;
+	transition: top .4s .5s, opacity .1s .2s;
 }
 .dropmenu_container .wrapper.shower{
-	visibility: visible;
-	top: 70px;
+	opacity: 1;top:0;
 }
 .wrapper ul{
 	width: 800px; max-width: 900px;
-	padding: 10px;
+	padding: 10px!important;
 	transition: all .5s ease;
 }
 .wrapper ul li{
-	line-height: 50px;
-	padding-left: 3rem!important;
+	line-height: 3rem;
+	padding-left: 1rem!important;
 }
 .wrapper ul li a{
 	position: relative;
 	color: var(--dropmenu-text);
-	font-size: 18px;
+	font-size: 1.5rem;
 	font-weight: 500;
 	padding: 0 10px;
 	display: flex;
@@ -99,7 +102,7 @@ ul li a .ibx{
 	display: none;
 }
 .wrapper .arrow{
-	padding-left: 3.5rem!important;
+	padding-left: 1.6rem!important;
 	font-size: 1.5rem;
 	font-weight: 500;
 	color: var(--dropmenu-text);
@@ -130,7 +133,7 @@ ul li a .ibx{
 	}
 	.dropmenu_container .drop-btn{
 		width: 400px;max-width: 400px;
-		line-height: 55px;
+		line-height: 3rem;
 		padding: 0 20px;
 	}
 	.dropmenu_container .wrapper{

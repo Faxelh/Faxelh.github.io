@@ -1,0 +1,234 @@
+
+.bookmarks_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    max-width: 500px;
+}
+
+#bookmarks_form {
+    min-width: 400px;
+    background: var(--a-text-color);
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+#bookmarks_form  > *{
+    margin: 10px 0;
+}
+#bookmarks_form  h3{
+    color: var(--bd-portfolio);
+    text-align: center;
+    font-family: "BN", sans-serif;
+    font-size: 2rem;
+}
+#bookmarks_form  input{
+    background: #ddd;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: "Uu", sans-serif;
+}
+#bookmarks_form ::placeholder{
+    color: #777;
+    opacity: .7;
+    font-weight: 100;
+    font-family: "FS", sans-serif;
+}
+#bookmarks_form input[type=submit]{
+    background: hsl(240, 2%, 12%);
+    display: inline-block;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: var(--cookie-pop);
+    box-shadow: inset -4px -5px 8px var(--changed-shadow),
+                inset 4px 5px 9px var(--changed-shadow);
+}
+
+#bookmarks{
+    background: var(--bookmarks-id);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.bookmark{
+    background: var(--bookmarks-c);
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px auto 10px auto;
+    border-radius: 6px;
+}
+.bookmark h4{
+    flex-basis: 61.3%;
+    color: #fff;
+}
+.bookmark a{
+    padding: 5px 10px;
+    background: #d55;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.bookmark span{
+    padding: 5px 15px;
+    background: #f00;
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media screen and (min-width: 800px) {
+    #bookmarks_form{
+        min-width: 400px;
+    }
+    .bookmark h4{
+        flex-basis: 60%;
+    }
+    .bookmark span{
+        padding: 5px 10px;
+        margin-right: 2.3rem;
+    }
+}
+/* Slider Icon Container*/
+.slider-icon {
+    width: 90%; height: 50vh;
+    background: var(--aside-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto 0 auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+.slider-icon .section--icons i {
+    font-size: 15rem;
+    color: var(--iconslider);
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0);
+    text-shadow: .2rem .2rem .2rem var(--input-val-h);
+    transition: transform .5s;
+}
+.slider-icon .section--icons i.slide-icon {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform .5s .5s;
+}
+
+/*To-do List */
+.todo--container{
+    width: 40%;
+    min-width: 450px;
+    margin: 0 auto 0 auto;
+}
+#todo--newtask{
+    position: relative;
+    background: var(--todo-bg);
+    padding: 15px 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 35px var(--c-text-color);
+}
+#todo--newtask #todo--input{
+    width: 70%;height: 45px;
+    font-family: 'FS',sans-serif;
+    font-size: 15px;
+    border: 2px solid var(--c-text-color);
+    padding: 12px;
+    color: #222;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+#todo--newtask #todo--push{
+    position: relative;
+    float: right;
+    width: 20%;height: 45px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 2rem;
+    background: var(--cookie-pop);
+    color: var(--c-text-color);
+    cursor: pointer;
+    font-family: 'Uu',sans-serif;
+}
+#todo--tasks{
+    background: var(--input-val-h);
+    padding: 15px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 35px var(--input-val);
+    width: 100%;
+    position: relative;
+}
+.todo--task{
+    background: var(--iconslider);
+    height: 40px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--c-text-color);
+}
+.todo--task #todo--taskname{
+    color: var(--c-text-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.todo--task span{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.todo--completed{
+    text-decoration: line-through;
+}
+.todo--delete{
+    cursor: pointer;
+    font-size: 2rem;
+    background: transparent;
+    color: var(--c-text-color);
+    margin-top: 8px;
+}
+.todo--task #todo--push{
+    background: #8052ec;
+    color: var(--c-text-color);
+    height: 100%; width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#error_enter{
+    background: var(--error_msg);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 360px;
+    color: var(--error_msg-a);
+    margin: 5px auto;
+    display: none;
+    font-family: "FS", sans-serif;
+}
+#error_mark{
+    background: var(--error_msg);
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 400px;
+    color: var(--error_msg-a);
+    margin: 5px auto;
+    display: block;
+    font-family: "FS", sans-serif;
+}

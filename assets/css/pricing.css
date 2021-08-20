@@ -34,23 +34,19 @@
 	box-shadow: 0 24px 48px -13px rgba(0, 0, 0, 0.05);
 	transition: all 0.3s ease;
 }
-
 .rows-block .price {
 	display: block;
 }
-
 .rows-block .price sup {
 	font-size: 2em;
 	top: -.8em;
 	color: var(--input-val-h);
 }
-
 .rows-block .price .number {
 	font-size: 50px;
 	font-weight: 600;
 	color: var(--input-val);
 }
-
 .rows-block .excerpt {
 	margin-bottom: 0;
 	color: var(--c-text-color);

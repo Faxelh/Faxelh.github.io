@@ -5,8 +5,7 @@
 	border: 2px solid var(--cookie-pop);
 	border-radius: 10px;
 	bottom: 2rem; right: 5%;
-	width: 100%;
-	z-index: 3;
+	width: 100%;z-index: 3;
 	overflow: hidden;
 	visibility: hidden;
 	max-width: 430px;
@@ -20,11 +19,10 @@
 }
 .new-mail__title span{
 	margin-right: 5px;
-	color: var(--cookie-pop); /*fa5b07*/
+	color: var(--cookie-pop);
 	text-transform: capitalize;
 	font-family: "Ro", sans-serif;
 }
-
 .new-mail__top {
 	align-items: center;
 	display: flex;
@@ -203,7 +201,6 @@
 	color: var(--cookie-pop);
 	font-size: 1.4rem;
 }
-
 .btn-cancel, .btn-sends {
 	background: var(--input-val-h);
 	border-radius: 10px;

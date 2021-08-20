@@ -42,6 +42,7 @@
 	--bdt: 1px solid var(--cookie-pop);
 	--bs-x: 1.5rem;
 	--bs-y: 0;
+	--color-o: #fa5b07;
 }
 
 body.darken{
@@ -84,6 +85,7 @@ body.darken{
 	--iconslider: #e85;
 	--schedule-h1: #e85;
 	--bdt: 1px solid var(--input-val);
+	--color-o: #cde5ff;
 }
 /* FullScreen Enter and Exit */
 .fullscreen_btn {

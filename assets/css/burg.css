@@ -8,6 +8,7 @@
     z-index: 3; display: none;
     align-items: center;
     justify-content: center;
+    transition: all .5s;
     animation: anime 1s ease infinite;
 }
 @keyframes anime {
@@ -44,7 +45,6 @@
     position: absolute;
     top: 5px; left: 0;
 }
-
 .aside .nav_toggle .tool-o,
 .aside .nav_toggle .tool-c{
     position: absolute;
@@ -56,7 +56,7 @@
     align-items: center;
     color: #fff;
     font-size: 1rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: .1rem;
     opacity: 0;
     visibility: hidden;
     transition: all .5s;

@@ -1,0 +1,97 @@
+.icon-pack{
+    padding:10px 0;
+}
+.icon-pack ul {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.icon-pack ul li{
+    margin: 15px;
+    display:inline-block ;
+}
+.icon-pack ul li a .bx {
+    font-size: 2.5rem;
+    color: var(--c-text-color);
+    line-height: 40px;
+    transition:.5s;
+}
+.icon-pack ul li a {
+    position:relative;
+    margin: 0 5px;
+    display:block;
+    width:40px;height:40px;
+    border-radius: 2px 4px 2px 0;
+    background: var(--cookie-pop);
+    transform:perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    box-shadow:-10px 10px 10px var(--changed-shadow);
+    transition:.5s;
+    cursor: pointer;
+}
+.icon-pack ul li a:before{
+    content:"";
+    position:absolute;
+    top:5px;left:-10px;
+    height:100%;width:10px;
+    border-radius:2px 2px 0 0;
+    background: var(--cookie-pop);
+    transform: rotate(0deg) skewX(-45deg);
+    -webkit-transform: rotate(0deg) skewY(-45deg);
+    transition:.5s;
+}
+.icon-pack ul li a:after{
+    content:"";
+    position:absolute;
+    bottom:-10px;right:5px;
+    height:10px;width:100%;
+    border-radius:2px 2px 2px 0;
+    background: var(--cookie-pop);
+    transform: rotate(0deg) skewX(-45deg);
+    transition:.5s;
+}
+.icon-pack ul li a:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(10px,-10px);
+    box-shadow: -30px 30px 30px var(--input-val);
+}
+
+.icon-pack ul li:hover .bx{
+    color:#fff;
+}
+.icon-pack ul li:hover:nth-child(1) a{
+    background:#3b5999;
+}
+.icon-pack ul li:hover:nth-child(2) a{
+    background:#dd4b39;
+}
+.icon-pack ul li:hover:nth-child(3) a{
+    background:#e4405f;
+}
+.icon-pack ul li:hover:nth-child(4) a{
+    background:#55acee;
+}
+
+.icon-pack ul li:hover:nth-child(1) a:before{
+    background:#2e4a86;
+}
+.icon-pack ul li:hover:nth-child(2) a:before{
+    background:#c13929
+}
+.icon-pack ul li:hover:nth-child(3) a:before{
+    background:#d02d4c;
+}
+.icon-pack ul li:hover:nth-child(4) a:before{
+    background:#4184b7;
+}
+
+.icon-pack ul li:hover:nth-child(1) a:after{
+    background:#4a69ad;
+}
+.icon-pack ul li:hover:nth-child(2) a:after{
+    background:#e8432f
+}
+.icon-pack ul li:hover:nth-child(3) a:after{
+    background:#f1395c;
+}
+.icon-pack ul li:hover:nth-child(4) a:after{
+    background:#4d9bde;
+}
