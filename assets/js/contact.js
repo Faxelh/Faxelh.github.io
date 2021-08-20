@@ -6,9 +6,7 @@ function validation(){
 		 subject = document.getElementById("subject").value,
 		 message = document.getElementById("message").value,
 		 error_msg = document.getElementById("error_msg");
-	
-	error_msg.style.padding = "10px";
-	
+	error_msg.style.padding = "7px";
 	let text;
 	if(name.length < 5){
 		text = "Veuillez entrer un nom valide";

@@ -1,4 +1,3 @@
-
 window.addEventListener("load", function(){
     this.setTimeout(() => {
         this.document.querySelector(".preloader3").style.display="none";
@@ -178,6 +177,7 @@ let SetSwitcher = (ToggleSwitch, StyleSwitch, ToggleSwitchIcon, navTogglerBtn, A
         document.querySelector(".drop-btn span").classList.remove("shower");
         document.querySelector(".tooltip").classList.remove("shower");
         NewmailIconPlus.classList.remove('bx-x');
+        document.querySelector('.login--form').classList.remove('sign--in');
         Icon.classList.remove('bx-x');
     })
     window.onscroll = () =>{
@@ -187,7 +187,8 @@ let SetSwitcher = (ToggleSwitch, StyleSwitch, ToggleSwitchIcon, navTogglerBtn, A
         document.querySelector(".wrapper").classList.remove("shower");
         document.querySelector(".drop-btn span").classList.remove("shower");
         document.querySelector(".tooltip").classList.remove("shower");
-        NewmailIconPlus.classList.remove('bx-x')
+        NewmailIconPlus.classList.remove('bx-x');
+        document.querySelector('.login--form').classList.remove('sign--in');
         Icon.classList.remove('bx-x')
     }
 }
@@ -247,7 +248,6 @@ EnterFullScreen.addEventListener('click', function (e) {
         EnterFullScreen.innerHTML = "Fullscreen";
     }
 });
-
 /* Button Download Count*/
 let Telechargement = document.getElementById("download_btn"),
    compteArebours = document.querySelector(".countdown"),
@@ -265,7 +265,7 @@ Telechargement.addEventListener("click", () => {
         if (temps <= 0) {
             clearInterval(tempsTelechargement);
             Patientez.style.display = "block";
-            let href_telechager = "TestFile.zip"; // entrez l'URL du lien du fichier a téléchargé  ici
+            let href_telechager = "blog.apk"; // entrez l'URL du lien du fichier a téléchargé  ici
             window.location.href = href_telechager;
             LienTelechargementManuel.href = href_telechager;
             setTimeout(() => {
@@ -275,45 +275,37 @@ Telechargement.addEventListener("click", () => {
         }
     }, 1000);
 });
-
-/*Follow Box JS*/
-const end = document.querySelector('.closed'),
-   modal = document.querySelector('.follow_box_container');
-window.onload = function (){
-    setTimeout(function (){
-        modal.classList.toggle('togglePopup');
-    } , 15000)
-}
-end.addEventListener('click', () => {
-    modal.classList.remove('togglePopup')
-});
-
 /* Super Nav JS*/
 let Supers = document.querySelector('.Super'),
    Targets = document.querySelectorAll('.Target'),
-   SuperNavLink = document.querySelector('.SuperNav--link');
+   SignInForm = document.querySelector('.login--form'),
+   SignInBtn = document.querySelector('.login'),
+   searchScriptForm = document.querySelector('.search--script'),
+   searchScriptBtn = document.querySelector('.script--btn'),
+   SuperthemeBtn = document.getElementById('super-theme-btn');
+
 Supers.addEventListener('click', () => {
     Targets.forEach((item) => {
         item.classList.toggle('move-down')
     });
-    SuperNavLink.forEach((item) => {
-        item.classList.remove('move-down')
-    })
 })
-/* Three Dot For Mobile Toggle */
-let Toggles = document.getElementById('toggles'),
-   MobNav = document.getElementById('mob-nav');
-Toggles.onclick = function(){
-    Toggles.classList.toggle('active-toggle');
-    MobNav.classList.toggle('active-mob');
-}
-document.onclick = function(e){
-    if(e.target.id !== 'toggles' && e.target.id !== 'mob-nav'){
-        Toggles.classList.remove('active-toggle');
-        MobNav.classList.remove('active-mob');
-    }
-}
 
+SignInBtn.onclick = () =>{
+    SignInForm.classList.toggle('sign--in');
+    searchScriptForm.classList.remove('search-active');
+}
+searchScriptBtn.onclick = () =>{
+    searchScriptForm.classList.toggle('search-active');
+    SignInForm.classList.remove('sign--in');
+}
+SuperthemeBtn.onclick = () =>{
+    SuperthemeBtn.classList.toggle('bx-sun');
+    if(SuperthemeBtn.classList.contains('bx-sun')){
+        SuperthemeBtn.classList.toggle('rem');
+    }else{
+        SuperthemeBtn.classList.remove('rem');
+    }
+};
 /* Typed  JS*/
 let typed = new Typed('#typing', {
     strings : ['Hacker & Web developer ^500', 'Web designer ^700', 'front end developer ^900'],

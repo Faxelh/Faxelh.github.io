@@ -34,36 +34,3 @@ for(let i=0; i<FaqToggle.length; i++){
 		}
 	});
 }
-
-
-/* To-do list */
-
-document.querySelector('#todo--push').onclick = function(){
-	if(document.querySelector('#todo--newtask #todo--input').value.length === 0){
-		alert("Veuillez saisir une tâche")
-	}
-	else{
-		let i;
-		document.querySelector('#todo--tasks').innerHTML += `
-         <div class="todo--task">
-             <span id="todo--taskname">
-                 ${document.querySelector('#todo--newtask #todo--input').value}
-             </span>
-             <button class="todo--delete"><i class="bx bx-trash-alt"></i></button>
-         </div>
-        `;
-		const current_tasks = document.querySelectorAll(".todo--delete");
-		for(i = 0; i<current_tasks.length; i++){
-			current_tasks[i].onclick = function(){
-				this.parentNode.remove();
-			}
-		}
-		const tasks = document.querySelectorAll(".todo--task");
-		for(i = 0; i<tasks.length; i++){
-			tasks[i].onclick = function(){
-				this.classList.toggle('todo--completed');
-			}
-		}
-		document.querySelector("#todo--newtask #todo--input").value = "";
-	}
-}
