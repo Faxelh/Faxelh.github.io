@@ -19,7 +19,7 @@
 </head>
 <body>
 <div id="cursor-circle"></div>
-<!--========== Preloader ==========-->
+<!--========== Preloader ==========
 <div class="preloader3">
 	<div class="pre_loader">
 		<span class="load_item" style="--i: 1;">L</span>
@@ -33,7 +33,7 @@
 		<span class="load_item" style="--i: 9;">.</span>
 		<span class="load_item" style="--i: 10;">.</span>
 	</div>
-</div>
+</div>-->
 <!--========== Main Container ==========-->
 <div class="main-container">
 	<div class="aside" id="aside">
@@ -45,22 +45,17 @@
 			<li><a href="#services"><i class="bx bx-add-to-queue"></i> Services </a></li>
 			<li><a href="#portfolio"><i class="bx bx-briefcase"></i> Portfolio </a></li>
 			<li><a href="#blog"><i class="bx bx-envelope"></i> Blog </a></li>
-			<li><a href="#contact"><i class="bx bx-comment"></i> Contact </a></li>
-			<li><a href="#contacts"><i class="bx bxs-comment"></i> Contact 2 </a></li>
-			<li><a href="#advance"><i class="bx bx-folder-open"></i> Advance Dropdown </a></li>
-			<li><a href="#pricing"><i class="bx bx-cube"></i> Pricing </a></li>
-			<li><a href="#Schedule"><i class="bx bxs-school"></i> Schedule </a></li>
-			<li><a href="#slide"><i class="bx bx-award"></i> Icon Slider Bookmark</a></li>
-			<li><a href="#store"><i class="bx bx-award"></i> Store </a></li>
+			<li><a href="#slide"><i class="bx bx-award"></i> Award</a></li>
+			<li><a href="#store"><i class="bx bx-store"></i> Store </a></li>
+			<li><a href="#tutoriel"><i class="bx bxl-tux"></i> Tutoriel</a></li>
 			<li><a href="#faq"><i class="bx bx-question-mark"></i> Faq </a></li>
-			<li><a href="#layer"><i class="bx bx-layer"></i> Layer </a></li>
 		</ul>
 		<a href="https://twitter.com/faxelhs" class="follow" target="_blank">
 			<span class="follow_txt"><i class="bx bxl-twitter"></i>Follow me on Twitter</span>
 			<span class="hacker"><img src="assets/Img/me_tw.png" alt=""/>Faxel — @faxelhs</span>
 		</a>
 		<div class="share-option">
-			<a href="https://api.whatsapp.com/send?text=Here%20is%20the%20best%20list%20of%20books%2C%20courses%20and%20many%20more%20for%20programmers.%0A%0AClick%20and%20Visit%3A%20https%3A%2F%2Ffaxel.netlify.app" target="_blank">Share via WhatsApp</a>
+			<a href="https://api.whatsapp.com/send?text=https//:faxel.netlify.app" target="_blank">Share via WhatsApp</a>
 		</div>
 		<div class="copyright">
 			&copy;<b>2019</b> <b><script>new Date().getFullYear()>2019&&document.write("- " + new Date().getFullYear());</script></b>
@@ -117,11 +112,11 @@
 								</div>
 								<div class="row">
 									<div class="button nette">
-											<a href="#" class="btn" id="download_btn"> Download CV <i class="bx bx-download"></i></a>
+											<a href="#" class="btn" id="download_btn"> Download Apk <i class="bx bx-download"></i></a>
 											<div class="countdown"></div><br/>
 											<div class="wait">Veuillez patientez...</div>
 											<div class="down_manual">Si le téléchargement ne démarre pas automatiquement, <a href="#" class="down_manual_link">cliquez ici.</a></div>
-										<a href="#contact" data-section-index="1" class="btn hire-me">Engagez moi</a>
+										<a href="#faq" data-section-index="1" class="btn hire-me">Engagez moi</a>
 									</div>
 								</div>
 							</div>
@@ -256,7 +251,7 @@
 				</div>
 			</div>
 		</section>
-		<!--==========  Service Section ========== -->
+		<!--==========  All Service Section ========== -->
 		<section class="service section" id="services">
 			<div class="container">
 				<div class="row"><div class="section-title nette"><h2>Services</h2></div></div>
@@ -314,8 +309,8 @@
 								Ipsum.</p>
 						</div>
 					</div>
-				
 				</div>
+				
 			</div>
 		</section>
 		<!--==========  Portfolio Section ========== -->
@@ -718,315 +713,7 @@
 				</div>
 			</div>
 		</section>
-
-		<!--==========  Contact Section ========== -->
-		<section class="contact section" id="contact">
-			<div class="container">
-				<div class="row"><div class="section-title nette"><h2>Contact</h2></div></div>
-
-  			<div class="row">
-					<div class="contact-info-item nette">
-						<div class="icon"><i class="bx bx-phone"></i></div>
-						<h4>Call Us On</h4>
-						<p>+225 0555709610 </p>
-					</div>
-					
-					<div class="contact-info-item nette">
-						<div class="icon"><i class="bx bx-map-pin"></i></div>
-						<h4>Location</h4>
-						<p>L152 Angré Cocody, Abidjan, Ivory Coast</p>
-					</div>
-					
-					<div class="contact-info-item nette">
-						<div class="icon"><i class="bx bx-envelope-open"></i></div>
-						<h4>Email</h4>
-						<p>taxel@outlook.fr</p>
-					</div>
-				</div>
-				<!--==========  Contact Form ========== -->
-				<div class="row">
-					<div id="error_msg"></div>
-					<form class="contact-form nette"  onsubmit="return validation();">
-						<div class="row">
-							<div class="input_item col-1 nette">
-								<div class="input_field"><input type="text" class="form-control" placeholder="Name" id="name"></div>
-							</div>
-							<div class="input_item col-1 nette">
-								<div class="input_field"><input type="email" class="form-control" placeholder="Email" id="email"></div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="input_item col-1 nette">
-								<div class="input_field"><input type="text" class="form-control" placeholder="Phone" id="phone"></div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="input_item col-1 nette">
-								<div class="input_field"><input type="text" class="form-control" placeholder="Subject" id="subject"></div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="input_item col-2 nette">
-								<div class="input_field"><textarea placeholder="Your Message" class="form-control" id="message"></textarea></div>
-							</div>
-						</div>
-						<div class="val_btn"><input type="submit"></div>
-					</form>
-				</div>
-			
-			</div>
-		</section>
-		<!--==========  Contact 2 Section ========== -->
-		<section class="contacts section" id="contacts">
-			<div class="row"><div class="section-title nette"><h2>Contacts</h2></div></div>
-			<div class="contact-container">
-				<div class="contact_left">
-					<div class="contact-details">
-						<div class="con-icon"><i class="bx bx-map-pin"></i></div>
-						<div class="con-det">Cocody, Abidjan Ivory Coast</div>
-					</div>
-					<div class="contact-details">
-						<div class="con-icon"><i class="bx bx-phone"></i></div>
-						<div class="con-det">+225 0555709610</div>
-					</div>
-					<div class="contact-details">
-						<div class="con-icon"><i class="bx bx-envelope"></i></div>
-						<div class="con-det">taxel@gmail.com</div>
-					</div>
-					<div class="contact-details">
-						<div class="con-icon"><i class="bx bx-check-circle"></i></div>
-						<div class="con-det">Free Lancing Available</div>
-					</div>
-				</div>
-				<div class="contact_right">
-					<iframe src="https://maps.google.com/maps?q=Cocody,%20Abidjan,%20C%C3%B4te%20d'Ivoire&t=k&z=11&ie=UTF8&iwloc=&output=embed" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-					<h1>How can I help you?</h1>
-					<form>
-						<input type="text" placeholder="Name">
-						<input type="email" placeholder="Email">
-						<input type="text" placeholder="Subject">
-						<textarea placeholder="Message" cols="30" rows="10"></textarea>
-						<button type="submit">Submit</button>
-						<button type="reset">Reset</button>
-					</form>
-				</div>
-			</div>
-		</section>
-		<!--==========  Advanced Dropdown Menu Section========== -->
-		<section class="section" id="advance">
-			<div class="dropmenu_container">
-				<div class="drop-btn">Advance Menu <span class="bx bx-chevron-down-circle"></span></div>
-				<div class="tooltip"></div>
-				<div class="wrapper">
-					<ul class="menu-bar">
-						<li><a href="#"><div class="icons"><span class="bx bx-home"></span></div>Home</a></li>
-						<li class="setting-item"><a href="#"><div class="icons"><span class="bx bxs-cog"></span></div>Settings & privacy<i class="bx bx-chevron-right-circle ibx"></i></a></li>
-						<li class="help-item"><a href="#"><div class="icons"><span class="bx bx-support"></span></div>Help & support<i class="bx bx-chevron-right-circle ibx"></i></a></li>
-						<li><a href="#"><div class="icons"><span class="bx bx-user"></span></div>About us</a></li>
-						<li><a href="#"><div class="icons"><span class="bx bx-comment"></span></div>Feedback </a></li>
-					</ul>
-					<ul class="setting-drop">
-						<li class="arrow back-setting-btn"><span class="bx bx-chevron-left"></span>Settings & privacy</li>
-						<li><a href="#"><div class="icons"><span class="bx bx-user"></span></div>Personal info </a></li>
-						<li><a href="#"><div class="icons"><span class="bx bx-lock"></span></div>Password </a></li>
-						<li><a href="#"><div class="icons"><span class="bx bx-book"></span></div>Activity log </a></li>
-						<li><a href="#"><div class="icons"><span class="bx bx-globe"></span></div>Languages </a></li>
-						<li><a href="#"><div class="icons"><span class="bx bx-log-out"></span></div>Log out </a></li>
-					</ul>
-					<ul class="help-drop">
-						<li class="arrow back-help-btn"><span class="bx bx-chevron-left"></span>Help & support</li>
-						<li><a href="#"><div class="icons"><span class="bx bx-support"></span></div>Help centre </a></li>
-						<li><a href="#"><div class="icons"><span class="bx bx-envelope"></span></div>Support Inbox </a></li>
-						<li><a href="#"><div class="icons"><span class="bx bx-comment"></span></div>Send feedback </a></li>
-						<li><a href="#"><div class="icons"><span class="bx bx-exclude"></span></div>Report problem </a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<!--==========  Schedule Section ========== -->
-		<section class="section" id="Schedule">
-			<div class="container">
-				<div class="row"><div class="section-title nette"><h2>Schedule Design</h2></div></div>
-				<div class="schedule-one">
-				<h1><span>Schedule</span></h1>
-				<table>
-					<tr>
-						<th>Day</th>
-						<th>Mon</th>
-						<th>Tue</th>
-						<th>Wed</th>
-						<th>Thu</th>
-						<th>Fri</th>
-					</tr>
-					<tr>
-						<td>8-8:30</td>
-						<td class="selected">Learn</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>9-10</td>
-						<td></td>
-						<td class="selected">Practice</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>1-1:30</td>
-						<td></td>
-						<td></td>
-						<td class="selected">Play</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>3:45-5</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td class="selected">Code</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>6-6:15</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td class="selected">Discuss</td>
-					</tr>
-				</table>
-			</div>
-			</div>
-			<!-------------- Schedule 2 ----------->
-			<div class="schedule-two">
-				<h1><span>Schedule 2</span></h1>
-				<table>
-					<tr>
-						<th>Hour / Day</th>
-						<th>Mon</th>
-						<th>Tue</th>
-						<th>Wed</th>
-						<th>Thu</th>
-						<th>Fri</th>
-						<th>Sat</th>
-						<th>Sun</th>
-					</tr>
-					<tr>
-						<td>08:00 - 10:00</td>
-						<td>Work</td>
-						<td>Work</td>
-						<td>Work</td>
-						<td>Work</td>
-						<td>Work</td>
-						<td>Exercise</td>
-						<td>Go to Church</td>
-					</tr>
-					<tr>
-						<td>10:00 - 12:00</td>
-						<td>Exercise</td>
-						<td>Exercise</td>
-						<td>Exercise</td>
-						<td>Exercise</td>
-						<td>Exercise</td>
-						<td>Exercise</td>
-						<td>Return Home</td>
-					</tr>
-					<tr>
-						<td class="selected">12:10 - 13:40</td>
-						<td class="selected" >Pause</td>
-						<td class="selected" >Pause</td>
-						<td class="selected" >Pause</td>
-						<td class="selected" >Pause</td>
-						<td class="selected" >Pause</td>
-						<td class="selected" >Pause</td>
-						<td class="selected" ></td>
-					</tr>
-					<tr>
-						<td>14:30 - 16:00</td>
-						<td>Code</td>
-						<td>Code</td>
-						<td>Code</td>
-						<td>Code</td>
-						<td>Code</td>
-						<td>Football</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>17:00 - 19:00</td>
-						<td>Play music</td>
-						<td>Play music</td>
-						<td>Play music</td>
-						<td>Play music</td>
-						<td>Play music</td>
-						<td>Work Home</td>
-						<td></td>
-					</tr>
-				</table>
-			</div>
-			<!------------- Schedule Contact ----------->
-			<div class="container">
-				<div class="schedule-contact">
-					<h1><span>Contact Me</span></h1>
-					<form class="form1">
-						<input name="name" placeholder="Name" type="text"  class="form1-input" required /><br/>
-						<input name="email" placeholder="Email" type="email"  class="form1-input" required /><br/>
-						<textarea name="message" placeholder="Message" class="form1-textarea" required ></textarea>
-						<input type="submit" value="SEND" class="submit" />
-					</form>
-				</div>
-			</div>
-		</section>
-		<!--==========  Pricing Section  ==========-->
-		<section class="section" id="pricing">
-			<div class="container">
-			<div class="row"><div class="section-title nette"><h2>Pricing</h2></div></div>
-			<div class="pricing-container">
-				<div class="rows">
-					<div class="rows-col">
-						<div class="rows-block">
-							<div class="rows-block-center">
-								<span class="excerpt">Basic Plan</span>
-								<span class="price"><sup>$</sup> <span class="number">25K</span></span>
-								<div class="paddings">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-								<a href="#" class="pricing-btn btn-primary">Get Started</a>
-							</div>
-						</div>
-					</div>
-					<div class="rows-col">
-						<div class="rows-block">
-							<div class="rows-block-center">
-								<span class="excerpt">Beginner Plan</span>
-								<span class="price"><sup>$</sup> <span class="number">60K</span></span>
-								<div class="paddings">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-								<a href="#" class="pricing-btn btn-primary">Get Started</a>
-							</div>
-						</div>
-					</div>
-					<div class="rows-col" >
-						<div class="rows-block">
-							<div class="rows-block-center">
-								<span class="excerpt">Premium Plan</span>
-								<span class="price"><sup>$</sup> <span class="number">99K</span></span>
-								<div class="paddings">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-								<a href="#" class="pricing-btn btn-primary">Get Started</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
-		<!--==========  Slide Icon && BookMarks  Section  ========== -->
+		<!--==========  Slide Icon && ToDo  Section  ========== -->
 		<section class="section " id="slide">
 			<div class="container">
 				<div class="row"><div class="section-title nette"><h2>Icon Slider</h2></div></div>
@@ -1059,6 +746,7 @@
 				<div class="bookmarks_container">
 					<form id="bookmarks_form">
 						<h3>BOOKMARKS</h3>
+						<div id="error_mark"></div>
 						<input type="text" placeholder="Nom du site | Ex: Facebook" value="" id="siteName" />
 						<input type="text" placeholder="URL du site | Ex: https://www.facebook.com" value="" id="siteUrl" />
 						<input type="submit" value="Ajouter"/>
@@ -1068,6 +756,7 @@
 				<!----------  To-do List ------------>
 				<div class="row"><div class="section-title nette"><h2>ToDo List</h2></div></div>
 				<div class="todo--container">
+					<div id="error_enter"></div>
 					<div id="todo--newtask">
 						<input type="text" placeholder="Tâche à faire.." id="todo--input">
 						<button id="todo--push">Add</button>
@@ -1165,9 +854,197 @@
 				<button class="store-btn btn-primary btn-purchase" type="button">PURCHASE</button>
 			</div>
 		</section>
-		
+		<!--==========  Tutoriel Section ========== -->
+		<section class="section" id="tutoriel">
+			<div class="container">
+				<div class="row"><div class="section-title nette"><h2>Tutoriel</h2></div></div>
+					<!--==========  Layer Section ========== -->
+							<div class="row"><div class="hi-title nette"><h2>Layer</h2></div></div>
+							<div class="row">
+								<div class="layer-container">
+									<div class="layer one show">
+										<h2>Layer One</h2>
+										<p>A context-shift transition. Use the dots below or your keyboard arrows.</p>
+									</div>
+									<div class="layer two"><h2>Layer Two</h2></div>
+									<div class="layer three"><h2>Layer Three</h2></div>
+									<div class="layer four"><h2>Layer Four</h2></div>
+									<div class="layer five"><h2>Layer Five</h2></div>
+								</div>
+								<ul class="bullets"></ul>
+							</div>
+					<!--==========  Schedule Section ========== -->
+						<div class="container">
+							<div class="row"><div class="hi-title nette"><h2>Schedule Design</h2></div></div>
+							<div class="schedule-one">
+								<h1><span>Schedule</span></h1>
+								<table>
+									<tr>
+										<th>Day</th>
+										<th>Mon</th>
+										<th>Tue</th>
+										<th>Wed</th>
+										<th>Thu</th>
+										<th>Fri</th>
+									</tr>
+									<tr>
+										<td>8-8:30</td>
+										<td class="selected">Learn</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>9-10</td>
+										<td></td>
+										<td class="selected">Practice</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>1-1:30</td>
+										<td></td>
+										<td></td>
+										<td class="selected">Play</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>3:45-5</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="selected">Code</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>6-6:15</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="selected">Discuss</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!-------------- Schedule 2 ----------->
+						<div class="schedule-two">
+							<h1><span>Schedule 2</span></h1>
+							<table>
+								<tr>
+									<th>Hour / Day</th>
+									<th>Mon</th>
+									<th>Tue</th>
+									<th>Wed</th>
+									<th>Thu</th>
+									<th>Fri</th>
+									<th>Sat</th>
+									<th>Sun</th>
+								</tr>
+								<tr>
+									<td>08:00 - 10:00</td>
+									<td>Work</td>
+									<td>Work</td>
+									<td>Work</td>
+									<td>Work</td>
+									<td>Work</td>
+									<td>Exercise</td>
+									<td>Go to Church</td>
+								</tr>
+								<tr>
+									<td>10:00 - 12:00</td>
+									<td>Exercise</td>
+									<td>Exercise</td>
+									<td>Exercise</td>
+									<td>Exercise</td>
+									<td>Exercise</td>
+									<td>Exercise</td>
+									<td>Return Home</td>
+								</tr>
+								<tr>
+									<td class="selected">12:10 - 13:40</td>
+									<td class="selected" >Pause</td>
+									<td class="selected" >Pause</td>
+									<td class="selected" >Pause</td>
+									<td class="selected" >Pause</td>
+									<td class="selected" >Pause</td>
+									<td class="selected" >Pause</td>
+									<td class="selected" ></td>
+								</tr>
+								<tr>
+									<td>14:30 - 16:00</td>
+									<td>Code</td>
+									<td>Code</td>
+									<td>Code</td>
+									<td>Code</td>
+									<td>Code</td>
+									<td>Football</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>17:00 - 19:00</td>
+									<td>Play music</td>
+									<td>Play music</td>
+									<td>Play music</td>
+									<td>Play music</td>
+									<td>Play music</td>
+									<td>Work Home</td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+						<!------------- Schedule Contact ----------->
+						<div class="container">
+							<div class="schedule-contact">
+								<h1><span>Contact Me</span></h1>
+								<form class="form1">
+									<input name="name" placeholder="Name" type="text"  class="form1-input" required /><br/>
+									<input name="email" placeholder="Email" type="email"  class="form1-input" required /><br/>
+									<textarea name="message" placeholder="Message" class="form1-textarea" required ></textarea>
+									<input type="submit" value="SEND" class="submit" />
+								</form>
+							</div>
+						</div>
+				<!--==========  Advanced Dropdown Menu========== -->
+				<div class="container">
+				<div class="row"><div class="hi-title nette"><h2>Advanced Dropdown</h2></div></div>
+				<div class="dropmenu_container">
+					<div class="drop-btn">Advance Menu <span class="bx bx-chevron-down-circle"></span></div>
+					<div class="tooltip"></div>
+					<div class="wrapper">
+						<ul class="menu-bar">
+							<li><a href="#"><div class="icons"><span class="bx bx-home"></span></div>Home</a></li>
+							<li class="setting-item"><a href="#"><div class="icons"><span class="bx bxs-cog"></span></div>Settings & privacy<i class="bx bx-chevron-right-circle ibx"></i></a></li>
+							<li class="help-item"><a href="#"><div class="icons"><span class="bx bx-support"></span></div>Help & support<i class="bx bx-chevron-right-circle ibx"></i></a></li>
+							<li><a href="#"><div class="icons"><span class="bx bx-user"></span></div>About us</a></li>
+							<li><a href="#"><div class="icons"><span class="bx bx-comment"></span></div>Feedback </a></li>
+						</ul>
+						<ul class="setting-drop">
+							<li class="arrow back-setting-btn"><span class="bx bx-chevron-left"></span>Settings & privacy</li>
+							<li><a href="#"><div class="icons"><span class="bx bx-user"></span></div>Personal info </a></li>
+							<li><a href="#"><div class="icons"><span class="bx bx-lock"></span></div>Password </a></li>
+							<li><a href="#"><div class="icons"><span class="bx bx-book"></span></div>Activity log </a></li>
+							<li><a href="#"><div class="icons"><span class="bx bx-globe"></span></div>Languages </a></li>
+							<li><a href="#"><div class="icons"><span class="bx bx-log-out"></span></div>Log out </a></li>
+						</ul>
+						<ul class="help-drop">
+							<li class="arrow back-help-btn"><span class="bx bx-chevron-left"></span>Help & support</li>
+							<li><a href="#"><div class="icons"><span class="bx bx-support"></span></div>Help centre </a></li>
+							<li><a href="#"><div class="icons"><span class="bx bx-envelope"></span></div>Support Inbox </a></li>
+							<li><a href="#"><div class="icons"><span class="bx bx-comment"></span></div>Send feedback </a></li>
+							<li><a href="#"><div class="icons"><span class="bx bx-exclude"></span></div>Report problem </a></li>
+						</ul>
+					</div>
+				</div>
+				</div>
+				
+			</div>
+		</section>
 		<!--==========  FAQ Section ========== -->
-		<section class="service section" id="faq">
+		<section class="section" id="faq">
 			<div class="container">
 				<div class="row"><div class="section-title nette"><h2>FAQ</h2></div></div>
 				<div class="row">
@@ -1196,29 +1073,47 @@
 								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
 							</div>
 						</div>
-				
 				</div>
-			</div>
-		</section>
-		<!--==========  Service Section ========== -->
-		<section class="section" id="layer">
-			<div class="container">
-				<div class="row"><div class="section-title nette"><h2>Layer</h2></div></div>
-				<div class="row">
-					<div class="layer-container">
-						<div class="layer one show">
-							<h2>Layer One</h2>
-							<p>A context-shift transition. Use the dots below or your keyboard arrows.</p>
+				<!--==========  Contact Container ========== -->
+				<div class="container contacts">
+					<div class="row"><div class="section-title nette"><h2>Contacts</h2></div></div>
+					<div class="contact-container">
+						<div class="contact_left">
+							<div class="contact-details">
+								<div class="con-icon"><i class="bx bx-map-pin"></i></div>
+								<div class="con-det">Cocody, Abidjan:Ivory Coast</div>
+							</div>
+							<div class="contact-details">
+								<div class="con-icon"><i class="bx bx-phone"></i></div>
+								<div class="con-det">+225 055-5709-610</div>
+							</div>
+							<div class="contact-details">
+								<div class="con-icon"><i class="bx bx-envelope"></i></div>
+								<div class="con-det">threat0@hotmail.com</div>
+							</div>
+							<div class="contact-details">
+								<div class="con-icon"><i class="bx bx-check-circle"></i></div>
+								<div class="con-det">Free Lancing Available</div>
+							</div>
 						</div>
-						<div class="layer two"><h2>Layer Two</h2></div>
-						<div class="layer three"><h2>Layer Three</h2></div>
-						<div class="layer four"><h2>Layer Four</h2></div>
-						<div class="layer five"><h2>Layer Five</h2></div>
+						<div class="contact_right">
+							<iframe src="https://maps.google.com/maps?q=Cocody,%20Abidjan,%20C%C3%B4te%20d'Ivoire&t=k&z=11&ie=UTF8&iwloc=&output=embed" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							<h1 class="hi-title">How can I help you?</h1>
+							<form onsubmit="return validation();">
+								<input type="text" placeholder="Your Name" id="name">
+								<input type="email" placeholder="Your Email" id="email">
+								<input type="text" placeholder="Your Phone" id="phone">
+								<input type="text" placeholder="Your Subject" id="subject">
+								<textarea placeholder="Your Message" cols="30" rows="10" id="message"></textarea>
+								<div id="error_msg"></div>
+								<button type="submit">Submit</button>
+							</form>
+						</div>
 					</div>
-					<ul class="bullets"></ul>
 				</div>
 			</div>
 		</section>
+		
 	</div>
 </div>
 <!--==========  End Main Container ========== -->
@@ -1270,24 +1165,9 @@
 		<li><a href="javascript:void(0);" title="indigo" style="background-color: #616;" onclick="setActiveStyle('indigo')"></a></li>
 	</ul>
 	<h4>Theme</h4>
-	<li><i class="bx bx-moon changed" id="DarkLight"></i></li>
+	<div><i class="bx bx-moon changed" id="DarkLight"></i></div>
 </div>
-<!--==========  FollowBox  and Search ========== -->
-<div class="follow_box_container">
-	<div class="follow_box">
-		<div class="Thank">
-			<div class="part"><h2 class="heading">Thanks</h2></div>
-		</div>
-		<div class="infos">
-			<p class="message">Thank you very much for visiting <b>(•‿•)</b>.</p>
-		</div>
-		<div class="actions">
-			<button class="closed" type="button"> Close</button>
-			<a href="https://www.youtube.com/channel/UCpFl1OHdyQbB9YI76j9C3HQ" target="_blank" class="followed"> Youtube</a>
-		</div>
-	</div>
-</div>
-<!----------- Search -------------->
+<!--==========   Search ==========-->
 <div class="search_box_container">
 	<a href="#search"><span class="bx bx-search search--icon"></span></a>
 </div>
@@ -1299,12 +1179,10 @@
 			<a class="search--close" href="#"><b>&times;</b></a>
 		</form>
 	</div>
-	
 	<div class="Clock-box">
 		<div class="our hour" id="hour"></div>
 		<div class="our min" id="min"></div>
 		<div class="our sec" id="sec"></div>
-		
 		<div class="clock">
 			<div class="circle"></div>
 			<div class="display-number display-number1">
@@ -1349,7 +1227,7 @@
 <!--==========  Chat With Admin ========== -->
 <button class="new__button new-mail__toggle">
 	<i class="bx bx-message-dots"></i>
-	<span class="tooltip">Chat with Admin.</span>
+	<span class="tooltip">Chat with Admin</span>
 </button>
 <div class="new">
 	<div class="new-mail">
@@ -1393,38 +1271,47 @@
 		</div>
 	</div>
 </div>
+<!--========== Super Nav Container  && FullScreen==========-->
 <button class="fullscreen_btn" id="fullscreen">FullScreen</button>
-<!--========== Fun Toggle Container ==========-->
-<div id="toggles"></div>
-<div class="mob-nav" id="mob-nav">
-	<ul>
-		<li class="active-mob"><a href="#">About</a></li>
-		<li><a href="#">Contact Our Admin</a></li>
-		<li><a href="#">Tutorial</a></li>
-		<li><a href="#">Contact Me</a></li>
-	</ul>
-</div>
-<!--========== Super Nav Container ==========-->
 <div class="Super Target"></div>
 <div class="SuperNav Target">
-	<a href="#" class="SuperNav--link"><i class="bx bx-home"></i><span>Home</span></a>
-	<a href="#" class="SuperNav--link"><i class="bx bxl-c-plus-plus"></i><span>Meals</span></a>
-	<a href="#" class="SuperNav--link"><i class="bx bx-badge"></i><span>Burger</span></a>
-	<a href="#" class="SuperNav--link"><i class="bx bxl-pinterest"></i><span>Pizza</span></a>
-	<a href="#" class="SuperNav--link"><i class="bx bx-book-content"></i><span>Contact</span></a>
+	<a href="#" class="SuperNav--link login wel"><i class="bx bxs-log-in"></i><span>Sign in</span></a>
+	<a href="#" class="SuperNav--link"><i class="bx bxs-user-account"></i><span>Sign up</span></a>
+	<a href="#" class="SuperNav--link"><i class="bx bxs-lock"></i><span>Forget</span></a>
+	<a href="#" class="SuperNav--link script--btn"><i class="bx bx-search"></i><span>Search Script</span></a>
+	<div class="bx bx-moon" id="super-theme-btn"></div>
 </div>
+<form action="" class="login--form">
+	<div class="login--inputBox">
+		<span>username</span>
+		<input type="text" placeholder="Enter your name">
+	</div>
+	<div class="login--inputBox">
+		<span>password</span>
+		<input type="password" placeholder="Enter your password">
+	</div>
+	<div class="login--remember">
+		<input type="checkbox" name="" id="login-remember">
+		<label for="login-remember">remember me</label>
+	</div>
+	<input type="submit" class="login--btn" value="login">
+</form>
+<form action="" class="search--script">
+	<input type="search" name="" placeholder="search script here..." id="searchScriptBox">
+	<label for="searchScriptBox" class="bx bx-search"></label>
+</form>
 <!--===================================================-->
 <script src="assets/js/main.js"></script>
-<script src="assets/js/bookmark.js"></script>
+<script src="assets/js/book-todo.js"></script>
 <script src="assets/js/advance.js"></script>
 <script src="assets/js/cookie.js"></script>
 <script src="assets/js/switch.js"></script>
-<script src="assets/js/super-and-slide.js"></script>
+<script src="assets/js/slide-icon.js"></script>
 <script src="assets/js/contact.js"></script>
 <script src="assets/js/store.js"></script>
 <script src="assets/js/clock.js"></script>
 <script src="assets/js/layer.js"></script>
 <script src="assets/js/faq.js"></script>
-<script src="assets/js/readmore.js"></script>
+<script src="assets/js/read-more.js"></script>
 </body>
 </html>
